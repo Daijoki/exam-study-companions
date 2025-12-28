@@ -18,11 +18,12 @@
     };
 
     const LIGHT_STYLES = {
-        classic: { name: 'Classic', emoji: '☀️' },
-        sunset: { name: 'Sunset', emoji: '🌸' },
-        spring: { name: 'Spring', emoji: '🌿' },
-        lavender: { name: 'Lavender', emoji: '💜' },
-        'ocean-breeze': { name: 'Ocean Breeze', emoji: '🌊' }
+        titanium: { name: 'Titanium', emoji: '🔧' },
+        sage: { name: 'Sage', emoji: '🌿' },
+        'slate-blue': { name: 'Slate Blue', emoji: '🔷' },
+        'warm-stone': { name: 'Warm Stone', emoji: '🪨' },
+        'deep-teal': { name: 'Deep Teal', emoji: '🌊' },
+        charcoal: { name: 'Charcoal', emoji: '⚫' }
     };
     
     // Get theme preference from storage or system

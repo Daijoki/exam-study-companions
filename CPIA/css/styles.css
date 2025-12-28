@@ -186,38 +186,92 @@
    LIGHT MODE VARIANTS
    ============================================= */
 
-/* 🌸 Sunset - warm peachy/coral tones */
-[data-theme="light"][data-light-style="sunset"] {
-    --primr-navy: #B45309;
-    --primr-navy-dark: #92400E;
-    --primr-navy-light: #D97706;
+/* 🌿 Sage - calming grayish-green for focus */
+[data-theme="light"][data-light-style="sage"] {
+    --primr-navy: #65A30D;
+    --primr-navy-dark: #4D7C0F;
+    --primr-navy-light: #84CC16;
     --primr-red: #DC2626;
     --primr-red-light: #EF4444;
     --primr-teal: #0891B2;
     --primr-teal-dark: #0E7490;
     --primr-teal-light: #06B6D4;
-    --primr-purple: #C026D3;
+    --primr-purple: #7C3AED;
+    --primr-aqua: #0284C7;
+    --primr-gold: #F59E0B;
+    --primr-green: #16A34A;
+    --primr-yellow: #FBBF24;
+
+    --bg-light: #FAFAF9;
+    --bg-lighter: #F5F5F4;
+    --bg-white: #FFFFFF;
+    --text-primary: #1C1917;
+    --text-secondary: #44403C;
+    --text-muted: #57534E;
+    --border-light: #E7E5E4;
+    --border-medium: #D6D3D1;
+    --border-dark: #A8A29E;
+}
+
+/* 🔷 Slate Blue - muted professional blue */
+[data-theme="light"][data-light-style="slate-blue"] {
+    --primr-navy: #3B82F6;
+    --primr-navy-dark: #2563EB;
+    --primr-navy-light: #60A5FA;
+    --primr-red: #DC2626;
+    --primr-red-light: #EF4444;
+    --primr-teal: #0891B2;
+    --primr-teal-dark: #0E7490;
+    --primr-teal-light: #06B6D4;
+    --primr-purple: #7C3AED;
     --primr-aqua: #0284C7;
     --primr-gold: #F59E0B;
     --primr-green: #059669;
     --primr-yellow: #FBBF24;
 
-    --bg-light: #FFF7ED;
-    --bg-lighter: #FFEDD5;
+    --bg-light: #F8FAFC;
+    --bg-lighter: #F1F5F9;
     --bg-white: #FFFFFF;
-    --text-primary: #78350F;
-    --text-secondary: #92400E;
-    --text-muted: #B45309;
-    --border-light: #FED7AA;
-    --border-medium: #FDBA74;
-    --border-dark: #FB923C;
+    --text-primary: #0F172A;
+    --text-secondary: #1E293B;
+    --text-muted: #475569;
+    --border-light: #E2E8F0;
+    --border-medium: #CBD5E1;
+    --border-dark: #94A3B8;
 }
 
-/* 🌿 Spring - fresh vibrant greens */
-[data-theme="light"][data-light-style="spring"] {
-    --primr-navy: #15803D;
-    --primr-navy-dark: #166534;
-    --primr-navy-light: #16A34A;
+/* 🪨 Warm Stone - warm neutral gray-tan */
+[data-theme="light"][data-light-style="warm-stone"] {
+    --primr-navy: #78716C;
+    --primr-navy-dark: #57534E;
+    --primr-navy-light: #A8A29E;
+    --primr-red: #DC2626;
+    --primr-red-light: #EF4444;
+    --primr-teal: #0891B2;
+    --primr-teal-dark: #0E7490;
+    --primr-teal-light: #06B6D4;
+    --primr-purple: #7C3AED;
+    --primr-aqua: #0284C7;
+    --primr-gold: #F59E0B;
+    --primr-green: #059669;
+    --primr-yellow: #FBBF24;
+
+    --bg-light: #FAFAF9;
+    --bg-lighter: #F5F5F4;
+    --bg-white: #FFFFFF;
+    --text-primary: #1C1917;
+    --text-secondary: #292524;
+    --text-muted: #44403C;
+    --border-light: #E7E5E4;
+    --border-medium: #D6D3D1;
+    --border-dark: #A8A29E;
+}
+
+/* 🌊 Deep Teal - muted calming teal */
+[data-theme="light"][data-light-style="deep-teal"] {
+    --primr-navy: #0F766E;
+    --primr-navy-dark: #115E59;
+    --primr-navy-light: #14B8A6;
     --primr-red: #DC2626;
     --primr-red-light: #EF4444;
     --primr-teal: #0D9488;
@@ -226,52 +280,25 @@
     --primr-purple: #7C3AED;
     --primr-aqua: #0891B2;
     --primr-gold: #F59E0B;
-    --primr-green: #16A34A;
-    --primr-yellow: #EAB308;
-
-    --bg-light: #F0FDF4;
-    --bg-lighter: #DCFCE7;
-    --bg-white: #FFFFFF;
-    --text-primary: #14532D;
-    --text-secondary: #166534;
-    --text-muted: #15803D;
-    --border-light: #BBF7D0;
-    --border-medium: #86EFAC;
-    --border-dark: #4ADE80;
-}
-
-/* 💜 Lavender - soft elegant purples */
-[data-theme="light"][data-light-style="lavender"] {
-    --primr-navy: #7C3AED;
-    --primr-navy-dark: #6D28D9;
-    --primr-navy-light: #8B5CF6;
-    --primr-red: #DC2626;
-    --primr-red-light: #EF4444;
-    --primr-teal: #0891B2;
-    --primr-teal-dark: #0E7490;
-    --primr-teal-light: #06B6D4;
-    --primr-purple: #A855F7;
-    --primr-aqua: #3B82F6;
-    --primr-gold: #F59E0B;
     --primr-green: #059669;
     --primr-yellow: #FBBF24;
 
-    --bg-light: #FAF5FF;
-    --bg-lighter: #F3E8FF;
+    --bg-light: #F0FDFA;
+    --bg-lighter: #CCFBF1;
     --bg-white: #FFFFFF;
-    --text-primary: #581C87;
-    --text-secondary: #6D28D9;
-    --text-muted: #7C3AED;
-    --border-light: #E9D5FF;
-    --border-medium: #D8B4FE;
-    --border-dark: #C084FC;
+    --text-primary: #134E4A;
+    --text-secondary: #115E59;
+    --text-muted: #0F766E;
+    --border-light: #99F6E4;
+    --border-medium: #5EEAD4;
+    --border-dark: #2DD4BF;
 }
 
-/* 🌊 Ocean Breeze - crisp blues and teals */
-[data-theme="light"][data-light-style="ocean-breeze"] {
-    --primr-navy: #1E40AF;
-    --primr-navy-dark: #1E3A8A;
-    --primr-navy-light: #2563EB;
+/* ⚫ Charcoal - high contrast dark gray */
+[data-theme="light"][data-light-style="charcoal"] {
+    --primr-navy: #52525B;
+    --primr-navy-dark: #3F3F46;
+    --primr-navy-light: #71717A;
     --primr-red: #DC2626;
     --primr-red-light: #EF4444;
     --primr-teal: #0891B2;
@@ -283,15 +310,15 @@
     --primr-green: #059669;
     --primr-yellow: #FBBF24;
 
-    --bg-light: #EFF6FF;
-    --bg-lighter: #DBEAFE;
+    --bg-light: #FAFAFA;
+    --bg-lighter: #F4F4F5;
     --bg-white: #FFFFFF;
-    --text-primary: #1E3A8A;
-    --text-secondary: #1E40AF;
-    --text-muted: #3B82F6;
-    --border-light: #BFDBFE;
-    --border-medium: #93C5FD;
-    --border-dark: #60A5FA;
+    --text-primary: #18181B;
+    --text-secondary: #27272A;
+    --text-muted: #3F3F46;
+    --border-light: #E4E4E7;
+    --border-medium: #D4D4D8;
+    --border-dark: #A1A1AA;
 }
 
 /* Smooth transitions for theme switching */

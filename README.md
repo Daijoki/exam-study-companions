@@ -55,4 +55,4 @@ Both projects are maintained in tandem to keep shared code synchronized:
    - CPIA → cpia.tiiny.site
 
 ## Version
-Latest: v1.0(11) - December 2024
+Latest: v1.0(12) - December 2024
