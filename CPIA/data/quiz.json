@@ -1,0 +1,148 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "number": 1,
+      "question": "Which of the following offers a voluntary accreditation program of institutional animal care and use programs?",
+      "options": [
+        {
+          "text": "A. PHS",
+          "correct": false
+        },
+        {
+          "text": "B. USDA",
+          "correct": false
+        },
+        {
+          "text": "C. OLAW",
+          "correct": false
+        },
+        {
+          "text": "D. AAALAC",
+          "correct": true
+        }
+      ],
+      "feedback": "Correct! <strong><a href='https://aaalac.org/' target='_blank' rel='noopener noreferrer' class='font-bold text-blue-600 hover:text-blue-800 hover:underline'>AAALAC International</a></strong> offers a voluntary accreditation program that evaluates institutions against the Guide and other standards. Unlike USDA's mandatory regulatory oversight or OLAW's oversight of PHS-funded research, AAALAC accreditation demonstrates institutional commitment to excellence through peer review."
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "question": "Which of the following is a required member of the IACUC?",
+      "options": [
+        {
+          "text": "A. Institutional Official",
+          "correct": false
+        },
+        {
+          "text": "B. Laboratory animal technician",
+          "correct": false
+        },
+        {
+          "text": "C. Individual not otherwise affiliated with the institution",
+          "correct": true
+        },
+        {
+          "text": "D. Representative from a local animal advocacy organization",
+          "correct": false
+        }
+      ],
+      "feedback": "Correct! Both <strong><a href=\"https://olaw.nih.gov/policies-laws/phs-policy.htm#AnimalWelfareAssurance\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-bold text-blue-600 hover:text-blue-800 hover:underline\">PHS Policy IV.A.3.b</a></strong> and <strong><a href=\"https://www.ecfr.gov/current/title-9/subtitle-A/chapter-I/subchapter-A/part-2/subpart-C/section-2.31\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-bold text-blue-600 hover:text-blue-800 hover:underline\">9 CFR \u00a72.31(b)(3)</a></strong> require at least one member who is not affiliated with the institution. This <strong>unaffiliated member</strong> provides community perspective and ensures IACUC decisions reflect broader societal concerns about animal research."
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "question": "According to USDA Regulations, an IACUC may have no more than how many members from any one administrative unit?",
+      "options": [
+        {
+          "text": "A. 3",
+          "correct": true
+        },
+        {
+          "text": "B. 4",
+          "correct": false
+        },
+        {
+          "text": "C. 5",
+          "correct": false
+        },
+        {
+          "text": "D. 6",
+          "correct": false
+        }
+      ],
+      "feedback": "Correct! Under <strong><a href=\"https://www.ecfr.gov/current/title-9/subtitle-A/chapter-I/subchapter-A/part-2/subpart-C/section-2.31\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-bold text-blue-600 hover:text-blue-800 hover:underline\">9 CFR \u00a72.31(b)(1)</a></strong>, the IACUC may have <strong>no more than three members from the same administrative unit</strong>. This ensures diverse perspectives and prevents any single department from dominating committee decisions. Note that PHS Policy does not contain this specific limitation."
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "question": "Which of the following does NOT need to be maintained by the IACUC?",
+      "options": [
+        {
+          "text": "A. Copy of Assurance",
+          "correct": false
+        },
+        {
+          "text": "B. Semiannual reports",
+          "correct": false
+        },
+        {
+          "text": "C. Logs of laboratory records",
+          "correct": true
+        },
+        {
+          "text": "D. Minutes from IACUC meetings",
+          "correct": false
+        }
+      ],
+      "feedback": "Correct! <strong>Laboratory records</strong> (animal health records, activity logs) are maintained by investigators and animal care staff, not by the IACUC itself. The IACUC must maintain its Assurance, meeting minutes, semiannual reports, and protocol records per <strong><a href=\"https://olaw.nih.gov/policies-laws/phs-policy.htm#RecordkeepingRequirements\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-bold text-blue-600 hover:text-blue-800 hover:underline\">PHS Policy IV.E</a></strong> and <strong><a href=\"https://www.ecfr.gov/current/title-9/subtitle-A/chapter-I/subchapter-A/part-2/subpart-D/section-2.35\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-bold text-blue-600 hover:text-blue-800 hover:underline\">9 CFR \u00a72.35</a></strong>."
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "question": "The IACUC may suspend an activity only after",
+      "options": [
+        {
+          "text": "A. a vote of a majority of the quorum present at a convened meeting.",
+          "correct": true
+        },
+        {
+          "text": "B. a discussion with the Principal Investigator takes place.",
+          "correct": false
+        },
+        {
+          "text": "C. the Institutional Official has been notified in writing of the event.",
+          "correct": false
+        },
+        {
+          "text": "D. all fact finding of the event has been conducted and documented.",
+          "correct": false
+        }
+      ],
+      "feedback": "Correct! Under <strong><a href=\"https://olaw.nih.gov/policies-laws/phs-policy.htm#ReviewofPHS-ConductedorSupportedResearchProjects\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-bold text-blue-600 hover:text-blue-800 hover:underline\">PHS Policy IV.C.6</a></strong> and <strong><a href=\"https://www.ecfr.gov/current/title-9/subtitle-A/chapter-I/subchapter-A/part-2/subpart-C/section-2.31\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-bold text-blue-600 hover:text-blue-800 hover:underline\">9 CFR \u00a72.31(d)(6)</a></strong>, the IACUC may suspend an activity only after review at a <strong>convened meeting</strong> with a <strong>majority vote of the quorum</strong>. This is one of the few IACUC actions that cannot be approved by designated member review."
+    },
+    {
+      "id": "q6",
+      "number": 6,
+      "question": "Training and instruction of personnel must include guidance in which of the following areas?",
+      "options": [
+        {
+          "text": "A. Effective writing of animal use proposals",
+          "correct": false
+        },
+        {
+          "text": "B. Proper use of personal protective equipment",
+          "correct": false
+        },
+        {
+          "text": "C. Appropriate communication with animal activist groups",
+          "correct": false
+        },
+        {
+          "text": "D. Research or testing methods that limit the use of animals",
+          "correct": true
+        }
+      ],
+      "feedback": "Correct! <strong><a href=\"https://olaw.nih.gov/policies-laws/phs-policy.htm#AnimalWelfareAssurance\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-bold text-blue-600 hover:text-blue-800 hover:underline\">PHS Policy IV.A.1.g</a></strong> and <strong><a href=\"https://www.ecfr.gov/current/title-9/subtitle-A/chapter-I/subchapter-A/part-2/subpart-C/section-2.32\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"font-bold text-blue-600 hover:text-blue-800 hover:underline\">9 CFR \u00a72.32(c)</a></strong> require training in <strong>methods that limit animal use or minimize distress</strong> - the 3Rs (replacement, reduction, refinement). This reflects the ethical obligation to consider alternatives throughout the research process."
+    }
+  ]
+}

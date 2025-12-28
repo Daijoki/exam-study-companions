@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    (function() {
+      try {
+        var theme = 'light';
+        var darkStyle = '';
+        if (window.top && window.top.document && window.top.document.documentElement) {
+          var t = window.top.document.documentElement.getAttribute('data-theme');
+          var s = window.top.document.documentElement.getAttribute('data-dark-style');
+          if (t) theme = t;
+          if (s) darkStyle = s;
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+        if (darkStyle) document.documentElement.setAttribute('data-dark-style', darkStyle);
+      } catch (e) {
+        // If we can't read parent, default styles apply
+      }
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Elements of Informed Consent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 1.5rem;
+      line-height: 1.5;
+      color: #111827;
+      background-color: #f9fafb;
+    }
+    h1, h2 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+      margin-top: 1.5rem;
+      border-bottom: 2px solid #e5e7eb;
+      padding-bottom: 0.5rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+      background-color: #ffffff;
+    }
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 0.5rem 0.75rem;
+      vertical-align: top;
+    }
+    thead th {
+      background-color: #eff6ff;
+      font-weight: 600;
+    }
+    tbody tr:nth-child(even) td {
+      background-color: #f9fafb;
+    }
+    a {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+    ul, ol {
+      margin: 0.25rem 0;
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.15rem;
+    }
+  
+  /* Dark mode support when opened inside CIP modal */
+  html[data-theme="dark"],
+  body[data-theme="dark"] {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  html[data-theme="dark"] table,
+  body[data-theme="dark"] table {
+    background-color: #020617;
+    color: #e5e7eb;
+    border-color: #4b5563;
+  }
+
+  html[data-theme="dark"] thead th,
+  body[data-theme="dark"] thead th {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+
+  html[data-theme="dark"] tbody tr:nth-child(even) td,
+  body[data-theme="dark"] tbody tr:nth-child(even) td {
+    background-color: #111827;
+  }
+
+  /* Ensure body background overrides light mode when theme is dark */
+  html[data-theme="dark"] body {
+    background-color: #020617;
+    color: #ffffff;
+  }
+
+  /* Row header cells in tables ((b)(1), etc.) should not stay light in dark mode */
+  html[data-theme="dark"] tbody th,
+  body[data-theme="dark"] tbody th {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  html[data-theme="dark"] body p,
+  html[data-theme="dark"] body li,
+  html[data-theme="dark"] body td,
+  html[data-theme="dark"] body th {
+    color: #ffffff;
+  }
+
+  html[data-theme="dark"] body h1,
+  html[data-theme="dark"] body h2,
+  html[data-theme="dark"] body h3 {
+    color: #ffffff;
+  }
+
+
+  html[data-theme="dark"] p.source,
+  body[data-theme="dark"] p.source {
+    color: #9ca3af;
+  }
+
+  html[data-theme="dark"] a,
+  body[data-theme="dark"] a {
+    color: #38bdf8;
+  }
+
+
+  
+  
+  
+  
+  /* === DARK STYLE VARIANTS === */
+  
+  /* 💠 Northern Lights - navy sky + teal aurora */
+  html[data-dark-style="aurora"], html[data-dark-style="aurora"] body {
+    background-color: #010814 !important;
+    color: #ccfbf1 !important;
+  }
+  html[data-dark-style="aurora"] table { background-color: #071525; border-color: #115e59; }
+  html[data-dark-style="aurora"] thead th { background-color: #0f3d38; color: #5eead4; border-color: #14b8a6; }
+  html[data-dark-style="aurora"] tbody tr:nth-child(even) td { background-color: #0c1f33; }
+  html[data-dark-style="aurora"] th, html[data-dark-style="aurora"] td { border-color: #115e59; color: #ccfbf1; }
+  html[data-dark-style="aurora"] a { color: #2dd4bf; }
+  html[data-dark-style="aurora"] p.source { color: #5eead4; }
+
+  /* 🐚 Deep Sea - true abyss + cyan glow */
+  html[data-dark-style="ocean"], html[data-dark-style="ocean"] body {
+    background-color: #000204 !important;
+    color: #cffafe !important;
+  }
+  html[data-dark-style="ocean"] table { background-color: #000a0f; border-color: #003040; }
+  html[data-dark-style="ocean"] thead th { background-color: #003040; color: #22d3ee; border-color: #0891b2; }
+  html[data-dark-style="ocean"] tbody tr:nth-child(even) td { background-color: #001018; }
+  html[data-dark-style="ocean"] th, html[data-dark-style="ocean"] td { border-color: #003040; color: #cffafe; }
+  html[data-dark-style="ocean"] a { color: #06b6d4; }
+  html[data-dark-style="ocean"] p.source { color: #22d3ee; }
+
+  /* ❄️ Frost - steel gray + ice white */
+  html[data-dark-style="frost"], html[data-dark-style="frost"] body {
+    background-color: #101214 !important;
+    color: #f3f4f6 !important;
+  }
+  html[data-dark-style="frost"] table { background-color: #1a1d21; border-color: #3f444d; }
+  html[data-dark-style="frost"] thead th { background-color: #3f444d; color: #f3f4f6; border-color: #6b7280; }
+  html[data-dark-style="frost"] tbody tr:nth-child(even) td { background-color: #24282e; }
+  html[data-dark-style="frost"] th, html[data-dark-style="frost"] td { border-color: #3f444d; color: #f3f4f6; }
+  html[data-dark-style="frost"] a { color: #9ca3af; }
+  html[data-dark-style="frost"] p.source { color: #d1d5db; }
+
+  /* 🌀 Blacklight - purple-black + neon */
+  html[data-dark-style="blacklight"], html[data-dark-style="blacklight"] body {
+    background-color: #080010 !important;
+    color: #fae8ff !important;
+  }
+  html[data-dark-style="blacklight"] table { background-color: #10001f; border-color: #581c87; }
+  html[data-dark-style="blacklight"] thead th { background-color: #581c87; color: #00f0ff; border-color: #a855f7; }
+  html[data-dark-style="blacklight"] tbody tr:nth-child(even) td { background-color: #1a0030; }
+  html[data-dark-style="blacklight"] th, html[data-dark-style="blacklight"] td { border-color: #581c87; color: #fae8ff; }
+  html[data-dark-style="blacklight"] a { color: #e879f9; }
+  html[data-dark-style="blacklight"] p.source { color: #e879f9; }
+
+  /* 📟 Matrix - pure black + green */
+  html[data-dark-style="matrix"], html[data-dark-style="matrix"] body {
+    background-color: #000000 !important;
+    color: #4ade80 !important;
+  }
+  html[data-dark-style="matrix"] table { background-color: #030303; border-color: #0a2f0a; }
+  html[data-dark-style="matrix"] thead th { background-color: #0a2f0a; color: #4ade80; border-color: #15803d; }
+  html[data-dark-style="matrix"] tbody tr:nth-child(even) td { background-color: #080808; }
+  html[data-dark-style="matrix"] th, html[data-dark-style="matrix"] td { border-color: #0a2f0a; color: #22c55e; }
+  html[data-dark-style="matrix"] a { color: #4ade80; }
+  html[data-dark-style="matrix"] p.source { color: #22c55e; }
+
+  </style></head>
+<body>
+  <h1>Elements of Informed Consent: FDA vs Common Rule</h1>
+  
+  <h2>Basic Elements of Informed Consent</h2>
+  <table>
+<thead>
+<tr>
+  <th scope="col">#</th>
+  <th scope="col">FDA (<a href="https://www.ecfr.gov/current/title-21/section-50.25" target="_blank">21 CFR 50.25(a)</a>)</th>
+  <th scope="col">Common Rule (<a href="https://www.ecfr.gov/current/title-45/part-46/section-46.116#p-46.116(b)" target="_blank">45 CFR 46.116(b)</a>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>A statement that the study involves research, an explanation of the purposes of the research and the expected duration of the subject's participation, a description of the procedures to be followed, and identification of any procedures which are experimental.</td>
+  <td>A statement that the study involves research, an explanation of the purposes of the research and the expected duration of the subject's participation, a description of the procedures to be followed, and identification of any procedures that are experimental;</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>A description of any reasonably foreseeable risks or discomforts to the subject.</td>
+  <td>A description of any reasonably foreseeable risks or discomforts to the subject;</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>A description of any benefits to the subject or to others which may reasonably be expected from the research.</td>
+  <td>A description of any benefits to the subject or to others that may reasonably be expected from the research;</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>A disclosure of appropriate alternative procedures or courses of treatment, if any, that might be advantageous to the subject.</td>
+  <td>A disclosure of appropriate alternative procedures or courses of treatment, if any, that might be advantageous to the subject;</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>A statement describing the extent, if any, to which confidentiality of records identifying the subject will be maintained and that notes the possibility that the Food and Drug Administration may inspect the records.</td>
+  <td>A statement describing the extent, if any, to which confidentiality of records identifying the subject will be maintained;</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>For research involving more than minimal risk, an explanation as to whether any compensation and an explanation as to whether any medical treatments are available if injury occurs and, if so, what they consist of, or where further information may be obtained.</td>
+  <td>For research involving more than minimal risk, an explanation as to whether any compensation and an explanation as to whether any medical treatments are available if injury occurs and, if so, what they consist of, or where further information may be obtained;</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>An explanation of whom to contact for answers to pertinent questions about the research and research subjects' rights, and whom to contact in the event of a research-related injury to the subject.</td>
+  <td>An explanation of whom to contact for answers to pertinent questions about the research and research subjects' rights, and whom to contact in the event of a research-related injury to the subject;</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td>A statement that participation is voluntary, that refusal to participate will involve no penalty or loss of benefits to which the subject is otherwise entitled, and that the subject may discontinue participation at any time without penalty or loss of benefits to which the subject is otherwise entitled.</td>
+  <td>A statement that participation is voluntary, refusal to participate will involve no penalty or loss of benefits to which the subject is otherwise entitled, and the subject may discontinue participation at any time without penalty or loss of benefits to which the subject is otherwise entitled; and</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td></td>
+  <td>One of the following statements about any research that involves the collection of identifiable private information or identifiable biospecimens:<br><br>(i) A statement that identifiers might be removed from the identifiable private information or identifiable biospecimens and that, after such removal, the information or biospecimens could be used for future research studies or distributed to another investigator for future research studies without additional informed consent from the subject or the legally authorized representative, if this might be a possibility; or<br><br>(ii) A statement that the subject's information or biospecimens collected as part of the research, even if identifiers are removed, will not be used or distributed for future research studies.</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Additional Elements of Informed Consent (When Appropriate)</h2>
+<table>
+<thead>
+<tr>
+  <th scope="col">#</th>
+  <th scope="col">FDA (<a href="https://www.ecfr.gov/current/title-21/part-50/section-50.25#p-50.25(b)" target="_blank">21 CFR 50.25(b)</a>)</th>
+  <th scope="col">Common Rule (<a href="https://www.ecfr.gov/current/title-45/part-46/section-46.116#p-46.116(c)" target="_blank">45 CFR 46.116(c)</a>)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>1</td>
+  <td>A statement that the particular treatment or procedure may involve risks to the subject (or to the embryo or fetus, if the subject is or may become pregnant) which are currently unforeseeable.</td>
+  <td>A statement that the particular treatment or procedure may involve risks to the subject (or to the embryo or fetus, if the subject is or may become pregnant) that are currently unforeseeable;</td>
+</tr>
+<tr>
+  <td>2</td>
+  <td>Anticipated circumstances under which the subject's participation may be terminated by the investigator without regard to the subject's consent.</td>
+  <td>Anticipated circumstances under which the subject's participation may be terminated by the investigator without regard to the subject's or the legally authorized representative's consent;</td>
+</tr>
+<tr>
+  <td>3</td>
+  <td>Any additional costs to the subject that may result from participation in the research.</td>
+  <td>Any additional costs to the subject that may result from participation in the research;</td>
+</tr>
+<tr>
+  <td>4</td>
+  <td>The consequences of a subject's decision to withdraw from the research and procedures for orderly termination of participation by the subject.</td>
+  <td>The consequences of a subject's decision to withdraw from the research and procedures for orderly termination of participation by the subject;</td>
+</tr>
+<tr>
+  <td>5</td>
+  <td>A statement that significant new findings developed during the course of the research which may relate to the subject's willingness to continue participation will be provided to the subject.</td>
+  <td>A statement that significant new findings developed during the course of the research that may relate to the subject's willingness to continue participation will be provided to the subject;</td>
+</tr>
+<tr>
+  <td>6</td>
+  <td>The approximate number of subjects involved in the study.</td>
+  <td>The approximate number of subjects involved in the study;</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td></td>
+  <td>A statement that the subject's biospecimens (even if identifiers are removed) may be used for commercial profit and whether the subject will or will not share in this commercial profit;</td>
+</tr>
+<tr>
+  <td>8</td>
+  <td></td>
+  <td>A statement regarding whether clinically relevant research results, including individual research results, will be disclosed to subjects, and if so, under what conditions; and</td>
+</tr>
+<tr>
+  <td>9</td>
+  <td></td>
+  <td>For research involving biospecimens, whether the research will (if known) or might include whole genome sequencing (i.e., sequencing of a human germline or somatic specimen with the intent to generate the genome or exome sequence of that specimen).</td>
+</tr>
+<tr>
+  <td>(c)</td>
+  <td>When seeking informed consent for applicable clinical trials, as defined in <a href="https://www.govinfo.gov/link/uscode/42/282" target="_blank">42 U.S.C. 282(j)(1)(A)</a>, the following statement shall be provided to each clinical trial subject in informed consent documents and processes. This will notify the clinical trial subject that clinical trial information has been or will be submitted for inclusion in the clinical trial registry databank under paragraph (j) of section 402 of the Public Health Service Act. The statement is: "A description of this clinical trial will be available on <a href="http://www.ClinicalTrials.gov" target="_blank">http://www.ClinicalTrials.gov</a>, as required by U.S. Law. This Web site will not include information that can identify you. At most, the Web site will include a summary of the results. You can search this Web site at any time."</td>
+  <td></td>
+</tr>
+<tr>
+  <td>(d)</td>
+  <td>The informed consent requirements in these regulations are not intended to preempt any applicable Federal, State, or local laws which require additional information to be disclosed for informed consent to be legally effective.</td>
+  <td></td>
+</tr>
+<tr>
+  <td>(e)</td>
+  <td>Nothing in these regulations is intended to limit the authority of a physician to provide emergency medical care to the extent the physician is permitted to do so under applicable Federal, State, or local law.</td>
+  <td></td>
+</tr>
+</tbody>
+</table>
+
+<h2>Agency-Specific Informed Consent Elements</h2>
+<table>
+<thead>
+<tr>
+  <th scope="col"></th>
+  <th scope="col">FDA</th>
+  <th scope="col">Common Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <th scope="row">FDA may inspect records</th>
+  <td><a href="https://www.ecfr.gov/current/title-21/section-50.25#p-50.25(a)(5)" target="_blank">21 CFR 50.25(a)(5)</a></td>
+  <td></td>
+</tr>
+<tr>
+  <th scope="row">Shared-agency requirements for waiver and alteration of informed consent</th>
+  <td colspan="2">(3) All the following criteria are met:<br><br>
+    (i) Research involves no more than minimal risk to subjects<br><br>
+    (ii) Research could not be practically carried out without the requested waiver or alteration<br><br>
+    (iii) Research involves using identifiable private information or identifiable biospecimens, the research could not practicably be carried out without using such information or biospecimens in an identifiable format<br><br>
+    (iv) Waiver or alteration would not adversely affect the rights and welfare of the subjects<br><br>
+    (v) Whenever appropriate, the subjects or legally authorized representatives will be provided with additional pertinent information after participation<br><br>
+    Common Rule <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.116#p-46.116(f)(3)" target="_blank">45 CFR 46.116(f)(3)</a><br><br>
+    <a href="https://www.federalregister.gov/documents/2023/12/21/2023-27935/institutional-review-board-waiver-or-alteration-of-informed-consent-for-minimal-risk-clinical" target="_blank">FDA Guidance</a>
+  </td>
+</tr>
+<tr>
+  <th scope="row">Agency-specific requirements for waiver or alteration of informed consent</th>
+  <td>(a)-(c) emergency use of a test article<br><br>
+    (d) administration of an investigational new drug to a member of the armed forces in connection with the member's participation in a particular military operation<br><br>
+    (e) investigational in vitro diagnostic devices used to identify chemical, biological, radiological, or nuclear agents...that would suggest a terrorism event or other public health emergency<br><br>
+    <a href="https://www.ecfr.gov/current/title-21/section-50.23" target="_blank">21 CFR 50.23</a>
+  </td>
+  <td>Public benefit and service programs: Research involving public benefit and service programs conducted by or subject to the approval of state or local officials<br><br>
+    <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.116#p-46.116(e)" target="_blank">45 CFR 46.116(e)</a>
+  </td>
+</tr>
+<tr>
+  <th scope="row">Waiver of documentation of informed consent</th>
+  <td>
+    <ol>
+      <li>Research with no more than minimal risk of harm to subjects and involves no procedures for which written consent is normally required outside the research context.</li>
+    </ol>
+    However, the IRB might require researchers to provide subjects with written statements regarding the research, and in manner in which the subject has access to it at a later time<br><br>
+    <a href="https://www.ecfr.gov/current/title-21/section-56.109#p-56.109(c)" target="_blank">21 CFR 56.109(c)</a>
+  </td>
+  <td>
+    <ol>
+      <li>The only record linking the subject and research is the informed consent form, and the principal risk would be potential harm from breach of confidentiality. Subjects will be asked whether they want documentation linking them to the research, and the subject's wishes govern</li>
+      <li>Research presents no more than minimal risk of harm to subjects and involve no procedures for which written consent is normally required outside research context</li>
+      <li>When all the following are met:
+        <ul>
+          <li>subjects are members of a distinct cultural group or community in which signing forms is not the norm</li>
+          <li>the research presents no more than minimal risk of harm to subjects</li>
+          <li>there is an appropriate alternative mechanism for documenting that informed consent was obtained</li>
+        </ul>
+      </li>
+    </ol>
+    However, IRB may require the investigator to provide subjects with a written statement regarding the research<br><br>
+    <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.117#p-46.117(c)" target="_blank">45 CFR 46.117(c)</a>
+  </td>
+</tr>
+</tbody>
+</table>
+
+<script>
+// Link tracking with green pill style + ability to clear read status
+(function() {
+  if (!window.parent || window.parent === window) return;
+
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && window.parent.stateManager) {
+      const context = {
+        type: 'source',
+        title: link.textContent || link.title || link.href,
+        source: 'Documents - Table'
+      };
+      window.parent.stateManager.markAsViewed(link.href, context);
+      setTimeout(enhanceLinks, 50);
+    }
+  });
+
+  function enhanceLinks() {
+    if (!window.parent || !window.parent.stateManager || !window.parent.ICONS) return;
+
+    const links = document.querySelectorAll('a[href^="http"]');
+    links.forEach(function(link) {
+      const url = link.href;
+      const isViewed = window.parent.stateManager.isViewed(url);
+
+      if (!isViewed) {
+        const wrapper = link.closest('.link-wrapper');
+        if (wrapper) {
+          const pill = wrapper.querySelector('.read-indicator');
+          if (pill) pill.remove();
+        }
+        return;
+      }
+
+      let wrapper = link.closest('.link-wrapper');
+      if (!wrapper) {
+        wrapper = document.createElement('span');
+        wrapper.className = 'link-wrapper';
+        wrapper.style.cssText = 'display: inline-flex; align-items: center; gap: 0.25rem;';
+        link.parentNode.insertBefore(wrapper, link);
+        wrapper.appendChild(link);
+      }
+
+      let pill = wrapper.querySelector('.read-indicator');
+      if (!pill) {
+        pill = document.createElement('button');
+        pill.type = 'button';
+        pill.className = 'read-indicator';
+        pill.style.cssText = 'display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.15rem 0.5rem; border-radius: 9999px; background-color: #d1fae5; color: #047857; border: none; cursor: pointer; font-size: 0.75rem;';
+        pill.setAttribute('title', 'Mark as unread');
+        pill.setAttribute('aria-label', 'Mark as unread');
+
+        const check = document.createElement('span');
+        check.innerHTML = window.parent.ICONS.check || '✓';
+        check.style.cssText = 'display: inline-block; font-size: 0.75rem;';
+
+        const text = document.createElement('span');
+        text.textContent = 'Read';
+
+        pill.appendChild(check);
+        pill.appendChild(text);
+        wrapper.appendChild(pill);
+
+        pill.addEventListener('click', function(ev) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          if (window.parent.stateManager && typeof window.parent.stateManager.toggleViewed === 'function') {
+            const context = {
+              type: 'source',
+              title: link.textContent || link.title || link.href,
+              source: 'Documents - Table'
+            };
+            window.parent.stateManager.toggleViewed(url, context);
+          }
+          pill.remove();
+        });
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enhanceLinks);
+  } else {
+    enhanceLinks();
+  }
+})();
+</script>
+</body>
+</html>

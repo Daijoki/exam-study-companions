@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    (function() {
+      try {
+        var theme = 'light';
+        var darkStyle = '';
+        if (window.top && window.top.document && window.top.document.documentElement) {
+          var t = window.top.document.documentElement.getAttribute('data-theme');
+          var s = window.top.document.documentElement.getAttribute('data-dark-style');
+          if (t) theme = t;
+          if (s) darkStyle = s;
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+        if (darkStyle) document.documentElement.setAttribute('data-dark-style', darkStyle);
+      } catch (e) {
+        // If we can't read parent, default styles apply
+      }
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Recordkeeping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 1.5rem;
+      line-height: 1.6;
+      color: #111827;
+      background-color: #f9fafb;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      color: #1f2937;
+    }
+    p {
+      margin-bottom: 1rem;
+      color: #374151;
+    }
+    ul {
+      margin-bottom: 1rem;
+      padding-left: 1.5rem;
+    }
+    li {
+      margin-bottom: 0.5rem;
+      color: #374151;
+    }
+    ul ul {
+      margin-top: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+    a {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+    a:hover {
+      color: #1e40af;
+    }
+    .source-links {
+      margin-top: 2rem;
+      padding-top: 1rem;
+      border-top: 1px solid #e5e7eb;
+    }
+    .source-links p {
+      font-size: 0.875rem;
+      color: #6b7280;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .source-links a {
+      display: block;
+      margin-bottom: 0.25rem;
+      font-size: 0.875rem;
+    }
+  
+  /* Dark mode support when opened inside CIP modal */
+  html[data-theme="dark"],
+  body[data-theme="dark"] {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  html[data-theme="dark"] table,
+  body[data-theme="dark"] table {
+    background-color: #020617;
+    color: #e5e7eb;
+    border-color: #4b5563;
+  }
+
+  html[data-theme="dark"] thead th,
+  body[data-theme="dark"] thead th {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+
+  html[data-theme="dark"] tbody tr:nth-child(even) td,
+  body[data-theme="dark"] tbody tr:nth-child(even) td {
+    background-color: #111827;
+  }
+
+  /* Ensure body background overrides light mode when theme is dark */
+  html[data-theme="dark"] body {
+    background-color: #020617;
+    color: #ffffff;
+  }
+
+  /* Row header cells in tables ((b)(1), etc.) should not stay light in dark mode */
+  html[data-theme="dark"] tbody th,
+  body[data-theme="dark"] tbody th {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  html[data-theme="dark"] body p,
+  html[data-theme="dark"] body li,
+  html[data-theme="dark"] body td,
+  html[data-theme="dark"] body th {
+    color: #ffffff;
+  }
+
+  html[data-theme="dark"] body h1,
+  html[data-theme="dark"] body h2,
+  html[data-theme="dark"] body h3 {
+    color: #ffffff;
+  }
+
+
+  html[data-theme="dark"] p.source,
+  body[data-theme="dark"] p.source {
+    color: #9ca3af;
+  }
+
+  html[data-theme="dark"] a,
+  body[data-theme="dark"] a {
+    color: #38bdf8;
+  }
+
+
+  
+  
+  
+  
+  /* === DARK STYLE VARIANTS === */
+  
+  /* 💠 Northern Lights - navy sky + teal aurora */
+  html[data-dark-style="aurora"], html[data-dark-style="aurora"] body {
+    background-color: #010814 !important;
+    color: #ccfbf1 !important;
+  }
+  html[data-dark-style="aurora"] table { background-color: #071525; border-color: #115e59; }
+  html[data-dark-style="aurora"] thead th { background-color: #0f3d38; color: #5eead4; border-color: #14b8a6; }
+  html[data-dark-style="aurora"] tbody tr:nth-child(even) td { background-color: #0c1f33; }
+  html[data-dark-style="aurora"] th, html[data-dark-style="aurora"] td { border-color: #115e59; color: #ccfbf1; }
+  html[data-dark-style="aurora"] a { color: #2dd4bf; }
+  html[data-dark-style="aurora"] p.source { color: #5eead4; }
+
+  /* 🐚 Deep Sea - true abyss + cyan glow */
+  html[data-dark-style="ocean"], html[data-dark-style="ocean"] body {
+    background-color: #000204 !important;
+    color: #cffafe !important;
+  }
+  html[data-dark-style="ocean"] table { background-color: #000a0f; border-color: #003040; }
+  html[data-dark-style="ocean"] thead th { background-color: #003040; color: #22d3ee; border-color: #0891b2; }
+  html[data-dark-style="ocean"] tbody tr:nth-child(even) td { background-color: #001018; }
+  html[data-dark-style="ocean"] th, html[data-dark-style="ocean"] td { border-color: #003040; color: #cffafe; }
+  html[data-dark-style="ocean"] a { color: #06b6d4; }
+  html[data-dark-style="ocean"] p.source { color: #22d3ee; }
+
+  /* ❄️ Frost - steel gray + ice white */
+  html[data-dark-style="frost"], html[data-dark-style="frost"] body {
+    background-color: #101214 !important;
+    color: #f3f4f6 !important;
+  }
+  html[data-dark-style="frost"] table { background-color: #1a1d21; border-color: #3f444d; }
+  html[data-dark-style="frost"] thead th { background-color: #3f444d; color: #f3f4f6; border-color: #6b7280; }
+  html[data-dark-style="frost"] tbody tr:nth-child(even) td { background-color: #24282e; }
+  html[data-dark-style="frost"] th, html[data-dark-style="frost"] td { border-color: #3f444d; color: #f3f4f6; }
+  html[data-dark-style="frost"] a { color: #9ca3af; }
+  html[data-dark-style="frost"] p.source { color: #d1d5db; }
+
+  /* 🌀 Blacklight - purple-black + neon */
+  html[data-dark-style="blacklight"], html[data-dark-style="blacklight"] body {
+    background-color: #080010 !important;
+    color: #fae8ff !important;
+  }
+  html[data-dark-style="blacklight"] table { background-color: #10001f; border-color: #581c87; }
+  html[data-dark-style="blacklight"] thead th { background-color: #581c87; color: #00f0ff; border-color: #a855f7; }
+  html[data-dark-style="blacklight"] tbody tr:nth-child(even) td { background-color: #1a0030; }
+  html[data-dark-style="blacklight"] th, html[data-dark-style="blacklight"] td { border-color: #581c87; color: #fae8ff; }
+  html[data-dark-style="blacklight"] a { color: #e879f9; }
+  html[data-dark-style="blacklight"] p.source { color: #e879f9; }
+
+  /* 📟 Matrix - pure black + green */
+  html[data-dark-style="matrix"], html[data-dark-style="matrix"] body {
+    background-color: #000000 !important;
+    color: #4ade80 !important;
+  }
+  html[data-dark-style="matrix"] table { background-color: #030303; border-color: #0a2f0a; }
+  html[data-dark-style="matrix"] thead th { background-color: #0a2f0a; color: #4ade80; border-color: #15803d; }
+  html[data-dark-style="matrix"] tbody tr:nth-child(even) td { background-color: #080808; }
+  html[data-dark-style="matrix"] th, html[data-dark-style="matrix"] td { border-color: #0a2f0a; color: #22c55e; }
+  html[data-dark-style="matrix"] a { color: #4ade80; }
+  html[data-dark-style="matrix"] p.source { color: #22c55e; }
+
+  </style></head>
+<body>
+  <h1>Recordkeeping</h1>
+  
+  <p>An institution or IRB must prepare and maintain adequate documentation of the following for at least three years:</p>
+  
+  <ul>
+    <li>Copies of all research proposals, scientific evaluations, approved sample consent forms, progress reports submitted by investigators, and reports of injuries to subjects.</li>
+    
+    <li>IRB meeting minutes that include, as described in <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.115#p-46.115(a)(2)" target="_blank">45 CFR 46.115(a)(2)</a>:
+      <ul>
+        <li>Attendance;</li>
+        <li>Actions taken by the IRB;</li>
+        <li>The vote on the actions including the number of members for, against, and abstaining;</li>
+        <li>The basis for requiring any changes in or disapproval of the research; and</li>
+        <li>A written summary of the discussion of controverted issues and their resolution.</li>
+      </ul>
+    </li>
+    
+    <li>Continuing review records, including the rationale for conducting continuing review differently than as described in <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.109#p-46.109(f)(1)" target="_blank">45 CFR 46.109(f)(1)</a>.</li>
+    
+    <li>All correspondence between the IRB and investigators.</li>
+    
+    <li>List of IRB members as described in <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.108#p-46.108(a)(2)" target="_blank">45 CFR 46.108(a)(2)</a>.</li>
+    
+    <li>Written procedures as described in <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.108#p-46.108(a)(3)" target="_blank">45 CFR 46.108(a)(3)</a>, <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.108#p-46.108(a)(4)" target="_blank">45 CFR 46.108(a)(4)</a>, and <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.103#p-46.103(e)" target="_blank">45 CFR 46.103(e)</a>, including procedures for:
+      <ul>
+        <li>Conducting initial and continuing review of research, and reporting findings and actions to the researcher and institution;</li>
+        <li>Determining which projects require review more often than annually and determining which projects need verification from sources other than the researcher that no material changes have occurred since previous IRB review;</li>
+        <li>Ensuring prompt reporting to the IRB of proposed changes in a research activity and that proposed changes are not initiated without IRB review and approval, except when it is necessary to eliminate apparent immediate hazards to the human subjects; and</li>
+        <li>Ensuring prompt reporting to the IRB, IO, and department or agency head (for research conducted or supported by HHS or FDA) of:
+          <ul>
+            <li>Unanticipated problems involving risks to human subjects or others;</li>
+            <li>Instances of serious noncompliance with the applicable HHS or FDA regulations or IRB requirements; and</li>
+            <li>Suspension or termination of IRB approval.</li>
+          </ul>
+        </li>
+        <li>Waiver of consent: the researcher must include justification in the study protocol for meeting the criteria for a waiver of consent.</li>
+        <li>Waiver of documentation of consent: the researcher must include justification in the study protocol for meeting the criteria for a waiver of documentation of consent.</li>
+      </ul>
+    </li>
+    
+    <li>Statements of significant new findings provided to subjects, as required by <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.116#p-46.116(c)(5)" target="_blank">45 CFR 46.116(c)(5)</a>.</li>
+    
+    <li>Rationale for an expedited review determination that the research is more than minimal risk, per <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.110#p-46.110(b)(1)(i)" target="_blank">45 CFR 46.110(b)(1)(i)</a>.</li>
+    
+    <li>Documentation specifying that an institution and its IRB will meet the responsibilities and comply with the requirements specified in <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.103#p-46.103(a)" target="_blank">45 CFR 46.103(a)</a>.</li>
+  </ul>
+
+  <div class="source-links">
+    <p>Primary Sources:</p>
+    <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.115" target="_blank">45 CFR 46.115</a>
+    <a href="https://www.ecfr.gov/current/title-21/part-56/section-56.115" target="_blank">21 CFR 56.115</a>
+  </div>
+
+<script>
+// Link tracking with green pill style + ability to clear read status
+(function() {
+  if (!window.parent || window.parent === window) return;
+
+  // Track clicks on links to mark as viewed
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && window.parent.stateManager) {
+      const context = {
+        type: 'source',
+        title: link.textContent || link.title || link.href,
+        source: 'Documents - Recordkeeping'
+      };
+      window.parent.stateManager.markAsViewed(link.href, context);
+      // Re-run enhancement so pills appear for newly viewed links
+      setTimeout(enhanceLinks, 50);
+    }
+  });
+
+  // Add green pill with checkmark to viewed links,
+  // and let users click the pill to mark as unread.
+  function enhanceLinks() {
+    if (!window.parent || !window.parent.stateManager || !window.parent.ICONS) return;
+
+    const links = document.querySelectorAll('a[href^="http"]');
+    links.forEach(function(link) {
+      const url = link.href;
+      const isViewed = window.parent.stateManager.isViewed(url);
+
+      // If not viewed, remove any existing pill and unwrap if needed
+      if (!isViewed) {
+        const wrapper = link.closest('.link-wrapper');
+        if (wrapper) {
+          const pill = wrapper.querySelector('.read-indicator');
+          if (pill) pill.remove();
+        }
+        return;
+      }
+
+      // Ensure wrapper exists
+      let wrapper = link.closest('.link-wrapper');
+      if (!wrapper) {
+        wrapper = document.createElement('span');
+        wrapper.className = 'link-wrapper';
+        wrapper.style.cssText = 'display: inline-flex; align-items: center; gap: 0.25rem;';
+        link.parentNode.insertBefore(wrapper, link);
+        wrapper.appendChild(link);
+      }
+
+      // If pill already exists, don't recreate; just ensure it has the right handlers
+      let pill = wrapper.querySelector('.read-indicator');
+      if (!pill) {
+        pill = document.createElement('button');
+        pill.type = 'button';
+        pill.className = 'read-indicator';
+        pill.style.cssText = 'display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.15rem 0.5rem; border-radius: 9999px; background-color: #d1fae5; color: #047857; border: none; cursor: pointer; font-size: 0.75rem;';
+        pill.setAttribute('title', 'Mark as unread');
+        pill.setAttribute('aria-label', 'Mark as unread');
+
+        const check = document.createElement('span');
+        check.innerHTML = window.parent.ICONS.check || '✓';
+        check.style.cssText = 'display: inline-block; font-size: 0.75rem;';
+
+        const text = document.createElement('span');
+        text.textContent = 'Read';
+
+        pill.appendChild(check);
+        pill.appendChild(text);
+        wrapper.appendChild(pill);
+
+        // Clicking the pill marks the source as unread and removes the pill
+        pill.addEventListener('click', function(ev) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          if (window.parent.stateManager && typeof window.parent.stateManager.toggleViewed === 'function') {
+            const context = {
+              type: 'source',
+              title: link.textContent || link.title || link.href,
+              source: 'Documents - Recordkeeping'
+            };
+            window.parent.stateManager.toggleViewed(url, context);
+          }
+          // Remove the pill; enhanceLinks can rebuild if it becomes viewed again
+          pill.remove();
+        });
+      }
+    });
+  }
+
+  // Run on load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enhanceLinks);
+  } else {
+    enhanceLinks();
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,194 @@
+{
+  "timeline": [
+    {
+      "title": "National Institutes of Health Established",
+      "year": "1930",
+      "description": [
+        "The Ransdell Act reorganized and expanded the Laboratory of Hygiene to the National Institute of Health.  Its title changed to the National Institutes of Health in 1948."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": []
+    },
+    {
+      "title": "Animal Care Panel Established",
+      "year": "1950",
+      "description": [
+        "The Animal Care Program was established in 1950 by a group of laboratory animal veterinarians, research investigators, and animal care personnel to enhance the well-being of research animals.  In 1967, the organization restructured as the American Association for Laboratory Animal Sciences (AALAS)."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "American Association for Laboratory Animal Sciences",
+          "url": "https://www.aalas.org/"
+        }
+      ]
+    },
+    {
+      "title": "Institute for Laboratory Animal Research Established",
+      "year": "1953",
+      "description": [
+        "The Institute of Animal Resources was established by the National Research Council, as part of the National Academies of Sciences, Engineering, and Medicine, to develop animal care standards. ILAR publishes the Guide for the Care and Use of Laboratory Animals."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Guide for the Care and Use of Laboratory Animals",
+          "url": "https://olaw.nih.gov/policies-laws/guide-care-use-lab-animals"
+        }
+      ]
+    },
+    {
+      "title": "Guide for Laboratory Animal Facilities and Care Published",
+      "year": "1963",
+      "description": [
+        "The Animal Care Panel and the Institute for Laboratory Animal Resources published the inaugural Guide in 1963. It included guidelines and recommendations for the proper care, housing, and humane treatment of nonhuman animals used in biomedical research."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": []
+    },
+    {
+      "title": "AAALAC International Founded",
+      "year": "1965",
+      "description": [
+        "The Animal Care Panel appointed a professional standards committee to explore criteria for developing a voluntary accreditation program for animal care facilities. This group incorporated into a separate nonprofit organization, AAALAC International, in 1965. AAALAC accreditation requires its institutions to comply with the Guide and the Animal Welfare Act, when appropriate."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "AAALAC International",
+          "url": "https://www.aaalac.org/"
+        }
+      ]
+    },
+    {
+      "title": "Laboratory Animal Welfare Act",
+      "year": "1966 and 1970",
+      "description": [
+        "The 1966 Laboratory Animal Welfare Act was passed by Congress after public outcry about conditions of animal holding facilities and the sale of pets to research facilities. Congress sought to protect the practice of animal research with concern for the welfare of laboratory animal subjects. The laboratory animal community had been self-regulated, having established accreditation standards through AAALAC and education and training opportunities through the Animal Care Panel (AALAS).",
+        "The 1970 amendment to the Animal Welfare Act expanded USDA’s reach from animal holding facilities to laboratories, zoos, circuses, and the pet trade."
+      ],
+      "key_points": [
+        "The Secretary of Agriculture was delegated to oversee regulations for animals in holding facilities and, per the 1970 amendment, research facilities",
+        "United States Department of Agriculture was charged with developing minimum standards of care and treatment for animals, and enforcing these regulations through unannounced inspections",
+        "Attending veterinarians were to be primarily responsible for adequate veterinary care and well-being of animals; the scope of standards was expanded in 1970",
+        "In 1970, reporting mandates were implemented. The USDA was to file the information collected into a publicly available report to Congress"
+      ],
+      "impact_today": [
+        "Federal standards and regulations must permit the continuation of animal research",
+        "Responsibility for lab animal oversight lies with a third party, and not with the main users of a research laboratory",
+        "Adequate veterinary care is still a cornerstone of animal research oversight"
+      ],
+      "links": []
+    },
+    {
+      "title": "AWA Amendment: Improved Standards for Laboratory Animals Act",
+      "year": "1985",
+      "description": [
+        "This 1985 Animal Welfare Act amendment clarified terms and concepts including humane care, minimization of pain and distress, considerations of alternatives, IACUCs, psychological wellbeing of primates, and exercise for dogs.",
+        "Health Research Extension Act of 1985",
+        "Congress passed the Health Research Extension Act of 1985, which mandated the Public Health Service Act be revised to extend the authorities of the NIH and for the Secretary of HHS to establish a plan for the care and use of animals in biomedical and behavioral research."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Animal Welfare Act",
+          "url": "https://www.aphis.usda.gov/media/document/17164/file"
+        },
+        {
+          "text": "Health Research Extension Act of 1985",
+          "url": "https://olaw.nih.gov/policies-laws/hrea-1985.htm"
+        }
+      ]
+    },
+    {
+      "title": "U.S. Government Principles for the Utilization and Care of Vertebrate Animals Used in Testing Research, and Training",
+      "year": "1985",
+      "description": [
+        "This is the ethical framework for currently accepted approaches in the care and housing of research animals."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "ethical framework",
+          "url": "https://olaw.nih.gov/policies-laws/gov-principles.htm"
+        }
+      ]
+    },
+    {
+      "title": "Public Health Service Policy",
+      "year": "1986",
+      "description": [
+        "The Health Research Extension Act of 1985 incorporated the Public Health Service Policy on Humane Care and Use of Laboratory Animals and the USDA Animal Welfare Act into law. PHS Policy provides the regulatory framework for the use of live vertebrate animals in activities supported by or conducted by PHS agencies and other entities that have a memorandum of understanding with the NIH.",
+        "PHS Policy mandates compliance with the",
+        "Guide for the Care and Use of Laboratory Animals",
+        "US Government Principles for the Utilization and Care of Vertebrate Animals Used in Testing, Research, Training",
+        "Animal Welfare Regulations",
+        "AVMA Guidelines on Euthanasia of Animals"
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Public Health Service Policy on Humane Care and Use of Laboratory Animals",
+          "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm"
+        },
+        {
+          "text": "USDA Animal Welfare Act",
+          "url": "https://www.aphis.usda.gov/media/document/17164/file"
+        }
+      ]
+    },
+    {
+      "title": "Guide for the Care and Use of Laboratory Animals: Eighth Edition",
+      "year": "2011",
+      "description": [
+        "The most recent edition of the Guide was published in 2011."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Guide",
+          "url": "https://olaw.nih.gov/policies-laws/guide-care-use-lab-animals"
+        }
+      ]
+    },
+    {
+      "title": "21st Century Cures Act",
+      "year": "2016",
+      "description": [
+        "The 21st Century Cures Act directed the NIH, USDA, and FDA to identify, clarify, and reduce inconsistent, overlapping and duplicative regulations and policies to reduce administrative burden, while also maintaining integrity and credibility of research findings and the protection of research animals. Applicable OLAW policies, clarifications, and proposed guidance and changes can be found here."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "here",
+          "url": "https://olaw.nih.gov/policies-laws/21st-century-cures-act"
+        }
+      ]
+    },
+    {
+      "title": "AVMA Guidelines for the Euthanasia of Animals: 2020 Edition",
+      "year": "2020",
+      "description": [
+        "PHS Policy requires IACUCs to be consistent with the recommendations of the American Veterinary Medical Association’s Guidelines for the Euthanasia of Animals, unless is a deviation is justified for scientific reasons, in writing, by the investigator. The most recent guidelines were published in 2020."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Guidelines for the Euthanasia of Animals",
+          "url": "https://www.avma.org/resources-tools/avma-policies/avma-guidelines-euthanasia-animals"
+        }
+      ]
+    }
+  ]
+}

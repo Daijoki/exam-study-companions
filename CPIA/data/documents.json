@@ -1,0 +1,234 @@
+{
+  "categories": {
+    "aaalac": [
+      {
+        "id": "aaalac-home",
+        "title": "AAALAC International",
+        "url": "https://aaalac.org/",
+        "description": "The premier accrediting organization for laboratory animal care programs worldwide. Voluntary peer-review process evaluates institutions against the Guide and other standards."
+      },
+      {
+        "id": "aaalac-faqs",
+        "title": "AAALAC FAQs",
+        "url": "https://www.aaalac.org/accreditation-standards/faqs/",
+        "description": "Common questions about accreditation standards, site visits, deficiencies, and maintaining accreditation status."
+      },
+      {
+        "id": "aaalac-position-statements",
+        "title": "AAALAC Position Statements",
+        "url": "https://www.aaalac.org/accreditation-standards/position-statements/",
+        "description": "Official positions on emerging issues in laboratory animal care, including social housing, environmental enrichment, and animal welfare assessment."
+      }
+    ],
+    "aalas": [
+      {
+        "id": "aalas-intro",
+        "title": "American Association for Laboratory Animal Science (AALAS)",
+        "url": "http://www.aalas.org/",
+        "description": "Professional organization providing education, certification, and networking for laboratory animal science professionals."
+      },
+      {
+        "id": "aalas-50-years",
+        "title": "The 50 Years of Laboratory Animal Science",
+        "url": "https://www.aalas.org/main/50-years-of-lab-animal-science",
+        "description": "Historical overview documenting the evolution of laboratory animal science as a profession and field of study."
+      },
+      {
+        "id": "history-awa",
+        "title": "The History of the Animal Welfare Act (AWA)",
+        "url": "https://aalascraftcms.blob.core.windows.net/cms-images/AALAS/07-About-Us/History/50-years-of-LAS-book-chapters/ch20-The-History-of-the-Animal-Welfare-Act.pdf",
+        "description": "Development of federal animal welfare legislation from its 1966 origins through modern amendments expanding coverage and standards."
+      },
+      {
+        "id": "history-phs-policy",
+        "title": "The History of the Public Health Service Policy on the Humane Care and Use of Laboratory Animals",
+        "url": "https://aalascraftcms.blob.core.windows.net/cms-images/AALAS/07-About-Us/History/50-years-of-LAS-book-chapters/ch21-The-History-of-the-Public-Health-Service-Policy.pdf",
+        "description": "Evolution of PHS Policy from its 1971 establishment through implementation of the Health Research Extension Act and subsequent revisions."
+      }
+    ],
+    "iacuc-guidebook": [
+      {
+        "id": "iacuc-guidebook",
+        "title": "ARENA/OLAW Institutional Animal Care and Use Committee Guidebook (the Guidebook)",
+        "url": "https://grants.nih.gov/grants/OLAW/GuideBook.pdf",
+        "description": "Comprehensive resource covering IACUC functions, protocol review procedures, regulatory compliance, and best practices. Essential reference for IACUC administrators."
+      }
+    ],
+    "avma": [
+      {
+        "id": "avma-euthanasia",
+        "title": "AVMA Guidelines for the Euthanasia of Animals: 2020 Edition",
+        "url": "https://www.avma.org/KB/Policies/Documents/euthanasia.pdf",
+        "description": "Evidence-based guidelines on humane euthanasia methods for various species. Widely accepted standard for acceptable and conditionally acceptable techniques."
+      }
+    ],
+    "dod": [
+      {
+        "id": "dod-care-use",
+        "title": "The Care and Use of Animals in DOD Research. September 1, 2022",
+        "url": "https://mrdc.health.mil/assets/docs/orp/DHAMSR_602502_The_Care_and_Use_of_Animals_in_DoD_Research.pdf",
+        "description": "Department of Defense manual implementing PHS Policy requirements plus additional DOD-specific standards for military animal research programs."
+      },
+      {
+        "id": "dod-instruction",
+        "title": "Department of Defense Instruction: Use of Animals in DOD Programs. September 13, 2010; amended March 19, 2019",
+        "url": "https://www.esd.whs.mil/Portals/54/Documents/DD/issuances/dodi/321601p.pdf",
+        "description": "DOD Instruction 3216.01 establishing policy, assigning responsibilities, and prescribing procedures for animal use in defense programs."
+      }
+    ],
+    "va": [
+      {
+        "id": "va-handbook",
+        "title": "Department of Veterans Affairs. Handbook 1200.07, Use of Animals in Research. May 23, 2023",
+        "url": "https://www.va.gov/vhapublications/ViewPublication.asp?pub_ID=10303",
+        "description": "VA requirements for animal research programs in VA medical centers, incorporating PHS Policy with VA-specific provisions."
+      },
+      {
+        "id": "va-guidance",
+        "title": "Guidance for VHA Directive 1200.07 VA Research with Animals. May 2023",
+        "url": "https://www.research.va.gov/programs/animal_research/Guidance-for-VHADirective-120007-VA-Research-with-Animals.pdf",
+        "description": "Implementation guidance clarifying VA Handbook requirements and providing supplemental information for VA animal research program administrators."
+      }
+    ],
+    "ag-guide": [
+      {
+        "id": "ag-guide",
+        "title": "Guide for the Care and Use of Agricultural Animals in Research and Teaching. Federation of Animal Science Societies, Fourth Edition, 2020",
+        "url": "https://www.asas.org/docs/default-source/default-document-library/agguide_4th.pdf?sfvrsn=56b44ed1_2",
+        "description": "Specialized guidance for farm animal research covering species-specific housing, husbandry, veterinary care, and welfare considerations not addressed in the Guide."
+      }
+    ],
+    "guide": [
+      {
+        "id": "guide-lab-animals",
+        "title": "Guide for the Care and Use of Laboratory Animals (the Guide)",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54050/",
+        "description": "The primary reference for laboratory animal care standards. Required for PHS-funded research. Covers housing, environment, veterinary care, personnel, and IACUC oversight."
+      }
+    ],
+    "nuremberg": [
+      {
+        "id": "nuremberg-code",
+        "title": "Nuremberg Code",
+        "url": "https://history.nih.gov/display/history/Nuremberg+Code",
+        "description": "Historic 1947 ethical code establishing principles of voluntary consent and protection of research subjects. Foundational to modern research ethics across species."
+      }
+    ],
+    "olaw": [
+      {
+        "id": "nih-olaw",
+        "title": "National Institutes of Health Office of Laboratory Animal Welfare (NIH OLAW)",
+        "url": "https://olaw.nih.gov/",
+        "description": "Federal office monitoring PHS-funded animal research compliance. Negotiates Assurances, investigates allegations, provides guidance, and ensures adherence to PHS Policy."
+      },
+      {
+        "id": "olaw-faqs",
+        "title": "FAQs",
+        "url": "https://olaw.nih.gov/faqs#/guidance/faqs",
+        "description": "Frequently asked questions on PHS Policy interpretation, IACUC functions, protocol requirements, and compliance issues."
+      },
+      {
+        "id": "olaw-guidance-notices",
+        "title": "Guidance Notices",
+        "url": "https://olaw.nih.gov/guidance/notices.htm",
+        "description": "Official guidance documents clarifying PHS Policy requirements and providing implementation instructions for institutions and IACUCs."
+      },
+      {
+        "id": "olaw-articles",
+        "title": "Articles by OLAW Staff and References",
+        "url": "https://olaw.nih.gov/guidance/articles.htm",
+        "description": "Scholarly articles and professional writings by OLAW staff on animal research policy, compliance, and welfare topics."
+      },
+      {
+        "id": "olaw-commentary",
+        "title": "Commentary",
+        "url": "https://olaw.nih.gov/guidance/commentary.htm",
+        "description": "Expert commentary providing OLAW interpretation of PHS Policy requirements and responses to common compliance scenarios."
+      }
+    ],
+    "phs-policy": [
+      {
+        "id": "phs-policy",
+        "title": "Public Health Service Policy on Humane Care and Use of Laboratory Animals (PHS Policy)",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm",
+        "description": "Federal policy governing all PHS-funded animal research. Requires IACUC oversight, Guide compliance, veterinary care, and institutional accountability through the Assurance."
+      },
+      {
+        "id": "health-research-extension-act",
+        "title": "Health Research Extension Act of 1985",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#HealthResearchExtensionActof1985",
+        "description": "Federal law (P.L. 99-158) establishing legal requirements for animal research programs and mandating IACUC review of PHS-funded activities."
+      },
+      {
+        "id": "us-government-principles",
+        "title": "US Government Principles for the Utilization and Care of Vertebrate Animals Used in Teaching, Research, and Training",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#USGovPrinciples",
+        "description": "Nine foundational principles guiding ethical animal use. Incorporated into PHS Policy as the basis for institutional animal care and use programs."
+      }
+    ],
+    "usda": [
+      {
+        "id": "usda-aphis",
+        "title": "US Department of Agriculture Animal and Plant Health Inspection Service (USDA APHIS)",
+        "url": "https://www.aphis.usda.gov/aphis/home/",
+        "description": "Federal agency enforcing the Animal Welfare Act through inspections, investigations, and regulatory oversight of research facilities."
+      },
+      {
+        "id": "awa-regulations",
+        "title": "Animal Welfare Act and Animal Welfare Regulations (AWA and AWAR)",
+        "url": "https://www.aphis.usda.gov/media/document/17164/file",
+        "description": "Federal law and implementing regulations (9 CFR Parts 1, 2, and 3) setting minimum standards for animal care, IACUC oversight, and facility operations. Covers most warm-blooded animals except purpose-bred rats, mice, and birds."
+      },
+      {
+        "id": "licensing-registration",
+        "title": "Licensing and Registration Under the Animal Welfare Act (AWA): Guidelines for Dealers, Exhibitors, Transporters, and Researchers",
+        "url": "https://www.aphis.usda.gov/sites/default/files/graybook.pdf",
+        "description": "Detailed guidance on AWA registration requirements, compliance expectations, and regulatory procedures for research facilities and other regulated entities."
+      },
+      {
+        "id": "aphis-publications",
+        "title": "Publications and Reports",
+        "url": "https://www.aphis.usda.gov/aphis/newsroom/publications",
+        "description": "Official publications including Annual Reports, inspection data, policy updates, and Animal Care Resource Guides addressing specific compliance topics."
+      }
+    ],
+    "training": [
+      {
+        "id": "aalas-learning-library",
+        "title": "AALAS Learning Library, Compliance & IACUC Training Modules",
+        "url": "https://www.aalaslearninglibrary.org/",
+        "description": "Online training modules covering animal care techniques, IACUC administration, regulatory compliance, and professional development for laboratory animal professionals."
+      },
+      {
+        "id": "research-ethics-timeline",
+        "title": "Research Ethics Timeline, Interactive timeline that explores milestones in the ethics of research with humans and other animals",
+        "url": "https://www.citiprogram.org/index.cfm?pageID=14",
+        "description": "Interactive historical overview of key events shaping modern research ethics standards across species."
+      },
+      {
+        "id": "citi-program",
+        "title": "Collaborative Institutional Training Initiative (CITI) Program. Animal Care and Use Modules",
+        "url": "https://www.citiprogram.org/index.cfm?pageID=14",
+        "description": "Web-based training covering animal research regulations, IACUC functions, animal welfare, and species-specific considerations. Some modules restricted to institutional subscribers."
+      },
+      {
+        "id": "ohs-research-animals",
+        "title": "Occupational Health and Safety in the Care and Use of Research Animals. National Research Council, National Academy of Sciences. 1997",
+        "url": "https://www.nap.edu/read/4988/chapter/1",
+        "description": "Guidance on protecting personnel from zoonoses, allergens, physical hazards, and chemical exposures when working with research animals."
+      },
+      {
+        "id": "aclam-position",
+        "title": "American College of Laboratory Animal Medicine Position Statement on Adequate Veterinary Care",
+        "url": "https://www.aclam.org/media/576c987a-4380-4e7c-b439-4892ac7ab6ce/GhFYxA/ACLAM/About%20Us/Position%20Statements/ACLAM%20Position%20Statement%20-%20Adequate%20Veterinary%20Care.pdf",
+        "description": "ACLAM guidance defining adequate veterinary care requirements including authority, availability, qualifications, and program oversight."
+      },
+      {
+        "id": "iacuc-handbook",
+        "title": "The IACUC Handbook (3rd Edition). CRC Press. 2014. This resource is not freely available",
+        "url": "https://www.routledge.com/The-IACUC-Handbook/Silverman-Suckow-Murthy/p/book/9781466555648?srsltid=AfmBOooA44JhCFJ0ij-yGuAd1Y08-gGaB-CNNsUuBfIhb40blnARu1rr",
+        "description": "Comprehensive reference on IACUC operations, protocol review, regulatory compliance, and program management. Purchase required."
+      }
+    ]
+  }
+}

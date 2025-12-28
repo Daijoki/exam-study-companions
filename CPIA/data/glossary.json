@@ -1,0 +1,560 @@
+[
+  {
+    "term": "3Rs",
+    "description": "Replacement, Reduction, Refinement",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "Guide, Chapter 1, The Three Rs",
+        "source": "Guide, Chapter 1, The Three Rs",
+        "definition": "Replacement refers to methods that avoid using animals. The term includes absolute replacements (i.e., replacing animals with inanimate systems such as computer programs) as well as relative replacements (i.e., replacing animals such as vertebrates with animals that are lower on the phylogenetic scale). Reduction involves strategies for obtaining comparable levels of information from the use of fewer animals or for maximizing the information obtained from a given number of animals (without increasing pain or distress) so that in the long run fewer animals are needed to acquire the same scientific information. Refinement refers to modifications of husbandry or experimental procedures to enhance animal well-being and minimize or eliminate pain and distress.",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54054/#ch1.s4"
+      },
+      {
+        "label": "USDA NAL, Animal Use Alternatives",
+        "source": "USDA NAL, Animal Use Alternatives",
+        "definition": "The \"3Rs alternatives\" refers to the replacement, reduction, and refinement of animals used in research, teaching, testing, and exhibition. Replacement refers to technologies or approaches that directly replace or avoid the use of animals. Reduction involves methods that help obtain comparable levels of information from the use of fewer animals. Refinement refers to modifications of husbandry or experimental procedures that minimize or eliminate animals' pain and distress and improve their welfare.",
+        "url": "https://www.nal.usda.gov/animal-health-and-welfare/animal-use-alternatives"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "AV",
+    "description": "Attending Veterinarian",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "Guide, Chapter 2, Program Management",
+        "source": "Guide, Chapter 2, Program Management",
+        "definition": "The attending veterinarian (AV) is responsible for the health and well-being of all laboratory animals used at the institution. The institution must provide the AV with sufficient authority, including access to all animals, and resources to manage the program of veterinary care.",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s2"
+      },
+      {
+        "label": "APHIS Animal Care Tech Note",
+        "source": "APHIS Animal Care Tech Note",
+        "definition": "As an attending veterinarian, you are one of the U.S. Department of Agriculture's (USDA) most important partners in assuring the humane care and treatment of animals. Your role is more comprehensive than providing medical care to sick animals. You are also responsible for providing important guidance to help licensees and registrants keep their animals healthy.",
+        "url": "https://www.aphis.usda.gov/sites/default/files/ac-tech-note-attending-vet.pdf"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "AWA",
+    "description": "Animal Welfare Act",
+    "type": "simple",
+    "definition": "The Congress finds that animals and activities which are regulated under this chapter are either in interstate or foreign commerce or substantially affect such commerce or the free flow thereof, and that regulation of animals and activities as provided in this chapter is necessary to prevent and eliminate burdens upon such commerce and to effectively regulate such commerce, in order\u2014 (1) to insure that animals intended for use in research facilities or for exhibition purposes or for use as pets are provided humane care and treatment; (2) to assure the humane treatment of animals during transportation in commerce; and (3) to protect the owners of animals from the theft of their animals by preventing the sale or use of animals which have been stolen.",
+    "source": "7 U.S.C. \u00a7 2131, Congressional Statement",
+    "agencies": [],
+    "source_url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section2131&num=0&edition=prelim"
+  },
+  {
+    "term": "AWAR/AWR",
+    "description": "Animal Welfare Act Regulations",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "9 CFR \u00a7 2.31(d)(1), IACUC Functions",
+        "source": "9 CFR \u00a7 2.31(d)(1), IACUC Functions",
+        "definition": "In order to approve proposed activities or proposed significant changes in ongoing activities, the IACUC shall conduct a review of those components of the activities related to the care and use of animals and determine that the proposed activities are in accordance with this subchapter unless acceptable justification for a departure is presented in writing.",
+        "url": "https://www.ecfr.gov/current/title-9/chapter-I/subchapter-A/part-2/subpart-C/section-2.31#p-2.31(d)(1)"
+      },
+      {
+        "label": "9 CFR \u00a7 2.31(e)(1), Protocol Requirements",
+        "source": "9 CFR \u00a7 2.31(e)(1), Protocol Requirements",
+        "definition": "The IACUC shall ensure that protocols contain identification of the species and the approximate number of animals to be used.",
+        "url": "https://www.ecfr.gov/current/title-9/chapter-I/subchapter-A/part-2/subpart-C/section-2.31#p-2.31(e)(1)"
+      }
+    ],
+    "agencies": [
+      "USDA"
+    ]
+  },
+  {
+    "term": "Animal",
+    "description": "Regulatory Definition of Covered Species",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "PHS Policy III.A, Definitions",
+        "source": "PHS Policy III.A, Definitions",
+        "definition": "Any live, vertebrate animal used or intended for use in research, research training, experimentation, or biological testing or for related purposes.",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#Definitions"
+      },
+      {
+        "label": "7 U.S.C. \u00a7 2132(g), Definitions",
+        "source": "7 U.S.C. \u00a7 2132(g), Definitions",
+        "definition": "The term \"animal\" means any live or dead dog, cat, monkey (nonhuman primate mammal), guinea pig, hamster, rabbit, or such other warm-blooded animal, as the Secretary may determine is being used, or is intended for use, for research, testing, experimentation, or exhibition purposes, or as a pet; but such term excludes (1) birds, rats of the genus Rattus, and mice of the genus Mus, bred for use in research, (2) horses not used for research purposes, and (3) other farm animals, such as, but not limited to livestock or poultry, used or intended for use as food or fiber.",
+        "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section2132&num=0&edition=prelim"
+      }
+    ],
+    "agencies": [
+      "USDA",
+      "NIH"
+    ]
+  },
+  {
+    "term": "Animal Care and Use Program",
+    "description": "Institutional Program Requirements",
+    "type": "simple",
+    "definition": "The animal care and use program (the Program) means the policies, procedures, standards, organizational structure, staffing, facilities, and practices put into place by an institution to achieve the humane care and use of animals in the laboratory and throughout the institution.",
+    "source": "Guide, Chapter 1, Key Terms",
+    "agencies": [],
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK54054/#ch1.s5"
+  },
+  {
+    "term": "Animal Use",
+    "description": "Care and Use of Research Animals",
+    "type": "simple",
+    "definition": "The proper care, use, and humane treatment of laboratory animals produced for or used in research, testing, or teaching.",
+    "source": "Guide, Chapter 1, Applicability and Goals",
+    "agencies": [],
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK54054/#ch1.s1"
+  },
+  {
+    "term": "Humane Care",
+    "description": "Ethical Treatment Standards",
+    "type": "simple",
+    "definition": "Humane care means those actions taken to ensure that laboratory animals are treated according to high ethical and scientific standards. Implementation of a humane care program, and creation of a laboratory environment in which humane care and respect for animals are valued and encouraged, underlies the core requirements of the Guide and the system of self-regulation it supports (Klein and Bayne 2007).",
+    "source": "Guide, Chapter 1, Key Terms",
+    "agencies": [],
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK54054/#ch1.s5"
+  },
+  {
+    "term": "Humane Endpoints",
+    "description": "Criteria for Ending Procedures",
+    "type": "simple",
+    "definition": "The humane endpoint is the point at which pain or distress in an experimental animal is prevented, terminated, or relieved.",
+    "source": "Guide, Chapter 2, Program Oversight",
+    "agencies": [],
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s13"
+  },
+  {
+    "term": "IACUC",
+    "description": "Institutional Animal Care and Use Committee",
+    "type": "simple",
+    "definition": "The Institutional Animal Care and Use Committee (IACUC), or institutional equivalent, is responsible for assessment and oversight of the institution's animal care and use program components and facilities. It should have sufficient authority and resources (e.g., staff, training, computers and related equipment) to fulfill this responsibility.",
+    "source": "Guide, Chapter 2, Program Management",
+    "agencies": [],
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s3"
+  },
+  {
+    "term": "IACUC Composition",
+    "description": "Required Committee Membership",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "PHS Policy IV.A.3.b, IACUC Membership",
+        "source": "PHS Policy IV.A.3.b, IACUC Membership",
+        "definition": "The committee shall consist of no fewer than five members, and shall include at least: (1) one Doctor of Veterinary Medicine, with training or experience in laboratory animal science and medicine, who has direct or delegated program authority and responsibility for activities involving animals at the institution; (2) one practicing scientist experienced in research involving animals; (3) one member whose primary concerns are in a nonscientific area (e.g., ethicist, lawyer, member of the clergy); and (4) one individual who is not affiliated with the institution in any way other than as a member of the IACUC, and is not a member of the immediate family of a person who is affiliated with the institution.",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#AnimalWelfareAssurance"
+      },
+      {
+        "label": "9 CFR \u00a7 2.31(b), Committee Composition",
+        "source": "9 CFR \u00a7 2.31(b), Committee Composition",
+        "definition": "(1) The members of each Committee shall be appointed by the Chief Executive Officer of the research facility; (2) The Committee shall be composed of a Chairman and at least two additional members; (3) Of the members of the Committee: (i) At least one shall be a Doctor of Veterinary Medicine; and (ii) At least one shall not be affiliated in any way with the facility other than as a member of the Committee.",
+        "url": "https://www.ecfr.gov/current/title-9/chapter-I/subchapter-A/part-2/subpart-C/section-2.31#p-2.31(b)"
+      }
+    ],
+    "agencies": [
+      "NIH",
+      "USDA"
+    ]
+  },
+  {
+    "term": "IO",
+    "description": "Institutional Official",
+    "type": "simple",
+    "definition": "The institutional official (IO) bears ultimate responsibility for the animal care and use program, although overall program direction should be a shared responsibility among the IO, attending veterinarian, and IACUC. The IO has the authority to allocate the resources needed to ensure the program's overall effectiveness. As a representative of senior administration, the IO is responsible for resource planning and ensuring the alignment of program goals of quality animal care and use with the institution's mission.",
+    "source": "Guide, Chapter 2, Program Management",
+    "agencies": [],
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s2"
+  },
+  {
+    "term": "Laboratory Animal",
+    "description": "Vertebrate Animals in Research",
+    "type": "simple",
+    "definition": "Any vertebrate animal (e.g., traditional laboratory animals, agricultural animals, wildlife, and aquatic species) produced for or used in research, testing, or teaching.",
+    "source": "Guide, Chapter 1, Applicability and Goals",
+    "agencies": [],
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK54054/#ch1.s1"
+  },
+  {
+    "term": "Must vs Should vs May",
+    "description": "Regulatory Language Interpretation",
+    "type": "simple",
+    "definition": "Must indicates actions that the Committee for the Update of the Guide considers imperative and mandatory duty or requirement for providing humane animal care and use. Should indicates a strong recommendation for achieving a goal; however, the Committee recognizes that individual circumstances might justify an alternative strategy. May indicates a suggestion to be considered.",
+    "source": "Guide, Chapter 1, Must, Should, and May",
+    "agencies": [],
+    "source_url": "https://www.ncbi.nlm.nih.gov/books/NBK54054/#ch1.s10"
+  },
+  {
+    "term": "Quorum",
+    "description": "Minimum Members for IACUC Voting",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "PHS Policy III.I, Definitions",
+        "source": "PHS Policy III.I, Definitions",
+        "definition": "A majority of the members of the Institutional Animal Care and Use Committee (IACUC).",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#Definitions"
+      },
+      {
+        "label": "7 U.S.C. \u00a7 2132(m), Definitions",
+        "source": "7 U.S.C. \u00a7 2132(m), Definitions",
+        "definition": "A majority of the Committee members.",
+        "url": "https://uscode.house.gov/view.xhtml?req=granuleid:USC-prelim-title7-section2132&num=0&edition=prelim"
+      }
+    ],
+    "agencies": [
+      "USDA",
+      "NIH"
+    ]
+  },
+  {
+    "term": "Semiannual Program Review vs Semiannual Facility Inspection",
+    "description": "Required Program and Facility Reviews",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "9 CFR \u00a7 2.31(c)(1) & (c)(2), IACUC Functions",
+        "source": "9 CFR \u00a7 2.31(c)(1) & (c)(2), IACUC Functions",
+        "definition": "Review, at least once every six months, the research facility's program for humane care and use of animals, using title 9, chapter I, subchapter A\u2014Animal Welfare, as a basis for evaluation. Inspect, at least once every six months, all of the research facility's animal facilities, including animal study areas, using title 9, chapter I, subchapter A-Animal Welfare, as a basis for evaluation.",
+        "url": "https://www.ecfr.gov/current/title-9/chapter-I/subchapter-A/part-2/subpart-C/section-2.31#p-2.31(c)"
+      },
+      {
+        "label": "PHS Policy IV.B.1 & B.2, IACUC Functions",
+        "source": "PHS Policy IV.B.1 & B.2, IACUC Functions",
+        "definition": "At least once every six months, the IACUC shall review the institution's program for humane care and use of animals, using the Guide as a basis for evaluation. Inspect at least once every six months all of the institution's animal facilities (including satellite facilities) using the Guide as a basis for evaluation.",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#FunctionsoftheInstitutionalAnimalCareandUseCommittee"
+      },
+      {
+        "label": "Guide, Chapter 2, Program Oversight",
+        "source": "Guide, Chapter 2, Program Oversight",
+        "definition": "Program review and facilities inspections should occur at least annually or more often as required (e.g., by the Animal Welfare Act and PHS Policy).",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s13"
+      }
+    ],
+    "agencies": [
+      "NIH",
+      "USDA"
+    ]
+  },
+  {
+    "term": "Authority",
+    "description": "Roles with ultimate or program oversight authority",
+    "type": "multi-agency-table",
+    "definitions": [
+      {
+        "label": "IACUC",
+        "definition": "Authority for oversight and assessment of the animal care and use program components and facilities."
+      },
+      {
+        "label": "Attending Veterinarian (AV)",
+        "definition": "Ultimate authority for the health and well-being of all laboratory animals; may stop animal activities for welfare reasons."
+      },
+      {
+        "label": "Institutional Official (IO)",
+        "definition": "Ultimate authority for the animal care and use program, including resources and alignment with the institution's mission."
+      }
+    ],
+    "agencies": [
+      "PHS Policy",
+      "The Guide",
+      "AAALAC"
+    ],
+    "leftHeader": "Role",
+    "sources": [
+      {
+        "text": "Guide, Chapter 2, Program Management",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s2"
+      },
+      {
+        "text": "PHS Policy IV.F.3",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#ReportingRequirements"
+      },
+      {
+        "text": "AAALAC Position Statement",
+        "url": "https://www.aaalac.org/accreditation-standards/position-statements/#vetcare"
+      }
+    ]
+  },
+  {
+    "term": "Responsibilities",
+    "description": "Role-specific program responsibilities",
+    "type": "multi-agency-table",
+    "definitions": [
+      {
+        "label": "IACUC",
+        "definition": "Assessment and oversight of animal care and use program components and facilities"
+      },
+      {
+        "label": "Attending Veterinarian (AV)",
+        "definition": "Oversees all aspects of animal care and use to ensure the animal care and use program complies with the Guide"
+      },
+      {
+        "label": "Institutional Official (IO)",
+        "definition": "Must allocate the necessary resources to ensure the program's effectiveness.\nMust align the program's goals with the institution's mission"
+      }
+    ],
+    "agencies": [
+      "PHS Policy",
+      "The Guide",
+      "AAALAC"
+    ],
+    "leftHeader": "Role",
+    "sources": [
+      {
+        "text": "Guide, Chapter 2, Program Management",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s2"
+      },
+      {
+        "text": "PHS Policy IV.F.3",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#ReportingRequirements"
+      },
+      {
+        "text": "AAALAC Position Statement",
+        "url": "https://www.aaalac.org/accreditation-standards/position-statements/#vetcare"
+      }
+    ]
+  },
+  {
+    "term": "Needs",
+    "description": "What each role must have to fulfill duties",
+    "type": "multi-agency-table",
+    "definitions": [
+      {
+        "label": "IACUC",
+        "definition": "Orientation, background materials, training to assist IACUC members in understanding their roles and responsibilities and evaluating issues brought to the committee"
+      },
+      {
+        "label": "Attending Veterinarian (AV)",
+        "definition": "Access to all animals.\nAccess to resources to manage the veterinary care program.\n\nCan serve on the IACUC as a committee member"
+      },
+      {
+        "label": "Institutional Official (IO)",
+        "definition": "Can't serve on the IACUC as a committee member"
+      }
+    ],
+    "agencies": [
+      "The Guide"
+    ],
+    "leftHeader": "Role",
+    "sources": [
+      {
+        "text": "Guide, Chapter 2, Program Management",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s2"
+      },
+      {
+        "text": "PHS Policy IV.F.3",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#ReportingRequirements"
+      },
+      {
+        "text": "AAALAC Position Statement",
+        "url": "https://www.aaalac.org/accreditation-standards/position-statements/#vetcare"
+      }
+    ]
+  },
+  {
+    "term": "Semiannual Reports",
+    "description": "Content and routing of semiannual evaluation reports",
+    "type": "multi-agency-table",
+    "definitions": [
+      {
+        "label": "IACUC",
+        "definition": "Prepare IACUC evaluation reports to the IO, distinguishing significant deficiencies from minor deficiencies and including a reasonable and specific plan for correcting each deficiency"
+      },
+      {
+        "label": "Institutional Official (IO)",
+        "definition": "Review semiannual reports and submit to regulators"
+      }
+    ],
+    "agencies": [
+      "PHS Policy",
+      "The Guide"
+    ],
+    "leftHeader": "Role",
+    "sources": [
+      {
+        "text": "Guide, Chapter 2, Program Management",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s2"
+      },
+      {
+        "text": "PHS Policy IV.F.3",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#ReportingRequirements"
+      },
+      {
+        "text": "AAALAC Position Statement",
+        "url": "https://www.aaalac.org/accreditation-standards/position-statements/#vetcare"
+      }
+    ]
+  },
+  {
+    "term": "Investigate Concerns",
+    "description": "Handling animal welfare concerns",
+    "type": "multi-agency-table",
+    "definitions": [
+      {
+        "label": "IACUC",
+        "definition": "Investigate animal welfare concerns in collaboration with the IO; the noncompliance may or may not be related to a study\n\nMust document and issue to the IO a report of the concern, findings, and corrective actions taken."
+      },
+      {
+        "label": "Institutional Official (IO)",
+        "definition": "Investigate animal welfare concerns in collaboration with the IACUC; the noncompliance may or may not be related to a study"
+      }
+    ],
+    "agencies": [
+      "PHS Policy",
+      "The Guide"
+    ],
+    "leftHeader": "Role",
+    "sources": [
+      {
+        "text": "Guide, Chapter 2, Program Management",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s2"
+      },
+      {
+        "text": "PHS Policy IV.F.3",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#ReportingRequirements"
+      },
+      {
+        "text": "AAALAC Position Statement",
+        "url": "https://www.aaalac.org/accreditation-standards/position-statements/#vetcare"
+      }
+    ]
+  },
+  {
+    "term": "Reporting Noncompliance",
+    "description": "What must be reported and to whom",
+    "type": "multi-agency-table",
+    "definitions": [
+      {
+        "label": "IACUC",
+        "definition": "Provide a report to the IO with a full explanation of the circumstances and actions taken with respect to:\n\u2022 Serious or continuous noncompliance with PHS Policy\n\u2022 Serious deviation from the Guide\n\u2022 Suspension of an activity by the IACUC"
+      },
+      {
+        "label": "Institutional Official (IO)",
+        "definition": "Must promptly provide OLAW with a full explanation of the circumstances and actions taken with respect to:\n\u2022 Serious or continuous noncompliance with PHS Policy\n\u2022 Serious deviation from the Guide\n\u2022 Suspension of an activity by the IACUC"
+      }
+    ],
+    "agencies": [
+      "PHS Policy",
+      "The Guide"
+    ],
+    "leftHeader": "Role",
+    "sources": [
+      {
+        "text": "Guide, Chapter 2, Program Management",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s2"
+      },
+      {
+        "text": "PHS Policy IV.F.3",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#ReportingRequirements"
+      },
+      {
+        "text": "AAALAC Position Statement",
+        "url": "https://www.aaalac.org/accreditation-standards/position-statements/#vetcare"
+      }
+    ]
+  },
+  {
+    "term": "Activity Suspension",
+    "description": "Who can stop or suspend animal activities",
+    "type": "multi-agency-table",
+    "definitions": [
+      {
+        "label": "IACUC",
+        "definition": "Only a convened IACUC can suspend a protocol, but a majority vote of the quorum present\n\nMust consult with the IO in investigating the circumstances, and create a report documenting the reasons for suspension and the corrective actions"
+      },
+      {
+        "label": "Attending Veterinarian (AV)",
+        "definition": "May stop animal activities for welfare reasons, but cannot suspend a protocol"
+      },
+      {
+        "label": "Institutional Official (IO)",
+        "definition": "Unilaterally halt, terminate, or impose sanctions on an animal activity\n\nMust provide OLAW and/or USDA with a report documenting the reasons for suspension and the corrective actions"
+      }
+    ],
+    "agencies": [
+      "PHS Policy",
+      "The Guide",
+      "AAALAC"
+    ],
+    "leftHeader": "Role",
+    "sources": [
+      {
+        "text": "Guide, Chapter 2, Program Management",
+        "url": "https://www.ncbi.nlm.nih.gov/books/NBK54045/#ch2.s2"
+      },
+      {
+        "text": "PHS Policy IV.F.3",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#ReportingRequirements"
+      },
+      {
+        "text": "AAALAC Position Statement",
+        "url": "https://www.aaalac.org/accreditation-standards/position-statements/#vetcare"
+      }
+    ]
+  },
+  {
+    "term": "Agency Notification",
+    "description": "Notification expectations for oversight bodies",
+    "type": "multi-agency-table",
+    "definitions": [
+      {
+        "label": "OLAW",
+        "definition": "Institutions should notify OLAW of IV.F3 noncompliance promptly with a preliminary report, and follow up once an investigation and corrective actions have been implemented. The following information should be included:\n\u2022 AWA number and, if applicable, relevant grant and contract numbers\n\u2022 A full description of how the situation could affect PHS-supported activities\n\u2022 Full explanation of the situation, including what happened, where/when it occurred, the species of animal involved, and the category of individuals involved\n\u2022 Description of actions institution undertook to address the situation\n\u2022 Description of short and long term corrective plans and implementation schedules",
+        "sourceText": "NOT-OD-05-034, NOT-OD-23-063",
+        "sources": [
+          {
+            "text": "NOT-OD-05-034",
+            "url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-05-034.html"
+          },
+          {
+            "text": "NOT-OD-23-063",
+            "url": "https://grants.nih.gov/grants/guide/notice-files/NOT-OD-23-063.html"
+          }
+        ]
+      },
+     {
+  "label": "AAALAC International",
+  "definition": "All programs must have an adverse event assessment and reporting plan.\n\nAn adverse event report must be submitted promptly to AAALAC International. Examples of specific situations include:\n\u2022 Inadequate veterinary care\n\u2022 Conditions that resulted in unexpected animal harm or deaths\n\u2022 Significant animal rights activities\n\u2022 Inappropriate euthanasia techniques/failure to confirm euthanasia\n\u2022 Substantiated complaints and reports of animal welfare concerns\n\u2022 Internal or external reviews/inspections that document significant adverse events or noncompliance, and other serious incidents that negatively impact animal well-being\n\u2022 Significant human health issue directly related to the animal care and use program",
+  "sourceText": "FAQ H2: Managing and Reporting Adverse Events",
+  "sources": [
+    {
+      "text": "FAQ H2: Managing and Reporting Adverse Events",
+      "url": "https://www.aaalac.org/accreditation-program/faqs/#H2"
+    }
+  ]
+}
+    ],
+    "agencies": [
+      "NIH/OLAW",
+      "AAALAC International"
+    ],
+    "leftHeader": "Organization"
+  },
+  {
+    "term": "Approval Requirements",
+    "description": "Vote needed for IACUC approval",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "PHS Policy IV.C.2",
+        "source": "PHS Policy IV.C.2",
+        "definition": "A majority of voting members present at a convened meeting must vote to approve protocols or actions.",
+        "url": "https://olaw.nih.gov/policies-laws/phs-policy.htm#ReviewofPHS-ConductedorSupportedResearchProjects"
+      },
+      {
+        "label": "9 CFR \u00a7 2.31(d)(2)",
+        "source": "9 CFR \u00a7 2.31(d)(2)",
+        "definition": "A majority of voting members present at a convened meeting must vote to approve protocols or actions.",
+        "url": "https://www.ecfr.gov/current/title-9/part-2/section-2.31#p-2.31(d)(2)"
+      }
+    ],
+    "agencies": [
+      "PHS Policy",
+      "AWRs"
+    ]
+  }
+]

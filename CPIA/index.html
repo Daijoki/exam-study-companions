@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<link href='data:image/svg+xml,&lt;svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"&gt;&lt;rect width="32" height="32" fill="%2300447C"/&gt;&lt;path d="M16 4L19 13L28 16L19 19L16 28L13 19L4 16L13 13Z" fill="white"/&gt;&lt;path d="M25 6V9" stroke="white" stroke-width="2" stroke-linecap="round"/&gt;&lt;path d="M26.5 7.5L23.5 7.5" stroke="white" stroke-width="2" stroke-linecap="round"/&gt;&lt;/svg&gt;' rel="icon"/>
+<style id="focus-modality-inline">:root{--focus-ring:#007CC2}
+:focus{outline:none!important;box-shadow:none!important}
+.modality-keyboard :focus-visible{outline:3px solid var(--focus-ring);outline-offset:3px}
+button:focus:not(:focus-visible),a:focus:not(:focus-visible),[role="button"]:focus:not(:focus-visible){outline:none!important;box-shadow:none!important}
+[data-silent-focus="true"]:focus,[data-silent-focus="true"]:focus-visible{outline:none!important;box-shadow:none!important}
+*{-webkit-tap-highlight-color:transparent}
+</style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>CPIA® Exam Prep</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          'primr-teal': '#008CA8',
+          'primr-navy': '#00447C',
+        }
+      }
+    }
+  }
+</script>
+<link href="css/styles.css" rel="stylesheet"/>
+<script src="js/theme-toggle.js"></script>
+<script src="js/icons.js"></script>
+<script>
+      // Inject SVG icons into any element with a data-icon attribute once
+      // the DOM has finished loading.  Icons are defined in js/icons.js.
+      document.addEventListener('DOMContentLoaded', function () {
+        if (!window.ICONS) return;
+        document.querySelectorAll('[data-icon]').forEach(function (el) {
+          var key = el.getAttribute('data-icon');
+          if (key && window.ICONS[key]) {
+            el.innerHTML = window.ICONS[key];
+          }
+        });
+      });
+    </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:FILL@0..1" rel="stylesheet"/>
+</head>
+<body class="text-gray-800">
+<a class="skip-link" href="#main-content">Skip to main content</a>
+<div class="container mx-auto p-4 md:p-8 max-w-7xl">
+<header class="gradient-bg text-white rounded-2xl p-8 md:p-12 mb-8 text-center shadow-lg relative">
+<button id="theme-toggle" class="theme-toggle" aria-label="Switch to dark mode" title="Toggle theme">
+<svg id="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display: block;">
+<path stroke-linecap="round" stroke-linejoin="round" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+</svg>
+<svg id="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" style="display: none;">
+<path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+</svg>
+</button>
+<h1 class="text-3xl md:text-5xl font-bold mb-3 flex items-center justify-center gap-3">
+<span aria-hidden="true" class="text-4xl" style="flex-shrink:0;">
+<svg fill="currentColor" height="1em" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="1em" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2 L14 8 L22 12 L14 16 L12 22 L10 16 L2 12 L10 8 Z" fill="currentColor" stroke="none"></path>
+<line x1="18.5" x2="18.5" y1="3.5" y2="5.5"></line>
+<line x1="17.5" x2="19.5" y1="4.5" y2="4.5"></line>
+</svg>
+</span>
+<span>CPIA® Exam Study Companion</span>
+</h1>
+<p class="text-lg md:text-xl opacity-90 max-w-3xl mx-auto">Four focused resources to help you prepare for your exam</p>
+</header>
+<nav aria-label="Main navigation" class="bg-white rounded-xl p-2 mb-8 shadow-md flex flex-col sm:flex-row justify-center items-center gap-2" id="main-nav" role="tablist">
+<button aria-controls="overview" aria-selected="true" class="nav-tab w-full sm:w-auto flex-1 px-4 py-3 rounded-lg font-semibold text-gray-600 hover:bg-gray-200 transition-all duration-300" data-tab-target="#overview" data-testid="doc-tab-overview" role="tab">Overview</button>
+<button aria-controls="documents" aria-selected="false" class="nav-tab w-full sm:w-auto flex-1 px-4 py-3 rounded-lg font-semibold text-gray-600 hover:bg-gray-200 transition-all duration-300" data-tab-target="#documents" data-testid="doc-tab-documents" role="tab">Documents</button>
+<button aria-controls="glossary" aria-selected="false" class="nav-tab w-full sm:w-auto flex-1 px-4 py-3 rounded-lg font-semibold text-gray-600 hover:bg-gray-200 transition-all duration-300" data-tab-target="#glossary" data-testid="doc-tab-glossary" role="tab">Glossary</button>
+<button aria-controls="historical" aria-selected="false" class="nav-tab w-full sm:w-auto flex-1 px-4 py-3 rounded-lg font-semibold text-gray-600 hover:bg-gray-200 transition-all duration-300" data-tab-target="#historical" data-testid="doc-tab-historical" role="tab">Historical Foundations</button>
+<button aria-controls="quiz" aria-selected="false" class="nav-tab w-full sm:w-auto flex-1 px-4 py-3 rounded-lg font-semibold text-gray-600 hover:bg-gray-200 transition-all duration-300" data-tab-target="#quiz" data-testid="doc-tab-quiz" role="tab">Knowledge Checks</button>
+</nav>
+<main id="main-content" tabindex="-1">
+<section aria-labelledby="overview-tab" class="content-section bg-white rounded-2xl shadow-lg overflow-hidden" id="overview" role="tabpanel">
+<div class="p-8 md:p-12">
+<p class="text-lg text-gray-700 mb-8 text-center max-w-3xl mx-auto"><strong>What's Inside</strong></p><p class="text-base text-gray-700 mb-4 text-center max-w-3xl mx-auto">Use this CPIA® Exam Study Companion to explore key documents, terms, history, and sample questions aligned with the CPIA® Content Outline.</p>
+<div class="border-t border-gray-300 mt-6 mb-4" id="tabs-spacer"></div><h3 class="text-center text-base font-semibold text-gray-700 tracking-wide mb-3">Tabs</h3><div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+<div aria-label="Go to Documents tab" class="feature-card cursor-pointer" data-target="#documents" onclick="document.querySelector('[data-tab-target=\'#documents\']').click()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();document.querySelector('[data-tab-target=\'#documents\']').click()}" role="button" tabindex="0">
+<div class="flex items-start gap-4">
+<div data-icon="documents" style="width: 56px; height: 56px; background: linear-gradient(135deg, var(--primr-teal), var(--primr-aqua)); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: 700; flex-shrink: 0;"></div>
+<div class="flex-1">
+<h4 class="text-lg font-bold mb-2" style="color: var(--primr-navy);">Documents</h4>
+<p class="text-gray-600 text-sm">Essential regulatory documents from AAALAC, USDA, OLAW, PHS Policy, and other key sources for animal care and use programs.</p>
+</div>
+</div>
+</div>
+<div aria-label="Go to Glossary tab" class="feature-card cursor-pointer" data-target="#glossary" onclick="document.querySelector('[data-tab-target=\'#glossary\']').click()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();document.querySelector('[data-tab-target=\'#glossary\']').click()}" role="button" tabindex="0">
+<div class="flex items-start gap-4">
+<div data-icon="glossary" style="width: 56px; height: 56px; background: linear-gradient(135deg, var(--primr-purple), var(--primr-navy)); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: 700; flex-shrink: 0;"></div>
+<div class="flex-1">
+<h4 class="text-lg font-bold mb-2" style="color: var(--primr-navy);">Glossary</h4>
+<p class="text-gray-600 text-sm">Searchable CPIA® terms with regulatory citations. Study Mode provides flashcards.</p>
+</div>
+</div>
+</div>
+<div aria-label="Go to Historical Foundations tab" class="feature-card cursor-pointer" data-target="#historical-foundations" onclick="document.querySelector('[data-tab-target=\'#historical\']').click()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();document.querySelector('[data-tab-target=\'#historical\']').click()}" role="button" tabindex="0">
+<div class="flex items-start gap-4">
+<div data-icon="history" style="width: 56px; height: 56px; background: linear-gradient(135deg, var(--primr-red), var(--primr-purple)); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: 700; flex-shrink: 0;"></div>
+<div class="flex-1">
+<h4 class="text-lg font-bold mb-2" style="color: var(--primr-navy);">Historical Foundations</h4>
+<p class="text-gray-600 text-sm">Timeline of animal research regulations and milestones that shaped modern IACUC oversight, from early standards to current requirements.</p>
+</div>
+</div>
+</div>
+<div aria-label="Go to Knowledge Checks tab" class="feature-card cursor-pointer" data-target="#knowledge-checks" onclick="document.querySelector('[data-tab-target=\'#quiz\']').click()" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();document.querySelector('[data-tab-target=\'#quiz\']').click()}" role="button" tabindex="0">
+<div class="flex items-start gap-4">
+<div data-icon="quiz" style="width: 56px; height: 56px; background: linear-gradient(135deg, var(--primr-aqua), var(--primr-teal)); border-radius: 14px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: 700; flex-shrink: 0;"></div>
+<div class="flex-1">
+<h4 class="text-lg font-bold mb-2" style="color: var(--primr-navy);">Knowledge Checks</h4>
+<p class="text-gray-600 text-sm">Test your understanding with authentic CPIA® exam sample questions.</p>
+</div>
+</div>
+</div>
+</div><h3 class="text-center text-base font-semibold text-gray-700 tracking-wide border-t border-gray-300 pt-4 mt-8 mb-4">Tools</h3><div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="tools-section"><div aria-label="Open Search Tool" class="feature-card cursor-pointer" id="tile-search-tool" role="button" tabindex="0"><div class="flex items-start gap-4"><div aria-hidden="true" style="width:56px;height:56px;background:linear-gradient(135deg,#008CA8,#00447C);border-radius:14px;display:flex;align-items:center;justify-content:center;color:white;font-size:28px;font-weight:700;flex-shrink:0;"><svg fill="none" height="28" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"></circle><line stroke="currentColor" stroke-linecap="round" stroke-width="2" x1="21" x2="16.65" y1="21" y2="16.65"></line></svg></div><div class="flex-1"><h4 class="text-lg font-bold mb-2" style="color: var(--primr-navy);">Global Search</h4><p class="text-gray-600 text-sm">Find specific regulations, policies, standards, cases, or terms instantly across all tabs.</p></div></div></div><div aria-label="Open Saved Drawer" class="feature-card cursor-pointer" id="tile-saved-drawer" role="button" tabindex="0"><div class="flex items-start gap-4"><div aria-hidden="true" style="width:56px;height:56px;background:linear-gradient(135deg,#008CA8,#00447C);border-radius:14px;display:flex;align-items:center;justify-content:center;color:white;font-size:28px;font-weight:700;flex-shrink:0;"><svg aria-hidden="true" fill="none" height="28" viewbox="0 0 24 24" width="28" xmlns="http://www.w3.org/2000/svg"><path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21 12 17.27z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path></svg></div><div class="flex-1"><h4 class="text-lg font-bold mb-2" style="color: var(--primr-navy);">Saved Items</h4><p class="text-gray-600 text-sm">Review everything you’ve starred (Star) in one place. Unstar items here or from any tab.</p></div></div></div>
+<div aria-label="Open Notes Drawer" class="feature-card cursor-pointer" id="tile-notes" role="button" tabindex="0">
+<div class="flex items-start gap-4">
+<div aria-hidden="true" style="width:56px;height:56px;background:linear-gradient(135deg,#008CA8,#00447C);border-radius:14px;display:flex;align-items:center;justify-content:center;color:white;font-size:28px;font-weight:700;flex-shrink:0;"><span class="notes-tile-icon" aria-hidden="true"></span></div>
+<div class="flex-1">
+<h4 class="text-lg font-bold mb-2" style="color: var(--primr-navy);">Notes</h4>
+<p class="text-gray-600 text-sm">Capture quick notes (Pen) tied to any document, term, case, or question. All notes live in the Notes drawer—edit or delete them anytime.</p>
+</div>
+</div>
+</div>
+<div aria-label="Open Backup & Restore" class="feature-card cursor-pointer" id="tile-backup-restore" role="button" tabindex="0">
+<div class="flex items-start gap-4">
+<div aria-hidden="true" style="width:56px;height:56px;background:linear-gradient(135deg,#008CA8,#00447C);border-radius:14px;display:flex;align-items:center;justify-content:center;color:white;font-size:28px;font-weight:700;flex-shrink:0;">
+<svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+</div>
+<div class="flex-1">
+<h4 class="text-lg font-bold mb-2" style="color: var(--primr-navy);">Backup & Restore</h4>
+<p class="text-gray-600 text-sm">Download a backup file of your Read (Check), Saved (Star), and Notes (Pen) data, then restore it later on this or another device.</p>
+</div>
+</div>
+</div>
+</div></div>
+</div></section>
+<section class="content-section hidden bg-white rounded-2xl shadow-lg overflow-hidden" id="documents">
+<div class="p-8">
+<div class="flex items-center gap-3 mb-2">
+<div data-icon="documents" style="width: 48px; height: 48px; background: linear-gradient(135deg, var(--primr-teal), var(--primr-aqua)); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;"></div>
+<h2 class="text-2xl font-bold" style="color: var(--primr-navy);">Key Documents Repository</h2>
+</div>
+<p class="text-gray-600 mb-8 ml-16">Explore federal and agency regulations, policies, and guidance you’ll need for the CPIA® exam. Click any document to open the official source in a new tab.</p>
+<div data-testid="documents-container" id="documents-container"></div>
+</div>
+</section>
+<section class="content-section hidden bg-white rounded-2xl shadow-lg overflow-hidden" id="glossary">
+<div class="p-8">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-3">
+<div data-icon="glossary" style="width: 48px; height: 48px; background: linear-gradient(135deg, var(--primr-purple), var(--primr-navy)); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;"></div>
+<h2 class="text-2xl font-bold" style="color: var(--primr-navy);">Key Terms &amp; Definitions</h2>
+</div>
+<button class="flex items-center gap-2 px-4 py-2 bg-white border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:border-[#8B5CF6] hover:bg-purple-50 transition-all duration-200 shadow-sm" id="study-mode-toggle">
+<span class="text-xl" data-icon="study"></span>
+<span>Study Mode</span>
+</button>
+</div>
+<p class="text-gray-600 mb-6 ml-16">Searchable CPIA® terms with regulatory citations. Study Mode provides flashcards you can practice in either direction (Term → Definition or Definition → Term) and shuffle for variety.</p>
+<div class="bg-gray-50 rounded-xl p-6 mb-6 border" id="search-section">
+<div class="flex flex-col lg:flex-row gap-4">
+<div class="flex-1">
+<label class="sr-only" for="glossary-search">Search terms, definitions, and agencies...</label><div class="relative"><input class="w-full px-4 py-3 pr-12 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#008CA8] focus:border-[#008CA8] text-gray-700" id="glossary-search" placeholder="Type a term..." type="text"/><span class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-gray-400" data-added="glossary-magnifier"><svg fill="none" height="20" viewbox="0 0 24 24" width="20" xmlns="http://www.w3.org/2000/svg"><circle cx="11" cy="11" r="7" stroke="currentColor" stroke-width="2"></circle><line stroke="currentColor" stroke-linecap="round" stroke-width="2" x1="21" x2="16.65" y1="21" y2="16.65"></line></svg></span></div>
+<div id="results-count" style="margin-top:10px;display:inline-flex;align-items:center;gap:8px;padding:6px 10px;border:1px solid #e5e7eb;border-radius:999px;background:#f9fafb;color:#374151;font-size:14px;">Showing <strong class="count" style="font-weight:700">0</strong> results</div>
+</div>
+<div class="flex flex-col sm:flex-row gap-2">
+<div aria-hidden="true" class="hidden"><div aria-hidden="true" class="hidden"><label class="sr-only" for="agency-filter">Filter by agency</label><select class="px-3 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-[#008CA8] bg-white" id="agency-filter">
+<option value="all">All Agencies</option>
+<option value="fda">FDA</option>
+<option value="ohrp">OHRP/HHS</option>
+</select></div></div>
+</div>
+</div>
+</div>
+<div class="hidden bg-white rounded-xl p-4 mb-6 border-2 border-purple-200 shadow-sm" id="study-controls">
+<div class="flex items-center justify-between gap-4 flex-wrap">
+<button class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-purple-50 to-purple-100 border-2 border-purple-300 rounded-lg font-semibold text-purple-800 hover:from-purple-100 hover:to-purple-200 transition-all duration-200 shadow-sm" id="direction-toggle">
+<span class="text-lg" data-icon="direction"></span>
+<span id="direction-text">Term → Definition</span>
+</button>
+<button class="flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-teal-50 to-teal-100 border-2 border-teal-300 rounded-lg font-semibold text-teal-800 hover:from-teal-100 hover:to-teal-200 transition-all duration-200 shadow-sm" id="shuffle-cards">
+<span class="text-lg" data-icon="shuffle"></span>
+<span>Shuffle Cards</span>
+</button>
+</div>
+</div>
+<div class="space-y-6" data-testid="glossary-container" id="glossary-container"></div>
+<div class="hidden" id="flashcard-container">
+<div class="max-w-2xl mx-auto">
+<div class="mb-6 text-center">
+<div class="inline-flex items-center gap-2 px-4 py-2 bg-purple-50 border border-purple-200 rounded-full">
+<span class="font-semibold text-purple-900" id="card-progress">Card 1 of 23</span>
+</div>
+</div>
+<div class="flashcard-wrapper perspective-1000" id="flashcard-wrapper">
+<div class="flashcard" id="flashcard">
+<div class="flashcard-front">
+<div class="text-center py-16">
+<div class="text-4xl font-bold text-[#00447C] mb-4" id="card-term"></div>
+<div class="text-sm text-gray-500 italic">Click to reveal definition</div>
+</div>
+</div>
+<div class="flashcard-back">
+<div class="py-8 px-6">
+<div class="text-2xl font-bold text-[#00447C] mb-4 text-center" id="card-term-back"></div>
+<div class="text-gray-800 mb-4 leading-relaxed" id="card-definition"></div>
+<div class="text-sm text-gray-600 pt-4 border-t" id="card-sources"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="flex justify-between items-center mt-6">
+<button class="px-6 py-3 bg-white border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:border-[#8B5CF6] hover:bg-purple-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2" id="prev-card">
+<span aria-hidden="true" data-icon="prev"></span>
+<span>Previous</span>
+</button>
+<button class="px-4 py-2 text-gray-600 hover:text-gray-900 font-medium" id="exit-study">
+Exit Study Mode
+</button>
+<button class="px-6 py-3 bg-white border-2 border-gray-300 rounded-lg font-semibold text-gray-700 hover:border-[#8B5CF6] hover:bg-purple-50 transition-all disabled:opacity-50 disabled:cursor-not-allowed flex items-center gap-2" id="next-card">
+<span>Next</span>
+<span aria-hidden="true" data-icon="next"></span>
+</button>
+</div>
+</div>
+</div>
+<div class="hidden bg-yellow-50 border border-yellow-200 rounded-lg p-8 text-center" id="no-results">
+<div class="mx-auto h-12 w-12 text-yellow-400 mb-4" data-icon="noResults"></div>
+<p class="text-lg font-medium text-yellow-800 mb-2">No matching terms found</p>
+<p class="text-yellow-700">Try adjusting your search or filter criteria</p>
+</div>
+</div>
+</section>
+<section class="content-section hidden bg-white rounded-2xl shadow-lg overflow-hidden" id="historical">
+<div class="p-8">
+<div class="flex items-center gap-3 mb-2">
+<div data-icon="history" style="width: 48px; height: 48px; background: linear-gradient(135deg, var(--primr-red), var(--primr-purple)); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;"></div>
+<h2 class="text-2xl font-bold" style="color: var(--primr-navy);">Historical Foundations</h2>
+</div>
+<p class="text-gray-600 mb-6 ml-16">Timeline of animal research regulations and milestones that shaped modern IACUC requirements. Browse chronologically to see when protections were established.</p>
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 mb-8" id="historical-scenarios"></div>
+<div class="historical-connection" id="historical-connection">
+<div class="bg-white border-2 border-gray-200 rounded-xl p-8" id="historical-detail-content">
+<div id="connection-content"></div>
+</div>
+</div>
+</div>
+</section>
+<section class="content-section hidden bg-white rounded-2xl shadow-lg overflow-hidden" id="quiz">
+<div class="p-8">
+<div class="flex items-center gap-3 mb-2">
+<div data-icon="quiz" style="width: 48px; height: 48px; background: linear-gradient(135deg, var(--primr-aqua), var(--primr-teal)); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700;"></div>
+<h2 class="text-2xl font-bold" style="color: var(--primr-navy);">Knowledge Checks</h2>
+</div>
+<p class="text-gray-600 mb-8 ml-16">Test your understanding with authentic CPIA® exam sample questions.</p>
+<div class="space-y-6" data-testid="quiz-container" id="quiz-container"></div>
+</div>
+</section>
+</main>
+</div>
+<footer class="text-center py-8 mt-8 border-t border-gray-200">
+<p class="text-gray-500 text-sm">Copyright © 2025 PRIM&amp;R. All rights reserved.</p>
+</footer>
+<div aria-describedby="modal-message" aria-labelledby="modal-message" aria-modal="true" class="fixed inset-0 bg-black bg-opacity-60 items-center justify-center p-4 z-50 hidden" data-testid="feedback-modal" id="feedback-modal" role="dialog">
+<div class="modal-content-animated bg-white rounded-2xl p-8 shadow-2xl text-center max-w-md w-full">
+<p class="text-gray-700 text-lg mb-6" id="modal-message"></p>
+<button aria-label="Close" class="p-2 rounded flex items-center justify-center text-gray-700 border border-transparent hover:border-gray-300 hover:bg-gray-100 hover:text-gray-900 transition-colors mx-auto" data-testid="modal-close-btn" id="modal-close-btn">
+<span aria-hidden="true" class="text-2xl" data-icon="cross"></span>
+</button>
+</div>
+</div>
+<div aria-atomic="true" aria-live="polite" class="sr-only" data-testid="live-region" id="live-region" role="status"></div>
+<div aria-labelledby="historical-modal-title" aria-modal="true" class="historical-modal-overlay" id="historical-modal" role="dialog">
+<div class="historical-modal-content" role="document">
+<div class="flex items-center justify-between p-6 border-b border-gray-200">
+<h3 id="historical-modal-title" class="text-2xl font-bold text-gray-900"></h3>
+<button aria-label="Close details" class="historical-modal-close p-2 rounded-lg hover:bg-gray-100" id="historical-modal-close">
+<span aria-hidden="true" class="text-2xl">×</span>
+</button>
+</div>
+<div id="historical-modal-body" class="p-6">
+</div>
+</div>
+</div>
+<script src="js/config.js"></script>
+<script src="js/utils.js"></script>
+<script src="js/data-loader.js"></script>
+<script src="js/state-manager.js"></script>
+<script src="js/link-enhancer.js"></script>
+<script src="js/search.js"></script>
+<script src="js/glossary.js"></script>
+<script src="js/documents.js"></script>
+<script src="js/historical.js"></script>
+<script src="js/quiz.js"></script>
+<script src="js/saved-drawer.js"></script>
+<script src="js/notes.js"></script>
+<script src="js/backup-manager.js"></script>
+<script src="js/main.js"></script>
+<script id="a11y-patch-js">
+// a11y patch utilities
+(function(){
+  function isVisible(el){
+    return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+  }
+  function enhanceClickables(){
+    document.querySelectorAll('[onclick]').forEach(function(el){
+      var tag = el.tagName.toLowerCase();
+      if(tag !== 'button' && tag !== 'a'){
+        if(!el.hasAttribute('role')) el.setAttribute('role','button');
+        if(!el.hasAttribute('tabindex')) el.setAttribute('tabindex','0');
+        if(!el.hasAttribute('aria-label')){
+          var txt = (el.textContent || '').trim();
+          if(txt) el.setAttribute('aria-label', txt);
+        }
+        el.addEventListener('keydown', function(e){
+          if(e.key === 'Enter' || e.key === ' '){
+            e.preventDefault();
+            el.click();
+          }
+        });
+      }
+    });
+  }
+
+  function labelInputs(){
+    var hasLabelFor = {};
+    document.querySelectorAll('label[for]').forEach(function(l){
+      hasLabelFor[l.getAttribute('for')] = true;
+    });
+
+    function hasWrappedLabel(el){
+      var p = el.parentElement;
+      while(p){
+        if(p.tagName && p.tagName.toLowerCase() === 'label') return true;
+        p = p.parentElement;
+      }
+      return false;
+    }
+
+    document.querySelectorAll('input, select, textarea').forEach(function(el){
+      var type = (el.getAttribute('type') || '').toLowerCase();
+      if(type === 'hidden') return;
+      if(el.hasAttribute('aria-label') || el.hasAttribute('title') || el.hasAttribute('aria-labelledby')) return;
+      var id = el.getAttribute('id');
+      if(id && hasLabelFor[id]) return;
+      if(hasWrappedLabel(el)) return;
+      var label = el.getAttribute('placeholder') || el.getAttribute('name') || 'Input';
+      el.setAttribute('aria-label', label);
+    });
+  }
+
+  // Focus trap helpers for dialogs
+  function getFocusable(container){
+    return Array.prototype.slice.call(container.querySelectorAll(
+      'a[href], button:not([disabled]), input:not([disabled]):not([type=hidden]), select, textarea, [tabindex]:not([tabindex="-1"])'
+    )).filter(isVisible);
+  }
+
+  function trapFocus(container){
+    function onKeydown(e){
+      if(e.key !== 'Tab') return;
+      var f = getFocusable(container);
+      if(!f.length) return;
+      var first = f[0], last = f[f.length-1];
+      if(e.shiftKey && document.activeElement === first){ last.focus(); e.preventDefault(); }
+      else if(!e.shiftKey && document.activeElement === last){ first.focus(); e.preventDefault(); }
+    }
+    container.__trapHandler = onKeydown;
+    container.addEventListener('keydown', onKeydown);
+  }
+  function untrapFocus(container){
+    if(container.__trapHandler){
+      container.removeEventListener('keydown', container.__trapHandler);
+      delete container.__trapHandler;
+    }
+  }
+
+  // Focus return after closing dialog: prefer #kc-try-again, else button containing 'Try again'/'Retry'
+  function focusTryAgain(){
+    var target = document.getElementById('kc-try-again')
+              || Array.prototype.find.call(document.querySelectorAll('button, [role="button"]'),
+                    function(b){ return /^(?:try again|retry)$/i.test((b.textContent||'').trim()); });
+    if(target && isVisible(target)) { target.focus(); }
+  }
+
+  // Observe dialogs opening/closing
+  function setupDialogObservers(){
+    function isDialog(el){
+      var tag = el.tagName ? el.tagName.toLowerCase() : '';
+      var role = el.getAttribute && el.getAttribute('role');
+      var ariaModal = el.getAttribute && el.getAttribute('aria-modal');
+      return (role === 'dialog' || role === 'alertdialog' || (el.classList && /modal/i.test(el.className)));
+    }
+    function visible(el){
+      return isVisible(el) && !el.hasAttribute('hidden') && el.getAttribute('aria-hidden') !== 'true';
+    }
+    // initial: trap visible dialogs
+    document.querySelectorAll('*').forEach(function(el){
+      if(isDialog(el) && visible(el)){ trapFocus(el); }
+    });
+    // mutations
+    var mo = new MutationObserver(function(muts){
+      muts.forEach(function(m){
+        var el = m.target;
+        if(isDialog(el)){
+          if(visible(el)){
+            trapFocus(el);
+          }else{
+            untrapFocus(el);
+            setTimeout(focusTryAgain, 0);
+          }
+        }
+      });
+    });
+    mo.observe(document.documentElement, { attributes:true, subtree:true, attributeFilter:['hidden','style','class','aria-hidden'] });
+
+    // Close buttons and ESC
+    document.addEventListener('click', function(e){
+      var t = e.target;
+      if(!t) return;
+      if(t.matches('[data-close], [aria-label="Close"], .modal-close, button.close')){
+        setTimeout(focusTryAgain, 0);
+      }
+    });
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){
+        // Let the app close the dialog, then refocus
+        setTimeout(focusTryAgain, 0);
+      }
+    });
+  }
+
+  function ensureMainLandmark(){
+    var main = document.querySelector('main, #main, [role="main"]');
+    if(!main){
+      // fallback: mark body as main (not ideal, but ensures skip link has a target)
+      document.body.setAttribute('role','main');
+      document.body.id = document.body.id || 'main';
+    }
+  }
+
+  function init(){
+    enhanceClickables();
+    labelInputs();
+    ensureMainLandmark();
+    setupDialogObservers();
+  }
+  if(document.readyState === 'loading'){
+    document.addEventListener('DOMContentLoaded', init);
+  }else{
+    init();
+  }
+
+  // Track the last radiogroup active when a dialog opens
+  var __lastQuestionGroup = null;
+
+  function closestRadioGroup(el){
+    while(el){
+      if(el.matches && el.matches('[role="radiogroup"], fieldset[role="radiogroup"]')) return el;
+      el = el.parentElement;
+    }
+    return null;
+  }
+  function getRadioGroups(){
+    return Array.prototype.slice.call(document.querySelectorAll('[role="radiogroup"], fieldset[role="radiogroup"]'));
+  }
+  function focusFirstRadioIn(group){
+    if(!group) return false;
+    var radios = group.querySelectorAll('[role="radio"], input[type="radio"]');
+    var first = Array.prototype.find.call(radios, function(r){
+      return (r.offsetParent !== null);
+    }) || radios[0];
+    if(first){
+      if(first.getAttribute && first.getAttribute('role') === 'radio'){
+        first.setAttribute('tabindex','0');
+        first.focus();
+      }else if(first.focus){
+        first.focus();
+      }
+      return true;
+    }
+    return false;
+  }
+  function focusNextRadioGroup(fromGroup){
+    var groups = getRadioGroups();
+    if(!groups.length) return false;
+    var idx = Math.max(0, groups.indexOf(fromGroup));
+    for(var i = idx+1; i < groups.length; i++){
+      if(focusFirstRadioIn(groups[i])) return true;
+    }
+    return false;
+  }
+
+  // Enhance existing dialog observer to store group on open and try next group on close
+  (function augmentDialogFocus(){
+    var origSetup = setupDialogObservers;
+    setupDialogObservers = function(){
+      origSetup();
+      // When a dialog becomes visible, remember current radiogroup
+      document.addEventListener('focusin', function(e){
+        var dlg = document.querySelector('[role="dialog"]:not([hidden]), [role="alertdialog"]:not([hidden]), .modal');
+        if(dlg && e.target && dlg.contains(e.target)){
+          // dialog just took focus; remember last radiogroup outside
+          __lastQuestionGroup = closestRadioGroup(document.activeElement);
+        }
+      }, true);
+
+      // When dialog closes, attempt to focus next question first; fallback to Try again
+      var prevFocusTryAgain = focusTryAgain;
+      focusTryAgain = function(){
+        // Try next radiogroup first (for "correct" cases)
+        if(__lastQuestionGroup && focusNextRadioGroup(__lastQuestionGroup)){
+          __lastQuestionGroup = null;
+          return;
+        }
+        // else fallback to original "Try again"/Retry logic
+        prevFocusTryAgain();
+      };
+    }
+  
+  // v3: robust next-question focus and skip-link behavior
+  var __currentQuestionGroup = null;
+
+  function isRadio(el){
+    return el && ((el.getAttribute && el.getAttribute('role') === 'radio') ||
+                  (el.tagName && el.tagName.toLowerCase() === 'input' && el.type === 'radio'));
+  }
+
+  document.addEventListener('change', function(e){
+    var t = e.target;
+    if(isRadio(t)){
+      __currentQuestionGroup = closestRadioGroup(t) || __currentQuestionGroup;
+    }
+  }, true);
+
+  // On dialog close, try next from __currentQuestionGroup first
+  (function augmentCloseSequence(){
+    var prevFocusTryAgain = focusTryAgain;
+    focusTryAgain = function(){
+      if(__currentQuestionGroup && focusNextRadioGroup(__currentQuestionGroup)){
+        __currentQuestionGroup = null;
+        return;
+      }
+      prevFocusTryAgain();
+    };
+  })();
+
+  // Skip link: move focus to #main and scroll into view
+  (function enhanceSkip(){
+    var skip = document.querySelector('a.skip-link[href="#main"]');
+    var main = document.querySelector('#main, main, [role="main"]');
+    if(skip && main){
+      function activateSkip(e){
+        if(e) e.preventDefault();
+        if(!main.hasAttribute('tabindex')) main.setAttribute('tabindex','-1');
+        main.focus({preventScroll:true});
+        main.scrollIntoView({block:'start', inline:'nearest'});
+      }
+      skip.addEventListener('click', activateSkip);
+      skip.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' '){ activateSkip(e); }
+      });
+    }
+  })();
+
+})();
+
+
+  // v3: robust next-question focus and skip-link behavior
+  var __currentQuestionGroup = null;
+
+  function isRadio(el){
+    return el && ((el.getAttribute && el.getAttribute('role') === 'radio') ||
+                  (el.tagName && el.tagName.toLowerCase() === 'input' && el.type === 'radio'));
+  }
+
+  document.addEventListener('change', function(e){
+    var t = e.target;
+    if(isRadio(t)){
+      __currentQuestionGroup = closestRadioGroup(t) || __currentQuestionGroup;
+    }
+  }, true);
+
+  // On dialog close, try next from __currentQuestionGroup first
+  (function augmentCloseSequence(){
+    var prevFocusTryAgain = focusTryAgain;
+    focusTryAgain = function(){
+      if(__currentQuestionGroup && focusNextRadioGroup(__currentQuestionGroup)){
+        __currentQuestionGroup = null;
+        return;
+      }
+      prevFocusTryAgain();
+    };
+  })();
+
+  // Skip link: move focus to #main and scroll into view
+  (function enhanceSkip(){
+    var skip = document.querySelector('a.skip-link[href="#main"]');
+    var main = document.querySelector('#main, main, [role="main"]');
+    if(skip && main){
+      function activateSkip(e){
+        if(e) e.preventDefault();
+        if(!main.hasAttribute('tabindex')) main.setAttribute('tabindex','-1');
+        main.focus({preventScroll:true});
+        main.scrollIntoView({block:'start', inline:'nearest'});
+      }
+      skip.addEventListener('click', activateSkip);
+      skip.addEventListener('keydown', function(e){
+        if(e.key === 'Enter' || e.key === ' '){ activateSkip(e); }
+      });
+    }
+  })();
+
+})();
+</script>
+<script id="a11y-focus-returns">
+(function(){
+  // Utility: get all radiogroups in logical doc order
+  function getRadioGroups(){
+    return Array.prototype.slice.call(document.querySelectorAll('[role="radiogroup"], fieldset[role="radiogroup"]'));
+  }
+  function firstFocusable(el){
+    if(!el) return null;
+    return el.querySelector('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
+  }
+  function focusFirstRadioIn(group){
+    if(!group) return false;
+    var radios = group.querySelectorAll('input[type="radio"]');
+    if(radios.length){
+      var checked = Array.prototype.find.call(radios, function(r){return r.checked;});
+      (checked || radios[0]).focus();
+      return true;
+    }
+    var f = firstFocusable(group);
+    if(f){ f.focus(); return true; }
+    return false;
+  }
+  function focusNextRadioGroup(from){
+    var groups = getRadioGroups();
+    if(!groups.length) return false;
+    var idx = Math.max(0, groups.indexOf(from));
+    for(var i=idx+1;i<groups.length;i++){
+      if(focusFirstRadioIn(groups[i])) return true;
+    }
+    return false;
+  }
+
+  var lastActiveGroup = null;
+
+  // Track the last active radiogroup before a dialog opens
+  document.addEventListener('focusin', function(e){
+    var t = e.target;
+    while(t){
+      if(t.matches && (t.matches('[role="radiogroup"]') || (t.getAttribute && t.getAttribute('role')==='radiogroup'))){
+        lastActiveGroup = t;
+        break;
+      }
+      t = t.parentElement;
+    }
+  }, true);
+
+  // Generic dialog open/close hooks
+  function isDialog(el){
+    if(!el) return false;
+    var role = el.getAttribute && el.getAttribute('role');
+    return role === 'dialog' || role === 'alertdialog' || /\bmodal\b/i.test(el.className||'');
+  }
+  function visible(el){
+    return el && el.offsetParent !== null && !el.hasAttribute('hidden') && el.getAttribute('aria-hidden') !== 'true';
+  }
+
+  // Observe attribute/class changes to detect dialog close
+  var mo = new MutationObserver(function(muts){
+    muts.forEach(function(m){
+      if(!(m.target instanceof Element)) return;
+      // if a dialog becomes hidden, move focus to next question (radiogroup)
+      if(isDialog(m.target) && !visible(m.target)){
+        if(lastActiveGroup && focusNextRadioGroup(lastActiveGroup)){
+          // success
+        } else {
+          // fallback: focus main heading
+          var main = document.querySelector('main, #main-content, [role="main"]');
+          if(main){ main.setAttribute('tabindex','-1'); main.focus(); }
+        }
+      }
+    });
+  });
+  mo.observe(document.documentElement, { attributes:true, subtree:true, attributeFilter: ['hidden','class','style','aria-hidden'] });
+
+  // Also patch common close buttons
+  document.addEventListener('click', function(e){
+    var t = e.target;
+    if(t && (t.matches('[data-modal-close], .modal [data-close], .modal .btn-close, [aria-label="Close"]'))){
+      setTimeout(function(){
+        if(lastActiveGroup && focusNextRadioGroup(lastActiveGroup)) return;
+        var main = document.querySelector('main, #main-content, [role="main"]');
+        if(main){ main.setAttribute('tabindex','-1'); main.focus(); }
+      }, 0);
+    }
+  }, true);
+})();
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  var rail = document.querySelector('#overview, [id*="overview"]');
+  if (!rail) return;
+  rail.addEventListener('click', function(e) {
+    var tile = e.target.closest('[data-target]');
+    if (!tile) return;
+    var targetId = tile.getAttribute('data-target');
+    if (!targetId) return;
+    // Activate the corresponding tab button if present
+    var tabBtn = document.querySelector('[role="tab"][aria-controls="' + targetId.replace('#','') + '"]');
+    if (tabBtn) { tabBtn.click(); }
+    var dest = document.querySelector(targetId);
+    if (dest) {
+      var focusTarget = dest.querySelector('h1, h2, h3, a, button, input, [tabindex]');
+      if (focusTarget) { try { focusTarget.focus(); } catch(e) {} }
+    }
+  }, false);
+});
+</script>
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  function byId(id){ return document.getElementById(id); }
+  function click(el){ el && el.click && el.click(); }
+  function openSearch(){ click(byId('global-search-trigger')); }
+  function openSaved(){
+    if (typeof window.__toggleSavedDrawer === 'function') { window.__toggleSavedDrawer(); return; }
+    const t = byId('saved-drawer-toggle'); if (t) { t.click(); return; }
+    const d = byId('saved-drawer'); if (d) { d.classList.toggle('translate-x-full', false); }
+  }
+  const tSearch = byId('tile-search-tool');
+  const tSaved = byId('tile-saved-drawer');
+  if (tSearch){ tSearch.addEventListener('click', openSearch); tSearch.addEventListener('keydown', e=>{ if(e.key==='Enter') openSearch(); }); }
+  if (tSaved){ tSaved.addEventListener('click', openSaved); tSaved.addEventListener('keydown', e=>{ if(e.key==='Enter') openSaved(); }); }
+});
+</script>
+
+<!-- How to Use Modal -->
+<div id="how-to-use-modal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-[9999] p-4" role="dialog" aria-labelledby="modal-title" aria-modal="true">
+  <div class="bg-white rounded-2xl shadow-2xl max-w-4xl w-full max-h-[90vh] overflow-hidden flex flex-col">
+    <div class="bg-gradient-to-r from-[#008CA8] to-[#00447C] text-white p-6 flex items-center justify-between">
+      <h2 id="modal-title" class="text-2xl font-bold">How to Use This Tool</h2>
+      <button id="close-modal" class="w-8 h-8 rounded-full hover:bg-white/20 transition-all duration-200 flex items-center justify-center" aria-label="Close dialog">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
+    </div>
+    <div class="p-8 overflow-y-auto">
+      <p class="text-lg text-gray-700 mb-6">Welcome to the CPIA® Exam Study Companion! This tool helps you prepare for your exam with four focused resources and powerful study features.</p>
+      
+      <h3 class="text-xl font-bold text-[#00447C] mb-3 mt-6">📑 Tabs</h3>
+      <div class="space-y-3 mb-6">
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div><strong>Documents:</strong> Browse key regulations, policies, and guidance documents. Click any document to open the official source in a new tab.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div><strong>Glossary:</strong> Study essential terms with flashcard mode. Toggle between term and definition views, and use the filter to find specific topics.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div><strong>Historical Foundations:</strong> Explore landmark research cases that shaped modern protections. Read summaries and click "Read More" for detailed information.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div><strong>Knowledge Checks:</strong> Test your understanding with sample questions. Click "Show Answer" to reveal explanations aligned with the CPIA® Content Outline.</div>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-[#00447C] mb-3 mt-6">🛠️ Tools (Floating Buttons)</h3>
+      <div class="space-y-3 mb-6">
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">🔍</div>
+          <div><strong>Global Search:</strong> Find any content across all tabs instantly. Type keywords to search documents, terms, cases, and questions.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">⭐</div>
+          <div><strong>Saved (Star):</strong> Star items you want to review later. All starred content appears in the Saved drawer for quick access.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">🖊️</div>
+          <div><strong>Notes (Pen):</strong> Add personal notes to any item. Notes are organized in the Notes drawer where you can edit or delete them anytime.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">💾</div>
+          <div><strong>Backup & Restore:</strong> Download your progress (Read checks, Stars, and Notes) as a backup file, then restore it on this or another device.</div>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-[#00447C] mb-3 mt-6">✅ Progress Tracking</h3>
+      <div class="space-y-3 mb-6">
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div><strong>Read Indicators (Check):</strong> Checkmarks automatically track which items you've reviewed. Progress persists in your browser.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div><strong>Starred Items (Star):</strong> Star important items for later review. Access all starred content from the Saved drawer.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div><strong>Notes (Pen):</strong> Capture thoughts tied to specific items. All notes are searchable in the Notes drawer.</div>
+        </div>
+      </div>
+
+      <h3 class="text-xl font-bold text-[#00447C] mb-3 mt-6">💡 Pro Tips</h3>
+      <div class="space-y-3 mb-6">
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div>Use <strong>Global Search</strong> to quickly find specific regulations or concepts across all content.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div>Enable <strong>Flashcard Mode</strong> in the Glossary to quiz yourself on key terms.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div>Create a <strong>Backup</strong> regularly so you never lose your study progress.</div>
+        </div>
+        <div class="flex gap-3">
+          <div class="text-[#008CA8] font-bold">•</div>
+          <div>Star frequently referenced documents and terms for quick access during your final review.</div>
+        </div>
+      </div>
+
+      <div class="bg-[#008CA8]/10 rounded-lg p-4 mt-6">
+        <p class="text-sm text-gray-700"><strong>Note:</strong> All your progress (checks, stars, and notes) is stored locally in your browser. Use the Backup & Restore feature to save your data externally.</p>
+      </div>
+    </div>
+    <div class="bg-gray-50 p-4 flex justify-end gap-3 border-t">
+      <label class="flex items-center gap-2 text-sm text-gray-700 cursor-pointer">
+        <input type="checkbox" id="dont-show-again" class="w-4 h-4 rounded border-gray-300 text-[#008CA8] focus:ring-[#008CA8]">
+        <span>Don't show this again</span>
+      </label>
+      <button id="modal-got-it" class="px-6 py-2 bg-[#008CA8] hover:bg-[#00447C] text-white rounded-lg font-semibold transition-all duration-200">
+        Got it!
+      </button>
+    </div>
+  </div>
+</div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  function wireTileToButton(tileId, buttonId) {
+    var tile = document.getElementById(tileId);
+    var button = document.getElementById(buttonId);
+    if (!tile || !button) return;
+
+    function activate(e) {
+      if (e) {
+        // Only respond to left click (button 0) or keyboard activation
+        if (e.type === 'click' && e.button !== 0) return;
+        if (e.type === 'keydown' && !['Enter', ' '].includes(e.key)) return;
+        e.preventDefault();
+      }
+      button.click();
+      button.focus();
+    }
+
+    tile.addEventListener('click', activate);
+    tile.addEventListener('keydown', activate);
+  }
+
+  // Wire Overview tiles to their drawers
+  wireTileToButton('tile-notes', 'notes-drawer-toggle');
+  wireTileToButton('tile-backup-restore', 'backup-btn');
+
+  // Make the Notes overview tile use the same icon as the Notes tool button
+  var notesIconHost = document.querySelector('#tile-notes .notes-tile-icon');
+  if (notesIconHost) {
+    if (window.ICONS && window.ICONS.noteOutline) {
+      notesIconHost.innerHTML = window.ICONS.noteOutline;
+    } else if (window.ICONS && window.ICONS.pen) {
+      notesIconHost.innerHTML = window.ICONS.pen;
+    } else {
+      // Fallback text if icons are unavailable
+      notesIconHost.textContent = '';
+    }
+  }
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    (function() {
+      try {
+        var theme = 'light';
+        var darkStyle = '';
+        if (window.top && window.top.document && window.top.document.documentElement) {
+          var t = window.top.document.documentElement.getAttribute('data-theme');
+          var s = window.top.document.documentElement.getAttribute('data-dark-style');
+          if (t) theme = t;
+          if (s) darkStyle = s;
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+        if (darkStyle) document.documentElement.setAttribute('data-dark-style', darkStyle);
+      } catch (e) {
+        // If we can't read parent, default styles apply
+      }
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>Limited IRB Review and Broad Consent</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 1.5rem;
+      line-height: 1.5;
+      color: #111827;
+      background-color: #f9fafb;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    .intro {
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      background-color: #eff6ff;
+      border-left: 4px solid #3b82f6;
+      border-radius: 0.25rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0.75rem;
+      font-size: 0.875rem;
+      background-color: #ffffff;
+    }
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 0.625rem;
+      vertical-align: top;
+    }
+    thead th {
+      background-color: #eff6ff;
+      font-weight: 600;
+      text-align: left;
+    }
+    tbody th {
+      background-color: #f3f4f6;
+      font-weight: 600;
+      text-align: center;
+      width: 80px;
+    }
+    tbody tr:nth-child(even) td {
+      background-color: #f9fafb;
+    }
+    p.source {
+      font-size: 0.85rem;
+      color: #374151;
+      margin-top: 0.5rem;
+    }
+    a {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+  
+  /* Dark mode support when opened inside CIP modal */
+  html[data-theme="dark"],
+  body[data-theme="dark"] {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  html[data-theme="dark"] table,
+  body[data-theme="dark"] table {
+    background-color: #020617;
+    color: #e5e7eb;
+    border-color: #4b5563;
+  }
+
+  html[data-theme="dark"] thead th,
+  body[data-theme="dark"] thead th {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+
+  html[data-theme="dark"] tbody tr:nth-child(even) td,
+  body[data-theme="dark"] tbody tr:nth-child(even) td {
+    background-color: #111827;
+  }
+
+  /* Ensure body background overrides light mode when theme is dark */
+  html[data-theme="dark"] body {
+    background-color: #020617;
+    color: #ffffff;
+  }
+
+  /* Row header cells in tables ((b)(1), etc.) should not stay light in dark mode */
+  html[data-theme="dark"] tbody th,
+  body[data-theme="dark"] tbody th {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  html[data-theme="dark"] body p,
+  html[data-theme="dark"] body li,
+  html[data-theme="dark"] body td,
+  html[data-theme="dark"] body th {
+    color: #ffffff;
+  }
+
+  html[data-theme="dark"] body h1,
+  html[data-theme="dark"] body h2,
+  html[data-theme="dark"] body h3 {
+    color: #ffffff;
+  }
+
+
+  html[data-theme="dark"] p.source,
+  body[data-theme="dark"] p.source {
+    color: #9ca3af;
+  }
+
+  html[data-theme="dark"] a,
+  body[data-theme="dark"] a {
+    color: #38bdf8;
+  }
+
+
+    html[data-theme="dark"] .intro,
+    body[data-theme="dark"] .intro {
+      background-color: #020617;
+      border-left-color: #3b82f6;
+      color: #e5e7eb;
+    }
+
+    html[data-theme="dark"] .intro strong,
+    body[data-theme="dark"] .intro strong {
+      color: #e5e7eb;
+    }
+
+
+  
+  
+  
+  
+  /* === DARK STYLE VARIANTS === */
+  
+  /* 💠 Northern Lights - navy sky + teal aurora */
+  html[data-dark-style="aurora"], html[data-dark-style="aurora"] body {
+    background-color: #010814 !important;
+    color: #ccfbf1 !important;
+  }
+  html[data-dark-style="aurora"] table { background-color: #071525; border-color: #115e59; }
+  html[data-dark-style="aurora"] thead th { background-color: #0f3d38; color: #5eead4; border-color: #14b8a6; }
+  html[data-dark-style="aurora"] tbody tr:nth-child(even) td { background-color: #0c1f33; }
+  html[data-dark-style="aurora"] th, html[data-dark-style="aurora"] td { border-color: #115e59; color: #ccfbf1; }
+  html[data-dark-style="aurora"] a { color: #2dd4bf; }
+  html[data-dark-style="aurora"] p.source { color: #5eead4; }
+
+  /* 🐚 Deep Sea - true abyss + cyan glow */
+  html[data-dark-style="ocean"], html[data-dark-style="ocean"] body {
+    background-color: #000204 !important;
+    color: #cffafe !important;
+  }
+  html[data-dark-style="ocean"] table { background-color: #000a0f; border-color: #003040; }
+  html[data-dark-style="ocean"] thead th { background-color: #003040; color: #22d3ee; border-color: #0891b2; }
+  html[data-dark-style="ocean"] tbody tr:nth-child(even) td { background-color: #001018; }
+  html[data-dark-style="ocean"] th, html[data-dark-style="ocean"] td { border-color: #003040; color: #cffafe; }
+  html[data-dark-style="ocean"] a { color: #06b6d4; }
+  html[data-dark-style="ocean"] p.source { color: #22d3ee; }
+
+  /* ❄️ Frost - steel gray + ice white */
+  html[data-dark-style="frost"], html[data-dark-style="frost"] body {
+    background-color: #101214 !important;
+    color: #f3f4f6 !important;
+  }
+  html[data-dark-style="frost"] table { background-color: #1a1d21; border-color: #3f444d; }
+  html[data-dark-style="frost"] thead th { background-color: #3f444d; color: #f3f4f6; border-color: #6b7280; }
+  html[data-dark-style="frost"] tbody tr:nth-child(even) td { background-color: #24282e; }
+  html[data-dark-style="frost"] th, html[data-dark-style="frost"] td { border-color: #3f444d; color: #f3f4f6; }
+  html[data-dark-style="frost"] a { color: #9ca3af; }
+  html[data-dark-style="frost"] p.source { color: #d1d5db; }
+
+  /* 🌀 Blacklight - purple-black + neon */
+  html[data-dark-style="blacklight"], html[data-dark-style="blacklight"] body {
+    background-color: #080010 !important;
+    color: #fae8ff !important;
+  }
+  html[data-dark-style="blacklight"] table { background-color: #10001f; border-color: #581c87; }
+  html[data-dark-style="blacklight"] thead th { background-color: #581c87; color: #00f0ff; border-color: #a855f7; }
+  html[data-dark-style="blacklight"] tbody tr:nth-child(even) td { background-color: #1a0030; }
+  html[data-dark-style="blacklight"] th, html[data-dark-style="blacklight"] td { border-color: #581c87; color: #fae8ff; }
+  html[data-dark-style="blacklight"] a { color: #e879f9; }
+  html[data-dark-style="blacklight"] p.source { color: #e879f9; }
+
+  /* 📟 Matrix - pure black + green */
+  html[data-dark-style="matrix"], html[data-dark-style="matrix"] body {
+    background-color: #000000 !important;
+    color: #4ade80 !important;
+  }
+  html[data-dark-style="matrix"] table { background-color: #030303; border-color: #0a2f0a; }
+  html[data-dark-style="matrix"] thead th { background-color: #0a2f0a; color: #4ade80; border-color: #15803d; }
+  html[data-dark-style="matrix"] tbody tr:nth-child(even) td { background-color: #080808; }
+  html[data-dark-style="matrix"] th, html[data-dark-style="matrix"] td { border-color: #0a2f0a; color: #22c55e; }
+  html[data-dark-style="matrix"] a { color: #4ade80; }
+  html[data-dark-style="matrix"] p.source { color: #22c55e; }
+
+  </style></head>
+<body>
+  <h1>Limited IRB Review and Broad Consent</h1>
+  
+  <div class="intro">
+    <p><strong>Limited IRB Review</strong> applies to four exemption categories, in which the IRB must determine whether the privacy protections and data confidentiality are adequate or whether the broad consent requirements are met. Expedited review procedures should be used to conduct limited IRB review.</p>
+    <p>Exemption Categories 7 and 8 are exempt from broad consent because they relate to the storage of identifiable private information or identifiable biospecimens for secondary research and for secondary research use of such identifiable information.</p>
+  </div>
+  
+  <table>
+    <thead>
+      <tr>
+        <th style="width: 80px;"></th>
+        <th>Informed Consent</th>
+        <th>Broad Consent</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">(b)(1)</th>
+        <td>A statement that the study involves research, an explanation of the purposes of the research and the expected duration of the subject's participation, a description of the procedures to be followed, and identification of any procedures that are experimental;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">(b)(2)</th>
+        <td>A description of any reasonably foreseeable risks or discomforts to the subject</td>
+        <td>A description of any reasonably foreseeable risks or discomforts to the subject</td>
+      </tr>
+      <tr>
+        <th scope="row">(b)(3)</th>
+        <td>A description of any benefits to the subject or to others that may reasonably be expected from the research;</td>
+        <td>A description of any benefits to the subject or to others that may reasonably be expected from the research;</td>
+      </tr>
+      <tr>
+        <th scope="row">(b)(4)</th>
+        <td>A disclosure of appropriate alternative procedures or courses of treatment, if any, that might be advantageous to the subject;</td>
+        <td>A disclosure of appropriate alternative procedures or courses of treatment, if any, that might be advantageous to the subject;</td>
+      </tr>
+      <tr>
+        <th scope="row">(b)(5)</th>
+        <td>A statement describing the extent, if any, to which confidentiality of records identifying the subject will be maintained;</td>
+        <td>A statement describing the extent, if any, to which confidentiality of records identifying the subject will be maintained;</td>
+      </tr>
+      <tr>
+        <th scope="row">(b)(6)</th>
+        <td>For research involving more than minimal risk, an explanation as to whether any compensation and an explanation as to whether any medical treatments are available if injury occurs and, if so, what they consist of, or where further information may be obtained;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">(b)(7)</th>
+        <td>An explanation of whom to contact for answers to pertinent questions about the research and research subjects' rights, and whom to contact in the event of a research-related injury to the subject;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">(b)(8)</th>
+        <td>A statement that participation is voluntary, refusal to participate will involve no penalty or loss of benefits to which the subject is otherwise entitled, and the subject may discontinue participation at any time without penalty or loss of benefits to which the subject is otherwise entitled</td>
+        <td>A statement that participation is voluntary, refusal to participate will involve no penalty or loss of benefits to which the subject is otherwise entitled, and the subject may discontinue participation at any time without penalty or loss of benefits to which the subject is otherwise entitled</td>
+      </tr>
+      <tr>
+        <th scope="row">(b)(9)</th>
+        <td colspan="2">One of the following statements about any research that involves the collection of identifiable private information or identifiable biospecimens:<br><br>
+          • A statement that identifiers might be removed from the identifiable private information or identifiable biospecimens and that, after such removal, the information or biospecimens could be used for future research studies or distributed to another investigator for future research studies without additional informed consent from the subject or the legally authorized representative, if this might be a possibility; or<br><br>
+          • A statement that the subject's information or biospecimens collected as part of the research, even if identifiers are removed, will not be used or distributed for future research studies.</td>
+      </tr>
+      <tr>
+        <th scope="row">(c)(1)</th>
+        <td colspan="2">A statement that the particular treatment or procedure may involve risks to the subject (or to the embryo or fetus, if the subject is or may become pregnant) that are currently unforeseeable;</td>
+      </tr>
+      <tr>
+        <th scope="row">(c)(2)</th>
+        <td>Anticipated circumstances under which the subject's participation may be terminated by the investigator without regard to the subject's or the legally authorized representative's consent;</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">(c)(3)</th>
+        <td>Any additional costs to the subject that may result from participation in the research</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">(c)(4)</th>
+        <td>The consequences of a subject's decision to withdraw from the research and procedures for orderly termination of participation by the subject</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">(c)(5)</th>
+        <td>A statement that significant new findings developed during the course of the research that may relate to the subject's willingness to continue participation will be provided to the subject</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">(c)(6)</th>
+        <td>The approximate number of subjects involved in the study</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">(c)(7)</th>
+        <td colspan="2">A statement that the subject's biospecimens (even if identifiers are removed) may be used for commercial profit and whether the subject will or will not share in this commercial profit</td>
+      </tr>
+      <tr>
+        <th scope="row">(c)(8)</th>
+        <td>A statement regarding whether clinically relevant research results, including individual research results, will be disclosed to subjects, and if so, under what conditions</td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">(c)(9)</th>
+        <td colspan="2">For research involving biospecimens, whether the research will (if known) or might include whole genome sequencing (i.e., sequencing of a human germline or somatic specimen with the intent to generate the genome or exome sequence of that specimen)</td>
+      </tr>
+      <tr>
+        <th scope="row">(d)(1)</th>
+        <td></td>
+        <td>A general description of the types of research that may be conducted with the identifiable private information or identifiable biospecimens. This description must include sufficient information such that a reasonable person would expect that the broad consent would permit the types of research conducted;</td>
+      </tr>
+      <tr>
+        <th scope="row">(d)(2)</th>
+        <td></td>
+        <td>A description of the identifiable private information or identifiable biospecimens that might be used in research, whether sharing of identifiable private information or identifiable biospecimens might occur, and the types of institutions or researchers that might conduct research with the identifiable private information or identifiable biospecimens</td>
+      </tr>
+      <tr>
+        <th scope="row">(d)(3)</th>
+        <td></td>
+        <td>A description of the period of time that the identifiable private information or identifiable biospecimens may be stored and maintained (which period of time could be indefinite), and a description of the period of time that the identifiable private information or identifiable biospecimens may be used for research purposes (which period of time could be indefinite);</td>
+      </tr>
+      <tr>
+        <th scope="row">(d)(4)</th>
+        <td></td>
+        <td>Unless the subject or legally authorized representative will be provided details about specific research studies, a statement that they will not be informed of the details of any specific research studies that might be conducted using the subject's identifiable private information or identifiable biospecimens, including the purposes of the research, and that they might have chosen not to consent to some of those specific research studies</td>
+      </tr>
+      <tr>
+        <th scope="row">(d)(5)</th>
+        <td></td>
+        <td>Unless it is known that clinically relevant research results, including individual research results, will be disclosed to the subject in all circumstances, a statement that such results may not be disclosed to the subject</td>
+      </tr>
+      <tr>
+        <th scope="row">(d)(6)</th>
+        <td></td>
+        <td>An explanation of whom to contact for answers to questions about the subject's rights and about storage and use of the subject's identifiable private information or identifiable biospecimens, and whom to contact in the event of a research-related harm.</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p class="source"><strong>Source:</strong> <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.116#p-46.116(b)" target="_blank">45 CFR 46.116(b)</a></p>
+
+<script>
+// Link tracking with green pill style + ability to clear read status
+(function() {
+  if (!window.parent || window.parent === window) return;
+
+  // Track clicks on links to mark as viewed
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && window.parent.stateManager) {
+      const context = {
+        type: 'source',
+        title: link.textContent || link.title || link.href,
+        source: 'Documents - Table'
+      };
+      window.parent.stateManager.markAsViewed(link.href, context);
+      // Re-run enhancement so pills appear for newly viewed links
+      setTimeout(enhanceLinks, 50);
+    }
+  });
+
+  // Add green pill with checkmark to viewed links,
+  // and let users click the pill to mark as unread.
+  function enhanceLinks() {
+    if (!window.parent || !window.parent.stateManager || !window.parent.ICONS) return;
+
+    const links = document.querySelectorAll('a[href^="http"]');
+    links.forEach(function(link) {
+      const url = link.href;
+      const isViewed = window.parent.stateManager.isViewed(url);
+
+      // If not viewed, remove any existing pill and unwrap if needed
+      if (!isViewed) {
+        const wrapper = link.closest('.link-wrapper');
+        if (wrapper) {
+          const pill = wrapper.querySelector('.read-indicator');
+          if (pill) pill.remove();
+        }
+        return;
+      }
+
+      // Ensure wrapper exists
+      let wrapper = link.closest('.link-wrapper');
+      if (!wrapper) {
+        wrapper = document.createElement('span');
+        wrapper.className = 'link-wrapper';
+        wrapper.style.cssText = 'display: inline-flex; align-items: center; gap: 0.25rem;';
+        link.parentNode.insertBefore(wrapper, link);
+        wrapper.appendChild(link);
+      }
+
+      // If pill already exists, don't recreate; just ensure it has the right handlers
+      let pill = wrapper.querySelector('.read-indicator');
+      if (!pill) {
+        pill = document.createElement('button');
+        pill.type = 'button';
+        pill.className = 'read-indicator';
+        pill.style.cssText = 'display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.15rem 0.5rem; border-radius: 9999px; background-color: #d1fae5; color: #047857; border: none; cursor: pointer; font-size: 0.75rem;';
+        pill.setAttribute('title', 'Mark as unread');
+        pill.setAttribute('aria-label', 'Mark as unread');
+
+        const check = document.createElement('span');
+        check.innerHTML = window.parent.ICONS.check || '✓';
+        check.style.cssText = 'display: inline-block; font-size: 0.75rem;';
+
+        const text = document.createElement('span');
+        text.textContent = 'Read';
+
+        pill.appendChild(check);
+        pill.appendChild(text);
+        wrapper.appendChild(pill);
+
+        // Clicking the pill marks the source as unread and removes the pill
+        pill.addEventListener('click', function(ev) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          if (window.parent.stateManager && typeof window.parent.stateManager.toggleViewed === 'function') {
+            const context = {
+              type: 'source',
+              title: link.textContent || link.title || link.href,
+              source: 'Documents - Table'
+            };
+            window.parent.stateManager.toggleViewed(url, context);
+          }
+          // Remove the pill; enhanceLinks can rebuild if it becomes viewed again
+          pill.remove();
+        });
+      }
+    });
+  }
+
+  // Run on load
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enhanceLinks);
+  } else {
+    enhanceLinks();
+  }
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,317 @@
+{
+  "timeline": [
+    {
+      "title": "U.S. Public Health Service Tuskegee Study of Untreated Syphilis in the Negro Male",
+      "year": "1932-1937",
+      "description": [
+        "The U.S. Public Health Service observed the natural history of untreated syphilis in Black men in Macon County, Alabama from 1932-1972.  Participants were recruited with the promise of free examinations, medical care, and “therapeutic” spinal taps. Participants were never informed of their syphilis diagnoses or treatment options, even after penicillin became standard of care. The press exposure of this study in 1972 led to the passage of the National Research Act (1974), IRB requirements, and the Belmont Report.",
+        "Participants were deceived and denied known effective treatment.",
+        "A racially and economically marginalized population was targeted for study burden.",
+        "The study continued for decades without reevaluation or external oversight."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "natural history of untreated syphilis in Black men in Macon County, Alabama from 1932-1972",
+          "url": "https://www.cdc.gov/tuskegee/about/index.html"
+        },
+        {
+          "text": "National Research Act",
+          "url": "https://www.congress.gov/bill/93rd-congress/house-bill/7724"
+        },
+        {
+          "text": "Belmont Report",
+          "url": "https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html"
+        }
+      ]
+    },
+    {
+      "title": "Human Radiation Experiments",
+      "year": "1944-1974",
+      "description": [
+        "In 1995, the Advisory Committee on Human Radiation Experiments, appointed by President Clinton, released its report “Human Radiation Experiments: The Department of Energy Roadmap to the Story and Records.” It examined human radiation experiments conducted on thousands of United States citizens during and after World War II, including the injection of plutonium into hospital patients without their consent and the intentional release of radiation into the environment.",
+        "The studies were conducted for a variety of reasons, among them, the advancement of biomedical science and national defense. Most of the studies did not result in serious harm to subjects, but some did result in increased risk of thyroid cancer, and several deaths occurred that were associated with acute radiation effects.",
+        "Failure to maintain proper records of the experiments."
+      ],
+      "key_points": [
+        "The ethical issues raised by these experiments included:",
+        "Lack of informed consent",
+        "Lack of fairness in the selection of subjects",
+        "Failure to report the existence or results of the experiments"
+      ],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Human Radiation Experiments: The Department of Energy Roadmap to the Story and Records",
+          "url": "https://ehss.energy.gov/ohre/roadmap/achre/summary.html"
+        }
+      ]
+    },
+    {
+      "title": "Guatemala Syphilis Experiments",
+      "year": "1946-1948",
+      "description": [
+        "U.S. Public Health Service researchers in Guatemala intentionally infected prisoners, soldiers, and psychiatric patients with syphilis, gonorrhea, and chancroid without consent to test prophylaxis and treatment with penicillin. Revealed decades later, the studies demonstrated exploitation across national boundaries and underscored universal consent standards and host-country ethical review.",
+        "Informed consent is a universal ethical requirement applicable in all settings. Participants were intentionally infected without consent or awareness.",
+        "International research must undergo ethical review in the host country to ensure accountability and cultural appropriateness."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Guatemala intentionally infected prisoners, soldiers, and psychiatric patients with syphilis, gonorrhea, and chancroid without consent",
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3828982/"
+        }
+      ]
+    },
+    {
+      "title": "Nazi Doctors’ Trial",
+      "year": "1946-1947",
+      "description": [
+        "During World War II, Nazi physicians conducted lethal experiments on concentration camp prisoners—including hypothermia, high-altitude, sterilization, malaria, and poison studies—without consent or anesthesia. The 1946–1947 Nazi Doctors’ Trial at Nuremberg convicted 16 defendants and articulated the Nuremberg Code, emphasizing voluntary consent, scientific necessity, favorable risk–benefit, and the avoidance of unnecessary suffering."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Nazi Doctors’ Trial at Nuremberg",
+          "url": "https://encyclopedia.ushmm.org/content/en/article/the-doctors-trial-the-medical-case-of-the-subsequent-nuremberg-proceedings"
+        }
+      ]
+    },
+    {
+      "title": "Nuremberg Code",
+      "year": "1949",
+      "description": [
+        "The Nuremberg Code is the Nuremberg Military Tribunal’s set of ethical principles for research involving human subjects, which was included in their decision following the Nazi Doctors’ Trials. This document is the basis for many different research with humans subjects regulatory frameworks, including the Declaration of Helsinki and the Belmont Report."
+      ],
+      "key_points": [
+        "The Nuremberg Code emphasizes:",
+        "Voluntariness",
+        "Scientific necessity",
+        "Unnecessary physical and mental injury",
+        "Favorable risk-benefit analysis"
+      ],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Nuremberg Code",
+          "url": "https://encyclopedia.ushmm.org/content/en/article/the-nuremberg-code"
+        },
+        {
+          "text": "Declaration of Helsinki",
+          "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/"
+        },
+        {
+          "text": "Belmont Report",
+          "url": "https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html"
+        }
+      ]
+    },
+    {
+      "title": "Henrietta Lacks / HeLa Cells",
+      "year": "1951-present",
+      "description": [
+        "Cervical cancer cells taken from Henrietta Lacks, without her knowledge, by a physician, became the first immortal human cell line (HeLa), enabling major advances in virology, vaccines, and cancer research. Neither Lacks nor her family were informed or compensated, and later publication of HeLa genomic data raised renewed concerns about privacy and family impact.",
+        "Identifiable biospecimens were collected and used without patient consent. Consent is required when identifiable biospecimens are collected, stored, or used for research purposes.",
+        "Scientists profited from the discoveries, while the Lacks family remained unaware of their involvement, and thus excluded from communication and acknowledgment despite the cell line’s enduring research use.",
+        "HeLa genomic data were published, revealing private health data, raising privacy concerns."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Henrietta Lacks",
+          "url": "https://www.hopkinsmedicine.org/henrietta-lacks"
+        }
+      ]
+    },
+    {
+      "title": "Willowbrook State School",
+      "year": "1956-1972",
+      "description": [
+        "Researchers at the Willowbrook State School in New York, an institution for mentally disabled children, deliberately infected children with a mild form of hepatitis during a series of studies of the progression, prevention and treatment of viral hepatitis that extended from 1956 to 1972. The results eventually contributed to the development of a successful hepatitis vaccine.  However, the ethics of the studies have been challenged; questions have been raised about the quality and content of parental consent, including evidence that studies were incompletely and inaccurately described. In addition, many have condemned the deliberate infection of these institutionalized children.",
+        "Coercive recruitment practices, in that parents were told their children’s enrollment at the school was predicated on their participation in the study. Consent must be voluntary and free from undue influence tied to services or access.",
+        "Pediatric research is permissible only when risk is minimal or offset by direct benefit.",
+        "Vulnerable subjects require additional protections, including independent advocacy when appropriate."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "a series of studies of the progression, prevention and treatment of viral hepatitis",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/4102289/"
+        }
+      ]
+    },
+    {
+      "title": "Milgram Experiment",
+      "year": "1961-1962",
+      "description": [
+        "Stanley Milgram, at Yale University, conducted a social science study in an attempt to understand the role of obedience to authority. The research design was to have an authority figure instruct subjects to do something that they would not do under ordinary circumstances.",
+        "In the study, Milgram told the subjects that another research subject (actually a research associate) would be completing a memory task. The associate was connected to a device that appeared to deliver an electrical charge, and the subjects were told to administer a shock if the associate answered incorrectly on the memory task. The associate responded as if an actual shock had been received. The researcher instructed the subjects to increase the “electrical charge” each time the associate answered incorrectly.",
+        "The research subjects had no idea that the associates were not actually being shocked. They experienced significant and unanticipated emotional distress both during and after the experiment.",
+        "Participants were deceived about the study’s true purpose and potential harm. Under current regulations, deception research is permissible only if it meets IRB criteria for altering consent, involves no more than minimal risk, and includes full debriefing.",
+        "Psychological harm must be anticipated and minimized as rigorously as physical harm."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "obedience to authority",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21366616/"
+        }
+      ]
+    },
+    {
+      "title": "Jewish Chronic Disease Hospital Study",
+      "year": "1963",
+      "description": [
+        "Researchers at Sloan-Kettering Cancer Research Institute injected live cancer cells into indigent, chronically ill elderly patients at Brooklyn’s Jewish Chronic Disease Hospital. The study activity was completely unrelated to subjects’ clinical care. Investigators claimed the injections were harmless and did not inform patients that the material was malignant or that they were part of a research study; they also failed to obtain prior institutional approval.",
+        "Vulnerable participants were intentionally infected without consent or awareness. Participants must be told the true purpose, procedures, and risks before agreeing to participate in a study"
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "injected live cancer cells into indigent, chronically ill elderly patients",
+          "url": "https://www.nejm.org/doi/abs/10.1056/NEJMp048108"
+        }
+      ]
+    },
+    {
+      "title": "Stanford Prison Experiment",
+      "year": "1971",
+      "description": [
+        "Philip Zimbardo created an experiment to determine the impacts of being a prisoner or a prison guard. In a simulated prison at Stanford University, student “guards” rapidly became abusive and “prisoners” experienced humiliation and psychological trauma. The study, expected to take two weeks, was terminated after five days due to the psychological abuse and rapidly deteriorating conditions.",
+        "Zimbardo also served as “prison superintendent,” compromising objectivity and allowing harm to escalate. The study was halted after six days and is now a touchstone for the necessity of independent oversight and stopping rules in behavioral research.",
+        "The researcher’s involvement in the study as a participant, and not a neutral observer, was unethical and influenced the results of the study",
+        "Studies must be stopped when actual risk exceeds what was anticipated or justified.",
+        "Oversight must ensure investigators avoid conflicting roles and that independent monitoring can halt unsafe studies.",
+        "Behavioral research requires active safety monitoring and explicit stopping criteria."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "impacts of being a prisoner or a prison guard",
+          "url": "https://www.verywellmind.com/the-stanford-prison-experiment-2794995"
+        }
+      ]
+    },
+    {
+      "title": "National Research Act",
+      "year": "1974",
+      "description": [
+        "A series of media exposures of human subjects research abuses occurred in the years leading up to the passage of the National Research Act of 1974, which:",
+        "Mandated federal rules for the protection of human subjects in both biomedical and behavioral research",
+        "Established the National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research, to identify basic ethical principles underlying the conduct of human subjects research. The National Commission released the Belmont Report in 1979."
+      ],
+      "key_points": [
+        "Required organizations receiving PHS funding to establish IRBs"
+      ],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "National Research Act of 1974",
+          "url": "https://www.congress.gov/bill/93rd-congress/house-bill/7724"
+        },
+        {
+          "text": "Belmont Report",
+          "url": "https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html"
+        }
+      ]
+    },
+    {
+      "title": "Belmont Report",
+      "year": "1979",
+      "description": [
+        "The National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research released the Belmont Report.  It identifies the three basic ethical principles of research with human subjects: respect for persons, beneficence, and justice. It also laid out the requirements for the applications of these principles: informed consent, risk/benefit assessment, and the selection of research subjects."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Belmont Report",
+          "url": "https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/index.html"
+        }
+      ]
+    },
+    {
+      "title": "Havasupai Tribe DNA Case",
+      "year": "1990–2010",
+      "description": [
+        "Arizona State University researchers collected blood samples from Havasupai Tribe members for a diabetes study. The samples were later reused for research studies on schizophrenia, inbreeding, and migration research without the participants’ consent. The reuse violated cultural values and tribal sovereignty, resulting in litigation, a 2010 settlement, and the return of samples.",
+        "Biological samples were reused for studies beyond the original scope of informed consent",
+        "Cultural values and tribal sovereignty were disregarded."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "later reused for research studies",
+          "url": "https://journalofethics.ama-assn.org/article/genetic-research-among-havasupai-cautionary-tale/2011-02"
+        }
+      ]
+    },
+    {
+      "title": "Common Rule",
+      "year": "1991",
+      "description": [
+        "The US Federal Policy for the Protection of Human Subjects, or the Common Rule, was published in 1991, implementing policies, procedures, and guidelines on the conduct and oversight of human subjects research. Subparts B, C, and D, included additional protections for pregnant women, human fetuses and neonates; additional protections for prisoners; and additional protections for children."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "Common Rule",
+          "url": "https://www.hhs.gov/ohrp/regulations-and-policy/regulations/common-rule/index.html"
+        }
+      ]
+    },
+    {
+      "title": "Jessie Gelsinger",
+      "year": "1999",
+      "description": [
+        "At the University of Pennsylvania, 18-year-old Jesse Gelsinger died during a gene-therapy trial after investigators failed to disclose prior serious adverse events and their financial interests in the technology. The case reshaped expectations for safety reporting, conflict-of-interest management, and institutional accountability in high-risk research.",
+        "Serious adverse events and risk signals were not promptly reported to oversight bodies.",
+        "Investigator financial conflicts of interest were undisclosed.",
+        "Institutional oversight failed to intervene despite warning signs."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": []
+    },
+    {
+      "title": "Revised Common Rule",
+      "year": "2018",
+      "description": [
+        "The 2018 Common Rule was the first major revision of the US Federal Policy for the Protection of Human Subjects published in 1991."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "2018 Common Rule",
+          "url": "https://www.hhs.gov/ohrp/regulations-and-policy/regulations/45-cfr-46/index.html"
+        }
+      ]
+    },
+    {
+      "title": "NIH Single IRB for Multisite or Cooperative Research",
+      "year": "2018-2020",
+      "description": [
+        "The NIH single IRB mandate requires multisite studies to use a single IRB to accomplish IRB review and approval for all non-exempt human studies. The rule was implemented in phases, so by 2020, all research under the revised Common Rule would follow the policy."
+      ],
+      "key_points": [],
+      "impact_today": [],
+      "links": [
+        {
+          "text": "NIH single IRB mandate",
+          "url": "https://grants.nih.gov/policy-and-compliance/policy-topics/human-subjects/single-irb-policy-multi-site-research"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,148 @@
+{
+  "questions": [
+    {
+      "id": "q1",
+      "number": 1,
+      "question": "According to the Belmont Report, respect for persons usually demands that subjects",
+      "options": [
+        {
+          "text": "A. gain direct benefit from the research.",
+          "correct": false
+        },
+        {
+          "text": "B. receive payment for their participation.",
+          "correct": false
+        },
+        {
+          "text": "C. be provided with an advocate.",
+          "correct": false
+        },
+        {
+          "text": "D. enter into research voluntarily and with adequate information.",
+          "correct": true
+        }
+      ],
+      "feedback": "Correct! The <strong>Belmont Report</strong> defines respect for persons as treating individuals as autonomous agents and protecting those with diminished autonomy. This principle requires that participation in research be <strong>voluntary</strong> and based on <strong>adequate information</strong> - the foundation of informed consent requirements in 45 CFR 46.116."
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "question": "A poorly designed protocol is considered unethical because",
+      "options": [
+        {
+          "text": "A. the data would never be published in scientific journals.",
+          "correct": false
+        },
+        {
+          "text": "B. data produced would not benefit all segments of the population.",
+          "correct": false
+        },
+        {
+          "text": "C. research subjects may be put at risk or inconvenienced for insufficient reason.",
+          "correct": true
+        },
+        {
+          "text": "D. conflict of interest is inherent.",
+          "correct": false
+        }
+      ],
+      "feedback": "Correct! A poorly designed protocol is unethical because any risks or burdens to participants cannot be justified if the research is unlikely to yield valid, meaningful knowledge. Even minimal risks or inconveniences become unreasonable when the knowledge gained is weak or unreliable. This reflects 45 CFR 46.111(a)(2), which requires that risks to subjects be reasonable in relation to anticipated benefits (if any) and the importance of the knowledge that may reasonably be expected to result."
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "question": "When should an IRB suspend or terminate approval of research?",
+      "options": [
+        {
+          "text": "A. Only when the institutional attorney has recommended suspending the research",
+          "correct": false
+        },
+        {
+          "text": "B. Only if the Institutional Official has given the IRB permission",
+          "correct": false
+        },
+        {
+          "text": "C. Only when volunteer subjects withdraw consent to participation",
+          "correct": false
+        },
+        {
+          "text": "D. When it is not being conducted in accordance with the IRB's requirements",
+          "correct": true
+        }
+      ],
+      "feedback": "Correct! Under <strong>45 CFR 46.113</strong>, an IRB has the authority to suspend or terminate approval when research is not being conducted in accordance with IRB requirements or has been associated with unexpected serious harm. The IRB does not need permission from attorneys or institutional officials to exercise this authority when participant safety is at stake."
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "question": "A quorum for a convened IRB meeting requires the presence of",
+      "options": [
+        {
+          "text": "A. a scientific member.",
+          "correct": false
+        },
+        {
+          "text": "B. an unaffiliated member.",
+          "correct": false
+        },
+        {
+          "text": "C. a nonscientific member.",
+          "correct": true
+        },
+        {
+          "text": "D. members of more than one profession.",
+          "correct": false
+        }
+      ],
+      "feedback": "Correct! <strong>45 CFR 46.108(b)</strong> requires that IRB quorum include a majority of members, including <strong>at least one member whose primary concerns are in nonscientific areas</strong>. This nonscientist member ensures that ethical and community perspectives are represented in all IRB decisions."
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "question": "Which of the following is required in research involving no more than minimal risk with children?",
+      "options": [
+        {
+          "text": "A. Consent is provided by a parent or guardian only",
+          "correct": false
+        },
+        {
+          "text": "B. Consent is provided by the child and parent or guardian",
+          "correct": false
+        },
+        {
+          "text": "C. Adequate provisions are made for assent of the child and permission of parent or guardian",
+          "correct": true
+        },
+        {
+          "text": "D. Adequate provisions are made to inform the child and obtain consent of parent or guardian",
+          "correct": false
+        }
+      ],
+      "feedback": "Correct! <strong>45 CFR 46 Subpart D</strong> requires that for research involving children, adequate provisions must be made for both <strong>assent of the child</strong> (when developmentally appropriate) and <strong>permission of the parent or guardian</strong>. This dual requirement respects both the developing autonomy of children and the protective role of parents."
+    },
+    {
+      "id": "q6",
+      "number": 6,
+      "question": "Federal regulations require each IRB to have written procedures for",
+      "options": [
+        {
+          "text": "A. determining which studies should continue to receive internal grant funding.",
+          "correct": false
+        },
+        {
+          "text": "B. monitoring studies and publicizing results.",
+          "correct": false
+        },
+        {
+          "text": "C. IRB administrative office operation, including hiring practices and performance evaluation of employees.",
+          "correct": false
+        },
+        {
+          "text": "D. initial and continuing review of research and for reporting its findings and actions to the investigator and the institution.",
+          "correct": true
+        }
+      ],
+      "feedback": "Correct! <strong>45 CFR 46.103(b)(4)</strong> specifically requires institutions to have written procedures for <strong>initial review, continuing review, and reporting IRB findings and actions</strong> to investigators and the institution. These procedures ensure consistent IRB operations and proper communication of decisions."
+    }
+  ]
+}

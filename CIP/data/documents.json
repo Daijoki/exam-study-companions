@@ -1,0 +1,260 @@
+{
+  "categories": {
+    "ethical-codes": [
+      {
+        "id": "belmont",
+        "title": "📗 Belmont Report",
+        "url": "https://www.hhs.gov/ohrp/regulations-and-policy/belmont-report/read-the-belmont-report/index.html",
+        "description": "The 1979 report of the US National Commission for the Protection of Human Subjects of Biomedical and Behavioral Research that defines respect for persons, beneficence, and justice as the three overarching principles for biomedical and behavioral human subjects research."
+      },
+      {
+        "id": "nuremberg",
+        "title": "📗 Nuremberg Code",
+        "url": "https://www.hhs.gov/ohrp/international/ethical-codes-and-research-standards/index.html",
+        "description": "The 1947 statement from the jurists of the Nuremberg Military Tribunal, which oversaw the trials of Nazi doctors. It outlines 10 ethical standards for experimentation on human subjects."
+      },
+      {
+        "id": "helsinki",
+        "title": "📗 Declaration of Helsinki",
+        "url": "https://www.wma.net/policies-post/wma-declaration-of-helsinki/",
+        "description": "The set of 37 ethical principles governing biomedical human subjects research adopted by the World Medical Association, originally in 1964, and most recently in 2024."
+      },
+      {
+        "id": "ich-gcp",
+        "title": "📗 ICH GCP (E6)",
+        "url": "https://www.ich.org/page/efficacy-guidelines",
+        "description": "The International Council for Harmonisation of Technical Requirements for Pharmaceuticals in Human Use endorsed Good Clinical Practice guidelines to establish international standards for the ethical design, approval, and reporting of clinical trials."
+      },
+      {
+        "id": "cioms",
+        "title": "📗 International Ethical Guidelines for Biomedical Research Involving Human Subjects (CIOMS Guidelines)",
+        "url": "https://cioms.ch/wp-content/uploads/2017/01/WEB-CIOMS-EthicalGuidelines.pdf",
+        "description": "The Council for International Organizations of Medical Sciences, in collaboration with the World Health Organization, sets these 25 guidelines to protect humans in research."
+      }
+    ],
+    "hhs": [
+      {
+        "id": "common-rule",
+        "title": "📗 45 CFR 46 (Common Rule)",
+        "url": "https://www.ecfr.gov/cgi-bin/retrieveECFR?gp=&SID=83cd09e1c0f5c6937cd9d7513160fc3f&pitd=20180719&n=pt45.1.46&r=PART&ty=HTML",
+        "description": "Federal regulations for the protection of human subjects. Defines IRB functions, exemption categories, consent requirements, and continuing review."
+      },
+      {
+        "id": "subpart-b",
+        "title": "📗 Subpart B (Pregnant Women)",
+        "url": "https://www.ecfr.gov/on/2018-07-19/title-45/subtitle-A/subchapter-A/part-46#subpart-B",
+        "description": "Provides additional safeguards for research with pregnant women, fetuses, and neonates. Specifies when risk is acceptable and what consent requirements apply."
+      },
+      {
+        "id": "subpart-c",
+        "title": "📗 Subpart C (Prisoners)",
+        "url": "https://www.ecfr.gov/on/2018-07-19/title-45/subtitle-A/subchapter-A/part-46#subpart-C",
+        "description": "Restricts the types of research permitted with prisoners. Requires specialized IRB composition and review procedures to protect this population."
+      },
+      {
+        "id": "subpart-d",
+        "title": "📗 Subpart D (Children)",
+        "url": "https://www.ecfr.gov/on/2018-07-19/title-45/subtitle-A/subchapter-A/part-46#subpart-D",
+        "description": "Establishes categories of research risk for children. Includes requirements for parental permission, child assent, and federal review of higher-risk protocols."
+      }
+    ],
+    "fda": [
+      {
+        "id": "fda-regs-50",
+        "title": "📗 21 CFR 50 (Consent)",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50?toc=1",
+        "description": "Outlines FDA requirements for obtaining and documenting informed consent. Includes specific exceptions for emergency research and special circumstances."
+      },
+      {
+        "id": "fda-regs-56",
+        "title": "📗 21 CFR 56 (IRBs)",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-56?toc=1",
+        "description": "Governs IRB composition, operations, and record-keeping for FDA-regulated studies. Establishes criteria for IRB review and procedures for disqualification."
+      },
+      {
+        "id": "fda-regs-312",
+        "title": "📗 21 CFR 312 (INDs)",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312?toc=1",
+        "description": "Defines requirements for Investigational New Drug applications. Covers sponsor and investigator responsibilities, safety reporting, and FDA review processes."
+      },
+      {
+        "id": "fda-regs-361",
+        "title": "📗 21 CFR 361 (Radioactive Drugs)",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-361?toc=1",
+        "description": "Permits basic science research with certain radioactive drugs without an IND. Applies only under strict conditions and with RDRC committee oversight."
+      },
+      {
+        "id": "fda-regs-600",
+        "title": "📗 21 CFR 600 (Biologics)",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-600?toc=1",
+        "description": "Provides general standards for biologics, including licensing and safety reporting. Establishes requirements for facilities, inspections, and adverse event monitoring."
+      },
+      {
+        "id": "fda-regs-812",
+        "title": "📗 21 CFR 812 (IDEs)",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-812?toc=1",
+        "description": "Regulates Investigational Device Exemptions for clinical studies. Specifies IRB responsibilities and distinguishes between significant and non-significant risk devices."
+      },
+      {
+        "id": "fda-regs-814",
+        "title": "📗 21 CFR 814(H) (HUDs)",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-814/subpart-H?toc=1",
+        "description": "Establishes the Humanitarian Device Exemption (HDE) process for rare-disease devices. Requires IRB oversight of Humanitarian Use Devices and limits their commercial use."
+      }
+    ],
+    "other-federal": [
+      {
+        "id": "hipaa",
+        "title": "📗 45 CFR 160/164 (HIPAA)",
+        "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/index.html",
+        "description": "Sets standards for the privacy and security of health information. Defines when protected health information (PHI) can be accessed, disclosed, or de-identified for research."
+      },
+      {
+        "id": "ferpa",
+        "title": "📗 FERPA (34 CFR 99)",
+        "url": "https://www.ecfr.gov/cgi-bin/text-idx?tpl=/ecfrbrowse/Title34/34cfr99_main_02.tpl",
+        "description": "Protects the privacy of student education records. Requires consent or specific conditions before disclosing identifiable student information for research."
+      },
+      {
+        "id": "ppra",
+        "title": "📗 PPRA (34 CFR 98)",
+        "url": "https://www.govinfo.gov/app/details/CFR-2024-title34-vol1/CFR-2024-title34-vol1-part98",
+        "description": "Ensures parental notification and consent for certain student surveys. Applies to federally funded educational research involving sensitive topics."
+      }
+    ],
+    "training": [
+      {
+        "id": "ohrp-training",
+        "title": "📗 OHRP Protection Foundational Training",
+        "url": "https://www.hhs.gov/ohrp/education-and-outreach/human-research-protection-training/human-research-protection-foundational-training/index.html",
+        "description": "Online modules covering Belmont principles and the Common Rule. Provides free training in core human subjects protections."
+      }
+    ],
+    "guidance": [
+      {
+        "id": "fda-info-sheets",
+        "title": "📗 FDA Information Sheets for Institutional Review Boards and Clinical Investigators",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/information-sheet-guidance-sponsors-clinical-investigators-and-irbs-frequently-asked-questions",
+        "description": "Practical Q&A-style guidance on FDA regulatory requirements for IRBs and clinical investigators, including consent, IRB operations, and investigator responsibilities."
+      },
+      {
+        "id": "ohrp-policy-guidance",
+        "title": "📗 OHRP Policy Guidance",
+        "url": "https://www.hhs.gov/ohrp/regulations-and-policy/guidance/index.html",
+        "description": "Interpretations and policy statements on the Common Rule. Clarifies how regulatory requirements apply in practice (e.g., engagement in research, exemptions)."
+      }
+    ],
+    "charts-and-tables": {
+      "irb-review": {
+        "title": "IRB Review Types",
+        "items": [
+          {
+            "id": "types-of-irb-review-table",
+            "title": "📊 Review Types",
+            "url": "docs/types-of-irb-review.html",
+            "description": "Convened, expedited, exempt with limited IRB review, and exempt review."
+          },
+          {
+            "id": "expedited-review-categories-table",
+            "title": "📊 Expedited Categories",
+            "url": "docs/expedited-review-categories.html",
+            "description": "Expedited review categories 1–9 with regulatory descriptions."
+          },
+          {
+            "id": "exemption-categories-table",
+            "title": "📊 Exemption Categories",
+            "url": "docs/exemption-categories.html",
+            "description": "Categories 1, 2i, 2ii, 2iii, and 3–8 with limited IRB review and Subpart B, C, D applicability."
+          },
+          {
+            "id": "limited-irb-review-broad-consent-table",
+            "title": "📊 Limited Review & Broad Consent",
+            "url": "docs/limited-irb-review-and-broad-consent.html",
+            "description": "Limited IRB review elements and broad consent elements under 45 CFR 46.116(b)."
+          },
+          {
+            "id": "continuing-review-table",
+            "title": "📊 Continuing Review",
+            "url": "docs/continuing-review.html",
+            "description": "Frequency and exceptions for continuing review under FDA and Common Rule."
+          },
+          {
+            "id": "modifications-to-approved-research-table",
+            "title": "📊 Modifications to Approved Research",
+            "url": "docs/modifications-to-approved-research.html",
+            "description": "Review types for modifications based on original review method and change significance."
+          }
+        ]
+      },
+      "informed-consent": {
+        "title": "Informed Consent",
+        "items": [
+          {
+            "id": "elements-of-informed-consent-table",
+            "title": "📊 Consent Elements",
+            "url": "docs/elements-of-informed-consent.html",
+            "description": "Basic elements, additional elements, and agency-specific requirements under FDA and Common Rule."
+          },
+          {
+            "id": "criteria-for-irb-approval-table",
+            "title": "📊 IRB Approval Criteria",
+            "url": "docs/criteria-for-irb-approval.html",
+            "description": "FDA (21 CFR 56.111) vs Common Rule (45 CFR 46.111) criteria including risk, consent, and vulnerable populations."
+          },
+          {
+            "id": "waiver-of-documentation-of-informed-consent-table",
+            "title": "📊 Waiver of Documentation",
+            "url": "docs/waiver-of-documentation-of-informed-consent.html",
+            "description": "FDA and Common Rule criteria for waiving documentation of informed consent."
+          }
+        ]
+      },
+      "fda-regulations": {
+        "title": "FDA Regulations",
+        "items": [
+          {
+            "id": "fda-vs-common-rule-table",
+            "title": "📊 FDA vs Common Rule",
+            "url": "docs/fda-vs-common-rule.html",
+            "description": "Applicability, definitions, exemptions, cooperative research, and broad consent."
+          },
+          {
+            "id": "ind-ide-requirements-table",
+            "title": "📊 IND/IDE Requirements",
+            "url": "docs/ind-ide-requirements.html",
+            "description": "When IND and IDE applications are required vs. not required, plus device risk assessment."
+          },
+          {
+            "id": "humanitarian-use-devices-table",
+            "title": "📊 Humanitarian Use Devices",
+            "url": "docs/humanitarian-use-devices.html",
+            "description": "Use within vs. outside approved indication, approval criteria, and emergency use."
+          },
+          {
+            "id": "expanded-access-table",
+            "title": "📊 Expanded Access",
+            "url": "docs/expanded-access.html",
+            "description": "Emergency use, individual patient, intermediate population, and IND holder responsibilities."
+          }
+        ]
+      },
+      "reference": {
+        "title": "Reference",
+        "items": [
+          {
+            "id": "ohrp-decision-charts",
+            "title": "📊 OHRP Decision Charts",
+            "url": "https://www.hhs.gov/ohrp/regulations-and-policy/decision-charts/index.html",
+            "description": "Decision charts on human subjects research and exemptions under 45 CFR 46.104(d)."
+          },
+          {
+            "id": "recordkeeping-table",
+            "title": "📊 Recordkeeping",
+            "url": "docs/recordkeeping.html",
+            "description": "Requirements under 45 CFR 46.115 and 21 CFR 56.115 for minutes, procedures, and correspondence."
+          }
+        ]
+      }
+    }
+  }
+}

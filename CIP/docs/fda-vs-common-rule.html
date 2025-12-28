@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    (function() {
+      try {
+        var theme = 'light';
+        var darkStyle = '';
+        if (window.top && window.top.document && window.top.document.documentElement) {
+          var t = window.top.document.documentElement.getAttribute('data-theme');
+          var s = window.top.document.documentElement.getAttribute('data-dark-style');
+          if (t) theme = t;
+          if (s) darkStyle = s;
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+        if (darkStyle) document.documentElement.setAttribute('data-dark-style', darkStyle);
+      } catch (e) {
+        // If we can't read parent, default styles apply
+      }
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>FDA vs Common Rule Comparison</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 1.5rem;
+      line-height: 1.5;
+      color: #111827;
+      background-color: #f9fafb;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+      background-color: #ffffff;
+    }
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 0.5rem 0.75rem;
+      vertical-align: top;
+    }
+    thead th {
+      background-color: #eff6ff;
+      font-weight: 600;
+    }
+    tbody tr:nth-child(even) td {
+      background-color: #f9fafb;
+    }
+    a {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+    ul {
+      margin: 0.25rem 0;
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.15rem;
+    }
+  
+  /* Dark mode support when opened inside CIP modal */
+  html[data-theme="dark"],
+  body[data-theme="dark"] {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  html[data-theme="dark"] table,
+  body[data-theme="dark"] table {
+    background-color: #020617;
+    color: #e5e7eb;
+    border-color: #4b5563;
+  }
+
+  html[data-theme="dark"] thead th,
+  body[data-theme="dark"] thead th {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+
+  html[data-theme="dark"] tbody tr:nth-child(even) td,
+  body[data-theme="dark"] tbody tr:nth-child(even) td {
+    background-color: #111827;
+  }
+
+  /* Ensure body background overrides light mode when theme is dark */
+  html[data-theme="dark"] body {
+    background-color: #020617;
+    color: #ffffff;
+  }
+
+  /* Row header cells in tables ((b)(1), etc.) should not stay light in dark mode */
+  html[data-theme="dark"] tbody th,
+  body[data-theme="dark"] tbody th {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  html[data-theme="dark"] body p,
+  html[data-theme="dark"] body li,
+  html[data-theme="dark"] body td,
+  html[data-theme="dark"] body th {
+    color: #ffffff;
+  }
+
+  html[data-theme="dark"] body h1,
+  html[data-theme="dark"] body h2,
+  html[data-theme="dark"] body h3 {
+    color: #ffffff;
+  }
+
+
+  html[data-theme="dark"] p.source,
+  body[data-theme="dark"] p.source {
+    color: #9ca3af;
+  }
+
+  html[data-theme="dark"] a,
+  body[data-theme="dark"] a {
+    color: #38bdf8;
+  }
+
+
+  
+  
+  
+  
+  /* === DARK STYLE VARIANTS === */
+  
+  /* 💠 Northern Lights - navy sky + teal aurora */
+  html[data-dark-style="aurora"], html[data-dark-style="aurora"] body {
+    background-color: #010814 !important;
+    color: #ccfbf1 !important;
+  }
+  html[data-dark-style="aurora"] table { background-color: #071525; border-color: #115e59; }
+  html[data-dark-style="aurora"] thead th { background-color: #0f3d38; color: #5eead4; border-color: #14b8a6; }
+  html[data-dark-style="aurora"] tbody tr:nth-child(even) td { background-color: #0c1f33; }
+  html[data-dark-style="aurora"] th, html[data-dark-style="aurora"] td { border-color: #115e59; color: #ccfbf1; }
+  html[data-dark-style="aurora"] a { color: #2dd4bf; }
+  html[data-dark-style="aurora"] p.source { color: #5eead4; }
+
+  /* 🐚 Deep Sea - true abyss + cyan glow */
+  html[data-dark-style="ocean"], html[data-dark-style="ocean"] body {
+    background-color: #000204 !important;
+    color: #cffafe !important;
+  }
+  html[data-dark-style="ocean"] table { background-color: #000a0f; border-color: #003040; }
+  html[data-dark-style="ocean"] thead th { background-color: #003040; color: #22d3ee; border-color: #0891b2; }
+  html[data-dark-style="ocean"] tbody tr:nth-child(even) td { background-color: #001018; }
+  html[data-dark-style="ocean"] th, html[data-dark-style="ocean"] td { border-color: #003040; color: #cffafe; }
+  html[data-dark-style="ocean"] a { color: #06b6d4; }
+  html[data-dark-style="ocean"] p.source { color: #22d3ee; }
+
+  /* ❄️ Frost - steel gray + ice white */
+  html[data-dark-style="frost"], html[data-dark-style="frost"] body {
+    background-color: #101214 !important;
+    color: #f3f4f6 !important;
+  }
+  html[data-dark-style="frost"] table { background-color: #1a1d21; border-color: #3f444d; }
+  html[data-dark-style="frost"] thead th { background-color: #3f444d; color: #f3f4f6; border-color: #6b7280; }
+  html[data-dark-style="frost"] tbody tr:nth-child(even) td { background-color: #24282e; }
+  html[data-dark-style="frost"] th, html[data-dark-style="frost"] td { border-color: #3f444d; color: #f3f4f6; }
+  html[data-dark-style="frost"] a { color: #9ca3af; }
+  html[data-dark-style="frost"] p.source { color: #d1d5db; }
+
+  /* 🌀 Blacklight - purple-black + neon */
+  html[data-dark-style="blacklight"], html[data-dark-style="blacklight"] body {
+    background-color: #080010 !important;
+    color: #fae8ff !important;
+  }
+  html[data-dark-style="blacklight"] table { background-color: #10001f; border-color: #581c87; }
+  html[data-dark-style="blacklight"] thead th { background-color: #581c87; color: #00f0ff; border-color: #a855f7; }
+  html[data-dark-style="blacklight"] tbody tr:nth-child(even) td { background-color: #1a0030; }
+  html[data-dark-style="blacklight"] th, html[data-dark-style="blacklight"] td { border-color: #581c87; color: #fae8ff; }
+  html[data-dark-style="blacklight"] a { color: #e879f9; }
+  html[data-dark-style="blacklight"] p.source { color: #e879f9; }
+
+  /* 📟 Matrix - pure black + green */
+  html[data-dark-style="matrix"], html[data-dark-style="matrix"] body {
+    background-color: #000000 !important;
+    color: #4ade80 !important;
+  }
+  html[data-dark-style="matrix"] table { background-color: #030303; border-color: #0a2f0a; }
+  html[data-dark-style="matrix"] thead th { background-color: #0a2f0a; color: #4ade80; border-color: #15803d; }
+  html[data-dark-style="matrix"] tbody tr:nth-child(even) td { background-color: #080808; }
+  html[data-dark-style="matrix"] th, html[data-dark-style="matrix"] td { border-color: #0a2f0a; color: #22c55e; }
+  html[data-dark-style="matrix"] a { color: #4ade80; }
+  html[data-dark-style="matrix"] p.source { color: #22c55e; }
+
+  </style></head>
+<body>
+  <h1>FDA vs Common Rule Comparison</h1>
+  <table>
+<thead>
+<tr>
+  <th scope="col"></th>
+  <th scope="col">FDA</th>
+  <th scope="col">Common Rule</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <th scope="row">Applicability</th>
+  <td>All <strong>clinical investigations</strong> that support applications for research or marketing permits for products regulated by the FDA<br><br><a href="https://www.ecfr.gov/current/title-21/part-50/section-50.3#p-50.3(i)" target="_blank">21 CFR 50.3(i)</a><br><br><strong>Clinical investigation:</strong> Any experiment that involves a <strong>test article</strong> and one or more <strong>human subjects</strong> and that is either subject to requirements for prior submission to the FDA...or the results of which are intended to be submitted to, or held for inspection by, the FDA as part of an application or marketing permit.<br><br><a href="https://www.ecfr.gov/current/title-21/part-50/section-50.3#p-50.3(c)" target="_blank">21 CFR 50.3(c)</a><br><br><strong>Test Article:</strong> Any drug, including a biological product for human use, medical device for human use, human food additive, color additive, electronic product, or any other article subject to regulation under the act or under sections 351 and 354-360F of the Public Health Service Act<br><br><a href="https://www.ecfr.gov/current/title-21/part-50/section-50.3#p-50.3(j)" target="_blank">21 CFR 50.3(j)</a></td>
+  <td>All <strong>human subjects research</strong> conducted, supported, or subjected to regulations by any Federal agency<br><br><a href="https://www.ecfr.gov/current/title-45/part-46/section-46.101#p-46.101(a)" target="_blank">45 CFR 46.101(a)</a><br><br><strong>Research:</strong> Systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge<br><br><a href="https://www.ecfr.gov/current/title-45/part-46/section-46.102#p-46.102(l)" target="_blank">45 CFR 46.102(l)</a></td>
+</tr>
+<tr>
+  <th scope="row">Human subject</th>
+  <td>An individual who is or becomes a participant in research, either as a recipient of the test article or as a control. A subject may be either a healthy individual or a patient<br><br><a href="https://www.ecfr.gov/current/title-21/part-50#p-50.3(g)" target="_blank">21 CFR 50.3(g)</a></td>
+  <td>A living individual about whom an investigator (whether professional or student) conducting research (i) obtains information or biospecimens through intervention or interaction with the individual and uses, studies, analyzes, or generates identifiable private information or identifiable biospecimens<br><br><a href="https://www.ecfr.gov/current/title-45/part-46/section-46.102#p-46.102(e)(1)" target="_blank">45 CFR 46.102(e)</a></td>
+</tr>
+<tr>
+  <th scope="row">Exemptions</th>
+  <td>4 categories:
+    <ul>
+      <li>(a) Investigations commenced prior to July 27, 1981 subject to IRB review</li>
+      <li>(b) Investigations commenced prior to July 27, 1981 not subject to IRB review</li>
+      <li>(c) Emergency use of a test article, provided that such emergency use is reported within 5 working days. Any subsequent use of the test article at the institution is subject to IRB review</li>
+      <li>(d) Taste and food quality evaluations and consumer acceptance studies</li>
+    </ul>
+    <a href="https://www.ecfr.gov/current/title-21/section-56.104" target="_blank">21 CFR 56.104</a>
+  </td>
+  <td>8 categories:
+    <ul>
+      <li>(1) Normal educational practices and settings</li>
+      <li>(2) Educational tests, surveys, interviews, or observations</li>
+      <li>(3) Benign behavioral interventions with adults</li>
+      <li>(4) Secondary research for which consent is not required</li>
+      <li>(5) Public benefit or service programs</li>
+      <li>(6) Taste and food quality evaluation and consumer acceptance standards</li>
+      <li>(7) Storage or maintenance for secondary research for which broad consent is required</li>
+      <li>(8) Secondary research for which broad consent is required</li>
+    </ul>
+    <a href="https://www.ecfr.gov/current/title-45/part-46/section-46.104#p-46.104(d)" target="_blank">45 CFR 46.104(d)</a>
+  </td>
+</tr>
+<tr>
+  <th scope="row">Cooperative research</th>
+  <td>Allowed but not required<br><br><a href="https://www.ecfr.gov/current/title-21/section-56.114" target="_blank">21 CFR 56.114</a></td>
+  <td>Required unless exempt<br><br><a href="https://www.ecfr.gov/on/2018-07-19/title-45/section-46.114" target="_blank">45 CFR 46.114(b)</a></td>
+</tr>
+<tr>
+  <th scope="row">Broad consent</th>
+  <td>N/A</td>
+  <td><a href="https://www.ecfr.gov/on/2018-07-19/title-45/part-46#p-46.116(d)" target="_blank">45 CFR 46.116(d)</a></td>
+</tr>
+<tr>
+  <th scope="row">Informed consent</th>
+  <td>Except as provided in <a href="https://www.ecfr.gov/current/title-21/section-50.22" target="_blank">§§ 50.22</a>, <a href="https://www.ecfr.gov/current/title-21/section-50.23" target="_blank">50.23</a>, and <a href="https://www.ecfr.gov/current/title-21/section-50.24" target="_blank">50.24</a>, no investigator may involve a human being as a subject in research covered by these regulations unless the investigator has obtained the legally effective informed consent of the subject or the subject's legally authorized representative. An investigator shall seek such consent only under circumstances that provide the prospective subject or the representative sufficient opportunity to consider whether or not to participate and that minimize the possibility of coercion or undue influence. The information that is given to the subject or the representative shall be in language understandable to the subject or the representative. No informed consent, whether oral or written, may include any exculpatory language through which the subject or the representative is made to waive or appear to waive any of the subject's legal rights, or releases or appears to release the investigator, the sponsor, the institution, or its agents from liability for negligence.<br><br><a href="https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-B" target="_blank">21 CFR 50.20</a></td>
+  <td>(1) Before involving a human subject in research covered by this policy, an investigator shall obtain the legally effective informed consent of the subject or the subject's legally authorized representative.<br><br>(2) An investigator shall seek informed consent only under circumstances that provide the prospective subject or the legally authorized representative sufficient opportunity to discuss and consider whether or not to participate and that minimize the possibility of coercion or undue influence.<br><br>(3) The information that is given to the subject or the legally authorized representative shall be in language understandable to the subject or the legally authorized representative.<br><br>(4) The prospective subject or the legally authorized representative must be provided with the information that a reasonable person would want to have in order to make an informed decision about whether to participate, and an opportunity to discuss that information.<br><br>(5) Except for broad consent obtained in accordance with <a href="https://www.ecfr.gov/current/title-45/section-46.116#p-46.116(d)" target="_blank">paragraph (d)</a> of this section:<br><br>(i) Informed consent must begin with a concise and focused presentation of the key information that is most likely to assist a prospective subject or legally authorized representative in understanding the reasons why one might or might not want to participate in the research. This part of the informed consent must be organized and presented in a way that facilitates comprehension.<br><br>(ii) Informed consent as a whole must present information in sufficient detail relating to the research, and must be organized and presented in a way that does not merely provide lists of isolated facts, but rather facilitates the prospective subject's or legally authorized representative's understanding of the reasons why one might or might not want to participate.<br><br>(6) No informed consent may include any exculpatory language through which the subject or the legally authorized representative is made to waive or appear to waive any of the subject's legal rights, or releases or appears to release the investigator, the sponsor, the institution, or its agents from liability for negligence.<br><br><a href="https://www.ecfr.gov/current/title-45/part-46/section-46.116#p-46.116(a)" target="_blank">45 CFR 46.116(a)</a></td>
+</tr>
+</tbody>
+</table>
+
+<script>
+// Link tracking with green pill style + ability to clear read status
+(function() {
+  if (!window.parent || window.parent === window) return;
+
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && window.parent.stateManager) {
+      const context = {
+        type: 'source',
+        title: link.textContent || link.title || link.href,
+        source: 'Documents - Table'
+      };
+      window.parent.stateManager.markAsViewed(link.href, context);
+      setTimeout(enhanceLinks, 50);
+    }
+  });
+
+  function enhanceLinks() {
+    if (!window.parent || !window.parent.stateManager || !window.parent.ICONS) return;
+
+    const links = document.querySelectorAll('a[href^="http"]');
+    links.forEach(function(link) {
+      const url = link.href;
+      const isViewed = window.parent.stateManager.isViewed(url);
+
+      if (!isViewed) {
+        const wrapper = link.closest('.link-wrapper');
+        if (wrapper) {
+          const pill = wrapper.querySelector('.read-indicator');
+          if (pill) pill.remove();
+        }
+        return;
+      }
+
+      let wrapper = link.closest('.link-wrapper');
+      if (!wrapper) {
+        wrapper = document.createElement('span');
+        wrapper.className = 'link-wrapper';
+        wrapper.style.cssText = 'display: inline-flex; align-items: center; gap: 0.25rem;';
+        link.parentNode.insertBefore(wrapper, link);
+        wrapper.appendChild(link);
+      }
+
+      let pill = wrapper.querySelector('.read-indicator');
+      if (!pill) {
+        pill = document.createElement('button');
+        pill.type = 'button';
+        pill.className = 'read-indicator';
+        pill.style.cssText = 'display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.15rem 0.5rem; border-radius: 9999px; background-color: #d1fae5; color: #047857; border: none; cursor: pointer; font-size: 0.75rem;';
+        pill.setAttribute('title', 'Mark as unread');
+        pill.setAttribute('aria-label', 'Mark as unread');
+
+        const check = document.createElement('span');
+        check.innerHTML = window.parent.ICONS.check || '✓';
+        check.style.cssText = 'display: inline-block; font-size: 0.75rem;';
+
+        const text = document.createElement('span');
+        text.textContent = 'Read';
+
+        pill.appendChild(check);
+        pill.appendChild(text);
+        wrapper.appendChild(pill);
+
+        pill.addEventListener('click', function(ev) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          if (window.parent.stateManager && typeof window.parent.stateManager.toggleViewed === 'function') {
+            const context = {
+              type: 'source',
+              title: link.textContent || link.title || link.href,
+              source: 'Documents - Table'
+            };
+            window.parent.stateManager.toggleViewed(url, context);
+          }
+          pill.remove();
+        });
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enhanceLinks);
+  } else {
+    enhanceLinks();
+  }
+})();
+</script>
+</body>
+</html>

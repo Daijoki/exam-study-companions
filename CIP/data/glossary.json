@@ -1,0 +1,510 @@
+[
+  {
+    "term": "AE",
+    "description": "Adverse Event",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "21 CFR 312.32(a)",
+        "source": "21 CFR 312.32(a)",
+        "definition": "Adverse event means any untoward medical occurrence associated with the use of a drug in humans, whether or not considered drug related.",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312/subpart-B/section-312.32#p-312.32(a)"
+      },
+      {
+        "label": "OHRP Guidance",
+        "source": "OHRP Guidance",
+        "definition": "Any untoward or unfavorable medical occurrence in a human subject, including any abnormal sign (for example, abnormal physical exam or laboratory finding), symptom, or disease, temporally associated with the subject’s participation in the research, whether or not considered related to the subject’s participation in the research.",
+        "url": "https://www.hhs.gov/ohrp/regulations-and-policy/guidance/reviewing-unanticipated-problems/index.html"
+      },
+      {
+        "label": "ICH E6(R2)",
+        "source": "ICH E6(R2)",
+        "definition": "An adverse event (AE) can therefore be any unfavourable and unintended sign (including an abnormal laboratory finding, for example), symptom, or disease temporally associated with the use of a medicinal product, whether or not considered related to the medicinal product.",
+        "url": "https://database.ich.org/sites/default/files/E6_R2_Addendum.pdf"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "IND",
+    "description": "Investigational New Drug",
+    "type": "simple",
+    "definition": "IND means an investigational new drug application. For purposes of this part, investigational new drug also includes a biological product that is used in a clinical investigation.",
+    "source": "21 CFR 312",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312"
+  },
+  {
+    "term": "IRB",
+    "description": "Institutional Review Board",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "21 CFR 50.3(i)",
+        "source": "21 CFR 50.3(i)",
+        "definition": "Institutional Review Board (IRB) means any board, committee, or other group formally designated by an institution to review, to approve the initiation of, and to conduct periodic review of, biomedical research involving human subjects. The primary purpose of such review is to assure the protection of the rights and welfare of the human subjects.",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-A/section-50.3#p-50.3(i)"
+      },
+      {
+        "label": "45 CFR 46.102(g)",
+        "source": "45 CFR 46.102(g)",
+        "definition": "IRB means an institutional review board established in accord with and for the purposes expressed in this policy.",
+        "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(g)"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "LAR",
+    "description": "Legally Authorized Representative",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "45 CFR 46.102(i)",
+        "source": "45 CFR 46.102(i)",
+        "definition": "Legally authorized representative means an individual or judicial or other body authorized under applicable law to consent on behalf of a prospective subject to the subject's participation in the procedure(s) involved in the research. If there is no applicable law addressing this issue, legally authorized representative means an individual recognized by institutional policy as acceptable for providing consent in the nonresearch context on behalf of the prospective subject to the subject's participation in the procedure(s) involved in the research.",
+        "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(i)"
+      },
+      {
+        "label": "21 CFR 50.3(l)",
+        "source": "21 CFR 50.3(l)",
+        "definition": "Legally authorized representative means an individual or judicial or other body authorized under applicable law to consent on behalf of a prospective subject to the subject's participation in the procedure(s) involved in the research.",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-A/section-50.3#p-50.3(l)"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "PPRA",
+    "description": "Protection of Pupil Rights Amendment",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "20 USC § 1232h",
+        "source": "20 USC § 1232h",
+        "definition": "The PPRA applies to the programs and activities of a State educational agency (SEA), local educational agency (LEA), or other recipient of funds under any program funded by the U.S. Department of Education.",
+        "url": "https://www.govinfo.gov/content/pkg/USCODE-2022-title20/html/USCODE-2022-title20-chap31-subchapIII-part4-sec1232h.htm"
+      },
+      {
+        "label": "34 CFR Part 98",
+        "source": "34 CFR Part 98",
+        "definition": "No student shall be required, as part of any program specified in § 98.1 (a) or (b), to submit without prior consent to psychiatric examination, testing, or treatment, or psychological examination, testing, or treatment, in which the primary purpose is to reveal information concerning one or more of the following:",
+        "url": "https://www.ecfr.gov/current/title-34/subtitle-A/part-98"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "Clinical Trial",
+    "description": null,
+    "type": "simple",
+    "definition": "Clinical trial means a research study in which one or more human subjects are prospectively assigned to one or more interventions (which may include placebo or other control) to evaluate the effects of the interventions on biomedical or behavioral health-related outcomes.",
+    "source": "45 CFR 46.102(b)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(b)"
+  },
+  {
+    "term": "Cooperative Research",
+    "description": null,
+    "type": "simple",
+    "definition": "Cooperative research projects are those that involve more than one institution. In the conduct of cooperative research projects, each institution is responsible for safeguarding the rights and welfare of human subjects and for complying with this policy.",
+    "source": "45 CFR 46.114",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.114"
+  },
+  {
+    "term": "Human Subject",
+    "description": null,
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "45 CFR 46.102(e)(1)",
+        "source": "45 CFR 46.102(e)(1)",
+        "definition": "A living individual about whom an investigator (whether professional or student) conducting research: (i) Obtains information or biospecimens through intervention or interaction with the individual, and uses, studies, or analyzes the information or biospecimens; or (ii) Obtains, uses, studies, analyzes, or generates identifiable private information or identifiable biospecimens.",
+        "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(e)(1)"
+      },
+      {
+        "label": "21 CFR 50.3(g)",
+        "source": "21 CFR 50.3(g)",
+        "definition": "Human subject means an individual who is or becomes a participant in research, either as a recipient of the test article or as a control. A subject may be either a healthy human or a patient.",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-A/section-50.3#p-50.3(g)"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "Institution",
+    "description": null,
+    "type": "multi-agency",
+    "agencies": [],
+    "definitions": [
+      {
+        "label": "45 CFR 46.102(f)",
+        "source": "45 CFR 46.102(f)",
+        "definition": "Institution means any public or private entity, or agency (including Federal, State, and other agencies).",
+        "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(f)"
+      },
+      {
+        "label": "21 CFR 50.3(h)",
+        "source": "21 CFR 50.3(h)",
+        "definition": "Institution means any public or private entity or agency (including Federal, State, and other agencies).",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-A/section-50.3#p-50.3(h)"
+      }
+    ]
+  },
+  {
+    "term": "Interaction",
+    "description": null,
+    "type": "simple",
+    "definition": "Interaction includes communication or interpersonal contact between investigator and subject.",
+    "source": "45 CFR 46.102(e)(3)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(e)(3)"
+  },
+  {
+    "term": "Intervention",
+    "description": null,
+    "type": "simple",
+    "definition": "Intervention includes both physical procedures by which information or biospecimens are gathered (e.g., venipuncture) and manipulations of the subject or the subject's environment that are performed for research purposes.",
+    "source": "45 CFR 46.102(e)(2)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(e)(2)"
+  },
+  {
+    "term": "Minimal Risk",
+    "description": null,
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "45 CFR 46.102(j)",
+        "source": "45 CFR 46.102(j)",
+        "definition": "Minimal risk means that the probability and magnitude of harm or discomfort anticipated in the research are not greater in and of themselves than those ordinarily encountered in daily life or during the performance of routine physical or psychological examinations or tests.",
+        "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(j)"
+      },
+      {
+        "label": "21 CFR 50.3(k)",
+        "source": "21 CFR 50.3(k)",
+        "definition": "Minimal risk means that the probability and magnitude of harm or discomfort anticipated in the research are not greater in and of themselves than those ordinarily encountered in daily life or during the performance of routine physical or psychological examinations or tests.",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-A/section-50.3#p-50.3(k)"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "Research",
+    "description": "",
+    "type": "simple",
+    "definition": "Research means a systematic investigation, including research development, testing, and evaluation, designed to develop or contribute to generalizable knowledge.",
+    "source": "45 CFR 46.102(i)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(i)"
+  },
+  {
+    "term": "Drug",
+    "description": null,
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "FD&C Act § 201(g)(1)",
+        "source": "FD&C Act § 201(g)(1)",
+        "definition": "The term “drug” means (A) articles recognized in the official United States Pharmacopoeia, official Homeopathic Pharmacopoeia of the United States, or official National Formulary, or any supplement to any of them; and (B) articles intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease in man or other animals; and (C) articles (other than food) intended to affect the structure or any function of the body of man or other animals; and (D) articles intended for use as a component of any article specified in clause (A), (B), or (C).",
+        "url": "https://www.fda.gov/regulatory-information/search-fda-guidance-documents/classification-products-drugs-and-devices-and-additional-product-classification-issues#drug"
+      },
+      {
+        "label": "21 U.S.C. § 321(g)(1)",
+        "source": "21 U.S.C. § 321(g)(1)",
+        "definition": "The term “drug” means (A) articles recognized in the official United States Pharmacopoeia, official Homeopathic Pharmacopoeia of the United States, or official National Formulary, or any supplement to any of them; and (B) articles intended for use in the diagnosis, cure, mitigation, treatment, or prevention of disease in man or other animals; and (C) articles (other than food) intended to affect the structure or any function of the body of man or other animals; and (D) articles intended for use as a component of any article specified in clause (A), (B), or (C).",
+        "url": "https://www.govinfo.gov/content/pkg/USCODE-2022-title21/html/USCODE-2022-title21-chap9-subchapII-sec321.htm"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "Biological Product",
+    "description": null,
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "PHS Act § 351",
+        "source": "PHS Act § 351",
+        "definition": "Biological product means a virus, therapeutic serum, toxin, antitoxin, vaccine, blood, blood component or derivative, allergenic product, protein, or analogous product, or arsphenamine or derivative of arsphenamine (or any other trivalent organic arsenic compound), applicable to the prevention, treatment, or cure of a disease or condition of human beings.",
+        "url": "https://www.govinfo.gov/content/pkg/USCODE-2022-title42/html/USCODE-2022-title42-chap6A-subchapII-partF-subpart1-sec262.htm"
+      },
+      {
+        "label": "21 C.F.R. § 600.3(h)",
+        "source": "21 C.F.R. § 600.3(h)",
+        "definition": "Biological product means a virus, therapeutic serum, toxin, antitoxin, vaccine, blood, blood component or derivative, allergenic product, protein, or analogous product, or arsphenamine or derivative of arsphenamine (or any other trivalent organic arsenic compound), applicable to the prevention, treatment, or cure of a disease or condition of human beings.",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-F/part-600/subpart-A/section-600.3#p-600.3(h)"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "Parent",
+    "description": null,
+    "type": "multi-agency",
+    "agencies": [],
+    "definitions": [
+      {
+        "label": "21 CFR 50.3(p)",
+        "source": "21 CFR 50.3(p)",
+        "definition": "Parent means a child's biological or adoptive parent.",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-A/section-50.3#p-50.3(p)"
+      },
+      {
+        "label": "45 CFR 46.402(d)",
+        "source": "45 CFR 46.402(d)",
+        "definition": "Parent means a child's biological or adoptive parent.",
+        "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-D/section-46.402#p-46.402(d)"
+      }
+    ]
+  },
+  {
+    "term": "Permission",
+    "description": null,
+    "type": "multi-agency",
+    "agencies": [],
+    "definitions": [
+      {
+        "label": "21 CFR 50.3(r)",
+        "source": "21 CFR 50.3(r)",
+        "definition": "Permission means the agreement of parent(s) or guardian to the participation of their child or ward in a clinical investigation.",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-A/section-50.3#p-50.3(r)"
+      },
+      {
+        "label": "45 CFR 46.402(c)",
+        "source": "45 CFR 46.402(c)",
+        "definition": "Permission means the agreement of parent(s) or guardian to the participation of their child or ward in a clinical investigation.",
+        "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-D/section-46.402#p-46.402(c)"
+      }
+    ]
+  },
+  {
+    "term": "Private Information",
+    "description": null,
+    "type": "simple",
+    "definition": "Private information includes information about behavior that occurs in a context in which an individual can reasonably expect that no observation or recording is taking place, and information that has been provided for specific purposes by an individual and that the individual can reasonably expect will not be made public (for example, a medical record).",
+    "source": "45 CFR 46.102(e)(4)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(e)(4)"
+  },
+  {
+    "term": "Public Health Authority",
+    "description": null,
+    "type": "simple",
+    "definition": "Public health authority means an agency or authority of the United States, a state, a territory, a political subdivision of a state or territory, an Indian tribe, or a foreign government, or a person or entity acting under a grant of authority from or contract with such public agency, including the employees or agents of such public agency or its contractors or persons or entities to whom it has granted authority, that is responsible for public health matters as part of its official mandate.",
+    "source": "45 CFR 46.102(k)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(k)"
+  },
+  {
+    "term": "Sponsor",
+    "description": null,
+    "type": "simple",
+    "definition": "Sponsor means a person who takes responsibility for and initiates a clinical investigation. The sponsor may be an individual or pharmaceutical company, governmental agency, academic institution, private organization, or other organization. The sponsor does not actually conduct the investigation unless the sponsor is a sponsor-investigator. A person other than an individual (e.g., corporation or agency) that uses one or more of its own employees to conduct an investigation that it has initiated is considered to be a sponsor (not a sponsor-investigator), and the employees are considered to be investigators.",
+    "source": "21 CFR 50.3(e)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-A/section-50.3#p-50.3(e)"
+  },
+  {
+    "term": "Sponsor-Investigator",
+    "description": null,
+    "type": "simple",
+    "definition": "Sponsor-investigator means an individual who both initiates and actually conducts, alone or with others, a clinical investigation, i.e., under whose immediate direction the test article is administered or dispensed to, or used involving, a subject. The term does not include any person other than an individual, e.g., corporation or agency.",
+    "source": "21 CFR 50.3(f)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-A/section-50.3#p-50.3(f)"
+  },
+  {
+    "term": "Test Article",
+    "description": null,
+    "type": "simple",
+    "definition": "Test article means any drug (including a biological product for human use), medical device for human use, human food additive, color additive, electronic product, or any other article subject to regulation under the act or under sections 351 and 354–360F of the Public Health Service Act.",
+    "source": "21 CFR 50.3(j)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-50/subpart-A/section-50.3#p-50.3(j)"
+  },
+  {
+    "term": "Written/In Writing",
+    "description": null,
+    "type": "simple",
+    "definition": "Written, or in writing, for purposes of this part, refers to writing on a tangible medium (e.g., paper) or in an electronic format.",
+    "source": "45 CFR 46.102(m)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.102#p-46.102(m)"
+  },
+  {
+    "term": "IVD",
+    "description": "In Vitro Diagnostics",
+    "type": "simple",
+    "definition": "In vitro diagnostic products are those reagents, instruments, and systems intended for use in the diagnosis of disease or other conditions, including a determination of the state of health, in order to cure, mitigate, treat, or prevent disease or its sequelae. Such products are intended for use in the collection, preparation, and examination of specimens taken from the human body.",
+    "source": "21 CFR 809.3(a)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-809/subpart-A/section-809.3#p-809.3(a)"
+  },
+  {
+    "term": "IRB Composition",
+    "description": "IRB membership requirements",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "45 CFR 46.107",
+        "source": "45 CFR 46.107",
+        "definition": "IRB composition requirements include:\n• At least five members with varying backgrounds to promote complete and adequate review of research activities commonly conducted at the institution\n• This includes members who are knowledgeable about vulnerable populations\n• Diversity in terms of race, gender, cultural backgrounds, and sensitivity to community attitudes\n• At least one scientist\n• At least one nonscientist\n• At least one  member of the community who is not affiliated with the institution",
+        "url": "https://www.ecfr.gov/current/title-45/section-46.107"
+      },
+      {
+        "label": "21 CFR 56.107",
+        "source": "21 CFR 56.107",
+        "definition": "IRB composition requirements include:\n• At least five members with varying backgrounds to promote complete and adequate review of research activities commonly conducted at the institution\n• This includes members who are knowledgeable about vulnerable populations\n• Diversity in terms of race, gender, cultural backgrounds, and sensitivity to community attitudes\n• At least one scientist\n• At least one nonscientist\n• At least one  member of the community who is not affiliated with the institution",
+        "url": "https://www.ecfr.gov/current/title-21/section-56.107"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "IRB Quorum",
+    "description": "Number and type of members required for a convened meeting",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "45 CFR 46.107",
+        "source": "45 CFR 46.107",
+        "definition": "IRB quorum for convened meetings:\n• An IRB must review proposed research at convened meetings at which a majority of the members of the IRB are present, including at least one member whose primary concerns are in nonscientific areas. In order for the research to be approved, it shall receive the approval of a majority of those members present at the meeting.\n• More than half the members/alternates must be present\n• A nonscientist must be present",
+        "url": "https://www.ecfr.gov/current/title-45/section-46.107"
+      },
+      {
+        "label": "21 CFR 56.107",
+        "source": "21 CFR 56.107",
+        "definition": "IRB quorum for convened meetings:\n• An IRB must review proposed research at convened meetings at which a majority of the members of the IRB are present, including at least one member whose primary concerns are in nonscientific areas. In order for the research to be approved, it shall receive the approval of a majority of those members present at the meeting.\n• More than half the members/alternates must be present\n• A nonscientist must be present",
+        "url": "https://www.ecfr.gov/current/title-21/section-56.107"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "IRB Minutes",
+    "description": "Required elements of IRB meeting minutes",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "45 CFR 46.115(a)(2)",
+        "source": "45 CFR 46.115(a)(2)",
+        "definition": "IRB meeting minutes must include:\n• Attendance\n• Actions taken by the IRB\n• The vote on the actions including the number of members for, against, and abstaining\n• The basis for requiring any changes in or disapproval of the research\n• Written summary of the discussion of controverted issues and their resolution",
+        "url": "https://www.ecfr.gov/current/title-45/part-46/section-46.115#p-46.115(a)(2)"
+      },
+      {
+        "label": "21 CFR 56.115(a)(2)",
+        "source": "21 CFR 56.115(a)(2)",
+        "definition": "IRB meeting minutes must include:\n• Attendance\n• Actions taken by the IRB\n• The vote on the actions including the number of members for, against, and abstaining\n• The basis for requiring any changes in or disapproval of the research\n• Written summary of the discussion of controverted issues and their resolution",
+        "url": "https://www.ecfr.gov/current/title-21/part-56/section-56.115#p-56.115(a)(2)"
+      },
+      {
+        "label": "OHRP IRB Minutes Guidance",
+        "source": "OHRP IRB Minutes Guidance",
+        "definition": "IRB meeting minutes must include:\n• Attendance\n• Actions taken by the IRB\n• The vote on the actions including the number of members for, against, and abstaining\n• The basis for requiring any changes in or disapproval of the research\n• Written summary of the discussion of controverted issues and their resolution",
+        "url": "https://www.hhs.gov/ohrp/minutes-institutional-review-board-irb-meetings-guidance-institutions-and-irbs.html-0"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "Required Written Procedures",
+    "description": "Regulatory requirements for IRB written procedures",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "45 CFR 46.108(a)(3)",
+        "source": "45 CFR 46.108(a)(3)",
+        "definition": "IRB written procedures must address:\n• Conducting initial and continuing review of research, and reporting findings and actions to the researcher and institution\n• Determining which projects require review more often than annually and determining which projects need verification from sources other than the researcher that no material changes have occurred since previous IRB review\n• Ensuring prompt reporting to the IRB of proposed changes in a research activity and the proposed changes are not initiated without IRB review and approval except when it’s necessary to eliminate apparent immediate hazards to the human subjects\n• Ensuring prompt reporting to the IRB, IO, and department/agency head for research conducted/supported by HHS, FDA of:\n• Unanticipated problems involving risks to human subjects or others\n• Instances of serious noncompliance with the applicable HHS/FDA regs or IRB requirements\n• Suspension/termination of IRB approval\n• Waiver of consent: researcher must include justification for meeting the five criteria are met in the study protocol\n• Waiver of documentation of consent: Waivers may be granted: researcher must include justification for meeting the five criteria are met in the study protocol",
+        "url": "https://www.ecfr.gov/current/title-45/part-46/section-46.108#p-46.108(a)(3)"
+      },
+      {
+        "label": "45 CFR 46.108(a)(4)",
+        "source": "45 CFR 46.108(a)(4)",
+        "definition": "IRB written procedures must address:\n• Conducting initial and continuing review of research, and reporting findings and actions to the researcher and institution\n• Determining which projects require review more often than annually and determining which projects need verification from sources other than the researcher that no material changes have occurred since previous IRB review\n• Ensuring prompt reporting to the IRB of proposed changes in a research activity and the proposed changes are not initiated without IRB review and approval except when it’s necessary to eliminate apparent immediate hazards to the human subjects\n• Ensuring prompt reporting to the IRB, IO, and department/agency head for research conducted/supported by HHS, FDA of:\n• Unanticipated problems involving risks to human subjects or others\n• Instances of serious noncompliance with the applicable HHS/FDA regs or IRB requirements\n• Suspension/termination of IRB approval\n• Waiver of consent: researcher must include justification for meeting the five criteria are met in the study protocol\n• Waiver of documentation of consent: Waivers may be granted: researcher must include justification for meeting the five criteria are met in the study protocol",
+        "url": "https://www.ecfr.gov/current/title-45/part-46/section-46.108#p-46.108(a)(4)"
+      },
+      {
+        "label": "21 CFR 56.108(a)",
+        "source": "21 CFR 56.108(a)",
+        "definition": "IRB written procedures must address:\n• Conducting initial and continuing review of research, and reporting findings and actions to the researcher and institution\n• Determining which projects require review more often than annually and determining which projects need verification from sources other than the researcher that no material changes have occurred since previous IRB review\n• Ensuring prompt reporting to the IRB of proposed changes in a research activity and the proposed changes are not initiated without IRB review and approval except when it’s necessary to eliminate apparent immediate hazards to the human subjects\n• Ensuring prompt reporting to the IRB, IO, and department/agency head for research conducted/supported by HHS, FDA of:\n• Unanticipated problems involving risks to human subjects or others\n• Instances of serious noncompliance with the applicable HHS/FDA regs or IRB requirements\n• Suspension/termination of IRB approval\n• Waiver of consent: researcher must include justification for meeting the five criteria are met in the study protocol\n• Waiver of documentation of consent: Waivers may be granted: researcher must include justification for meeting the five criteria are met in the study protocol",
+        "url": "https://www.ecfr.gov/current/title-21/part-56/section-56.108#p-56.108(a)"
+      },
+      {
+        "label": "21 CFR 56.108(b)",
+        "source": "21 CFR 56.108(b)",
+        "definition": "IRB written procedures must address:\n• Conducting initial and continuing review of research, and reporting findings and actions to the researcher and institution\n• Determining which projects require review more often than annually and determining which projects need verification from sources other than the researcher that no material changes have occurred since previous IRB review\n• Ensuring prompt reporting to the IRB of proposed changes in a research activity and the proposed changes are not initiated without IRB review and approval except when it’s necessary to eliminate apparent immediate hazards to the human subjects\n• Ensuring prompt reporting to the IRB, IO, and department/agency head for research conducted/supported by HHS, FDA of:\n• Unanticipated problems involving risks to human subjects or others\n• Instances of serious noncompliance with the applicable HHS/FDA regs or IRB requirements\n• Suspension/termination of IRB approval\n• Waiver of consent: researcher must include justification for meeting the five criteria are met in the study protocol\n• Waiver of documentation of consent: Waivers may be granted: researcher must include justification for meeting the five criteria are met in the study protocol",
+        "url": "https://www.ecfr.gov/current/title-21/part-56/section-56.108#p-56.108(b)"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "Clinical Investigation",
+    "description": null,
+    "type": "simple",
+    "definition": "Clinical Investigation means any experiment that involves a test article and one or more human subjects, and that either must meet the requirements for prior submission to the Food and Drug Administration under section 505(i) or 520(g) of the act, or need not meet the requirements for prior submission to the Food and Drug Administration under these sections of the act, but the results of which are intended to be later submitted to, or held for inspection by, the Food and Drug Administration as part of an application for a research or marketing permit. The term does not include experiments that must meet the provisions of part 58, regarding nonclinical laboratory studies. The terms research, clinical research, clinical study, study, and clinical investigation are deemed to be synonymous for purposes of this part.",
+    "source": "21 CFR 56.102(c)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-56/subpart-A/section-56.102#p-56.102(c)"
+  },
+  {
+    "term": "Significant Risk Device",
+    "description": null,
+    "type": "simple",
+    "definition": "A significant risk device is an investigational device that: (1) Is intended as an implant and presents a potential for serious risk to the health, safety, or welfare of a subject; (2) Is purported or represented to be for a use in supporting or sustaining human life and presents a potential for serious risk to the health, safety, or welfare of a subject; (3) Is for a use of substantial importance in diagnosing, curing, mitigating, or treating disease, or otherwise preventing impairment of human health and presents a potential for serious risk to the health, safety, or welfare of a subject; or (4) Otherwise presents a potential for serious risk to the health, safety, or welfare of a subject.",
+    "source": "21 CFR 812.3(m)",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-812/subpart-A/section-812.3#p-812.3(m)"
+  },
+  {
+    "term": "Humanitarian Use Device",
+    "description": "HUD",
+    "type": "simple",
+    "definition": "Humanitarian Use Devices (HUDs) are legally marketed devices used to treat or diagnose diseases or conditions that affect no more than 8,000 individuals in the United States per year. FDA approval is based on safety and probable benefit, and not effectiveness.",
+    "source": "21 CFR 814 Subpart H",
+    "agencies": [],
+    "source_url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-H/part-814/subpart-H"
+  },
+  {
+    "term": "Expanded Access",
+    "description": null,
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "21 CFR 312 Subpart I",
+        "source": "21 CFR 312 Subpart I",
+        "definition": "The use of an investigational drug or biologic to treat a patient with a serious disease/condition where there is no comparable or satisfactory alternative treatment available.",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-D/part-312/subpart-I"
+      },
+      {
+        "label": "21 CFR 812.35-812.36",
+        "source": "21 CFR 812.35-812.36",
+        "definition": "The use of an investigational medical device to treat a patient with a serious disease/condition where there is no comparable or satisfactory alternative treatment available.",
+        "url": "https://www.ecfr.gov/current/title-21/section-812.35"
+      }
+    ],
+    "agencies": []
+  },
+  {
+    "term": "Exemptions from IRB Review",
+    "description": "Categories of research exempt from IRB review",
+    "type": "multi-agency",
+    "definitions": [
+      {
+        "label": "21 CFR 56.104",
+        "source": "21 CFR 56.104",
+        "definition": "FDA exemption categories (4 categories):\n(a) Investigations commenced prior to July 27, 1981 subject to IRB review\n(b) Investigations commenced prior to July 27, 1981 not subject to IRB review\n(c) Emergency use of a test article, provided that such emergency use is reported within 5 working days. Any subsequent use of the test article at the institution is subject to IRB review\n(d) Taste and food quality evaluations and consumer acceptance studies",
+        "url": "https://www.ecfr.gov/current/title-21/chapter-I/subchapter-A/part-56/subpart-B/section-56.104"
+      },
+      {
+        "label": "45 CFR 46.104(d)",
+        "source": "45 CFR 46.104(d)",
+        "definition": "Common Rule exemption categories (8 categories):\n(1) Normal educational practices and settings\n(2) Educational tests, surveys, interviews, or observations\n(3) Benign behavioral interventions with adults\n(4) Secondary research for which consent is not required\n(5) Public benefit or service programs\n(6) Taste and food quality evaluation and consumer acceptance standards\n(7) Storage or maintenance for secondary research for which broad consent is required\n(8) Secondary research for which broad consent is required",
+        "url": "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-A/part-46/subpart-A/section-46.104#p-46.104(d)"
+      }
+    ],
+    "agencies": []
+  }
+]

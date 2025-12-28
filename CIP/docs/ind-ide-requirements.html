@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+    (function() {
+      try {
+        var theme = 'light';
+        var darkStyle = '';
+        if (window.top && window.top.document && window.top.document.documentElement) {
+          var t = window.top.document.documentElement.getAttribute('data-theme');
+          var s = window.top.document.documentElement.getAttribute('data-dark-style');
+          if (t) theme = t;
+          if (s) darkStyle = s;
+        }
+        document.documentElement.setAttribute('data-theme', theme);
+        if (darkStyle) document.documentElement.setAttribute('data-dark-style', darkStyle);
+      } catch (e) {
+        // If we can't read parent, default styles apply
+      }
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <title>When is an IND/IDE Required?</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      margin: 1.5rem;
+      line-height: 1.5;
+      color: #111827;
+      background-color: #f9fafb;
+    }
+    h1 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+      background-color: #ffffff;
+    }
+    th, td {
+      border: 1px solid #e5e7eb;
+      padding: 0.5rem 0.75rem;
+      vertical-align: top;
+    }
+    thead th {
+      background-color: #eff6ff;
+      font-weight: 600;
+    }
+    tbody tr:nth-child(even) td {
+      background-color: #f9fafb;
+    }
+    a {
+      color: #1d4ed8;
+      text-decoration: underline;
+    }
+    ul {
+      margin: 0.25rem 0;
+      padding-left: 1.25rem;
+    }
+    li {
+      margin-bottom: 0.25rem;
+    }
+  
+  /* Dark mode support when opened inside CIP modal */
+  html[data-theme="dark"],
+  body[data-theme="dark"] {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  html[data-theme="dark"] table,
+  body[data-theme="dark"] table {
+    background-color: #020617;
+    color: #e5e7eb;
+    border-color: #4b5563;
+  }
+
+  html[data-theme="dark"] thead th,
+  body[data-theme="dark"] thead th {
+    background-color: #111827;
+    color: #f9fafb;
+  }
+
+  html[data-theme="dark"] tbody tr:nth-child(even) td,
+  body[data-theme="dark"] tbody tr:nth-child(even) td {
+    background-color: #111827;
+  }
+
+  /* Ensure body background overrides light mode when theme is dark */
+  html[data-theme="dark"] body {
+    background-color: #020617;
+    color: #ffffff;
+  }
+
+  /* Row header cells in tables ((b)(1), etc.) should not stay light in dark mode */
+  html[data-theme="dark"] tbody th,
+  body[data-theme="dark"] tbody th {
+    background-color: #020617;
+    color: #e5e7eb;
+  }
+
+  html[data-theme="dark"] body p,
+  html[data-theme="dark"] body li,
+  html[data-theme="dark"] body td,
+  html[data-theme="dark"] body th {
+    color: #ffffff;
+  }
+
+  html[data-theme="dark"] body h1,
+  html[data-theme="dark"] body h2,
+  html[data-theme="dark"] body h3 {
+    color: #ffffff;
+  }
+
+
+  html[data-theme="dark"] p.source,
+  body[data-theme="dark"] p.source {
+    color: #9ca3af;
+  }
+
+  html[data-theme="dark"] a,
+  body[data-theme="dark"] a {
+    color: #38bdf8;
+  }
+
+
+  
+  
+  
+  
+  /* === DARK STYLE VARIANTS === */
+  
+  /* 💠 Northern Lights - navy sky + teal aurora */
+  html[data-dark-style="aurora"], html[data-dark-style="aurora"] body {
+    background-color: #010814 !important;
+    color: #ccfbf1 !important;
+  }
+  html[data-dark-style="aurora"] table { background-color: #071525; border-color: #115e59; }
+  html[data-dark-style="aurora"] thead th { background-color: #0f3d38; color: #5eead4; border-color: #14b8a6; }
+  html[data-dark-style="aurora"] tbody tr:nth-child(even) td { background-color: #0c1f33; }
+  html[data-dark-style="aurora"] th, html[data-dark-style="aurora"] td { border-color: #115e59; color: #ccfbf1; }
+  html[data-dark-style="aurora"] a { color: #2dd4bf; }
+  html[data-dark-style="aurora"] p.source { color: #5eead4; }
+
+  /* 🐚 Deep Sea - true abyss + cyan glow */
+  html[data-dark-style="ocean"], html[data-dark-style="ocean"] body {
+    background-color: #000204 !important;
+    color: #cffafe !important;
+  }
+  html[data-dark-style="ocean"] table { background-color: #000a0f; border-color: #003040; }
+  html[data-dark-style="ocean"] thead th { background-color: #003040; color: #22d3ee; border-color: #0891b2; }
+  html[data-dark-style="ocean"] tbody tr:nth-child(even) td { background-color: #001018; }
+  html[data-dark-style="ocean"] th, html[data-dark-style="ocean"] td { border-color: #003040; color: #cffafe; }
+  html[data-dark-style="ocean"] a { color: #06b6d4; }
+  html[data-dark-style="ocean"] p.source { color: #22d3ee; }
+
+  /* ❄️ Frost - steel gray + ice white */
+  html[data-dark-style="frost"], html[data-dark-style="frost"] body {
+    background-color: #101214 !important;
+    color: #f3f4f6 !important;
+  }
+  html[data-dark-style="frost"] table { background-color: #1a1d21; border-color: #3f444d; }
+  html[data-dark-style="frost"] thead th { background-color: #3f444d; color: #f3f4f6; border-color: #6b7280; }
+  html[data-dark-style="frost"] tbody tr:nth-child(even) td { background-color: #24282e; }
+  html[data-dark-style="frost"] th, html[data-dark-style="frost"] td { border-color: #3f444d; color: #f3f4f6; }
+  html[data-dark-style="frost"] a { color: #9ca3af; }
+  html[data-dark-style="frost"] p.source { color: #d1d5db; }
+
+  /* 🌀 Blacklight - purple-black + neon */
+  html[data-dark-style="blacklight"], html[data-dark-style="blacklight"] body {
+    background-color: #080010 !important;
+    color: #fae8ff !important;
+  }
+  html[data-dark-style="blacklight"] table { background-color: #10001f; border-color: #581c87; }
+  html[data-dark-style="blacklight"] thead th { background-color: #581c87; color: #00f0ff; border-color: #a855f7; }
+  html[data-dark-style="blacklight"] tbody tr:nth-child(even) td { background-color: #1a0030; }
+  html[data-dark-style="blacklight"] th, html[data-dark-style="blacklight"] td { border-color: #581c87; color: #fae8ff; }
+  html[data-dark-style="blacklight"] a { color: #e879f9; }
+  html[data-dark-style="blacklight"] p.source { color: #e879f9; }
+
+  /* 📟 Matrix - pure black + green */
+  html[data-dark-style="matrix"], html[data-dark-style="matrix"] body {
+    background-color: #000000 !important;
+    color: #4ade80 !important;
+  }
+  html[data-dark-style="matrix"] table { background-color: #030303; border-color: #0a2f0a; }
+  html[data-dark-style="matrix"] thead th { background-color: #0a2f0a; color: #4ade80; border-color: #15803d; }
+  html[data-dark-style="matrix"] tbody tr:nth-child(even) td { background-color: #080808; }
+  html[data-dark-style="matrix"] th, html[data-dark-style="matrix"] td { border-color: #0a2f0a; color: #22c55e; }
+  html[data-dark-style="matrix"] a { color: #4ade80; }
+  html[data-dark-style="matrix"] p.source { color: #22c55e; }
+
+  </style></head>
+<body>
+  <h1>When is an IND/IDE Required?</h1>
+  
+  <table>
+<thead>
+<tr>
+  <th scope="col"></th>
+  <th scope="col">IND</th>
+  <th scope="col">IDE</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <th scope="row">Required</th>
+  <td>Studies investigating a drug that has never been approved for use in the US<br><br>Studies investigating new populations, dosing, or routes of administration for a drug previously approved<br><br><a href="https://www.fda.gov/drugs/types-applications/investigational-new-drug-ind-application" target="_blank">FDA Guidance</a></td>
+  <td>When an investigational device, including a transitional device, is the object of an investigation<br><br><a href="https://www.ecfr.gov/current/title-21/part-812#p-812.3(g)" target="_blank">21 CFR 812.3(g)</a></td>
+</tr>
+<tr>
+  <th scope="row">Not required</th>
+  <td>Studies evaluating a marketed drug in a manner consistent with its labeling<br><br>Studies with an approved drug, marketed in the US, when:
+    <ul>
+      <li>Investigation not intended to be reported to FDA in support of a new indication or a significant change in the advertising of a drug</li>
+      <li>Prescription drugs in which the investigation is not intended to support a significant change in the advertising of a drug</li>
+      <li>Investigation does not involve a route of administration, dose, patient population, or other factor that significantly increases the risk/decreases acceptability of risk associated with use of the drug</li>
+    </ul>
+    <a href="https://www.fda.gov/drugs/types-applications/investigational-new-drug-ind-application" target="_blank">FDA Guidance</a>
+  </td>
+  <td>
+    <ul>
+      <li>(1) A device, other than a transitional device, in commercial distribution immediately before May 28, 1976, when used or investigated in accordance with the indications in labeling in effect at that time.</li>
+      <li>(2) A device, other than a transitional device, introduced into commercial distribution on or after May 28, 1976, that FDA has determined to be substantially equivalent to a device in commercial distribution immediately before May 28, 1976, and that is used or investigated in accordance with the indications in the labeling FDA reviewed under subpart E of part 807 in determining substantial equivalence.</li>
+      <li>(3) A diagnostic device, if the sponsor complies with applicable requirements in § 809.10(c) and if the testing:
+        <ul>
+          <li>(i) Is noninvasive,</li>
+          <li>(ii) Does not require an invasive sampling procedure that presents significant risk,</li>
+          <li>(iii) Does not by design or intention introduce energy into a subject, and</li>
+          <li>(iv) Is not used as a diagnostic procedure without confirmation of the diagnosis by another, medically established diagnostic product or procedure.</li>
+        </ul>
+      </li>
+      <li>(4) A device undergoing consumer preference testing, testing of a modification, or testing of a combination of two or more devices in commercial distribution, if the testing is not for the purpose of determining safety or effectiveness and does not put subjects at risk.</li>
+      <li>(5) A device intended solely for veterinary use.</li>
+      <li>(6) A device shipped solely for research on or with laboratory animals and labeled in accordance with § 812.5(c).</li>
+      <li>(7) A custom device as defined in § 812.3(b), unless the device is being used to determine safety or effectiveness for commercial distribution.</li>
+    </ul>
+    <a href="https://www.ecfr.gov/current/title-21/part-812/section-812.2#p-812.2(c)" target="_blank">21 CFR 812.2(c)</a>
+  </td>
+</tr>
+<tr>
+  <th scope="row">Risk Assessment</th>
+  <td></td>
+  <td>Convened IRB must determine whether the risk is significant or nonsignificant risk<br><br>A significant/nonsignificant risk determination is not the same as the minimal risk/greater than minimal risk IRB determination required by <a href="https://www.ecfr.gov/current/title-21/part-56" target="_blank">21 CFR 56</a>.</td>
+</tr>
+</tbody>
+</table>
+
+<script>
+// Link tracking with green pill style + ability to clear read status
+(function() {
+  if (!window.parent || window.parent === window) return;
+
+  document.addEventListener('click', function(e) {
+    const link = e.target.closest('a');
+    if (link && link.href && window.parent.stateManager) {
+      const context = {
+        type: 'source',
+        title: link.textContent || link.title || link.href,
+        source: 'Documents - Table'
+      };
+      window.parent.stateManager.markAsViewed(link.href, context);
+      setTimeout(enhanceLinks, 50);
+    }
+  });
+
+  function enhanceLinks() {
+    if (!window.parent || !window.parent.stateManager || !window.parent.ICONS) return;
+
+    const links = document.querySelectorAll('a[href^="http"]');
+    links.forEach(function(link) {
+      const url = link.href;
+      const isViewed = window.parent.stateManager.isViewed(url);
+
+      if (!isViewed) {
+        const wrapper = link.closest('.link-wrapper');
+        if (wrapper) {
+          const pill = wrapper.querySelector('.read-indicator');
+          if (pill) pill.remove();
+        }
+        return;
+      }
+
+      let wrapper = link.closest('.link-wrapper');
+      if (!wrapper) {
+        wrapper = document.createElement('span');
+        wrapper.className = 'link-wrapper';
+        wrapper.style.cssText = 'display: inline-flex; align-items: center; gap: 0.25rem;';
+        link.parentNode.insertBefore(wrapper, link);
+        wrapper.appendChild(link);
+      }
+
+      let pill = wrapper.querySelector('.read-indicator');
+      if (!pill) {
+        pill = document.createElement('button');
+        pill.type = 'button';
+        pill.className = 'read-indicator';
+        pill.style.cssText = 'display: inline-flex; align-items: center; gap: 0.25rem; padding: 0.15rem 0.5rem; border-radius: 9999px; background-color: #d1fae5; color: #047857; border: none; cursor: pointer; font-size: 0.75rem;';
+        pill.setAttribute('title', 'Mark as unread');
+        pill.setAttribute('aria-label', 'Mark as unread');
+
+        const check = document.createElement('span');
+        check.innerHTML = window.parent.ICONS.check || '✓';
+        check.style.cssText = 'display: inline-block; font-size: 0.75rem;';
+
+        const text = document.createElement('span');
+        text.textContent = 'Read';
+
+        pill.appendChild(check);
+        pill.appendChild(text);
+        wrapper.appendChild(pill);
+
+        pill.addEventListener('click', function(ev) {
+          ev.preventDefault();
+          ev.stopPropagation();
+          if (window.parent.stateManager && typeof window.parent.stateManager.toggleViewed === 'function') {
+            const context = {
+              type: 'source',
+              title: link.textContent || link.title || link.href,
+              source: 'Documents - Table'
+            };
+            window.parent.stateManager.toggleViewed(url, context);
+          }
+          pill.remove();
+        });
+      }
+    });
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', enhanceLinks);
+  } else {
+    enhanceLinks();
+  }
+})();
+</script>
+</body>
+</html>
