@@ -321,6 +321,271 @@
     --border-dark: #A1A1AA;
 }
 
+/* =============================================
+   LIGHT MODE COMPONENT STYLES (Deep Integration)
+   Mirrors dark mode architecture - uses CSS custom properties
+   that are defined by each light variant (titanium, sage, etc.)
+   ============================================= */
+
+/* === TYPOGRAPHY & TEXT COLORS === */
+[data-theme="light"] .text-gray-800 { color: var(--text-primary) !important; }
+[data-theme="light"] .text-gray-700 { color: var(--text-secondary) !important; }
+[data-theme="light"] .text-gray-600 { color: var(--text-muted) !important; }
+
+/* === BACKGROUNDS === */
+[data-theme="light"] .bg-white { background-color: var(--bg-white) !important; }
+[data-theme="light"] .bg-gray-50 { background-color: var(--bg-lighter) !important; }
+[data-theme="light"] .bg-gray-100 { background-color: var(--bg-lighter) !important; }
+
+/* === BORDERS === */
+[data-theme="light"] .border-gray-200 { border-color: var(--border-light) !important; }
+[data-theme="light"] .border-gray-300 { border-color: var(--border-medium) !important; }
+
+/* === TABLES (Glossary & Documents) === */
+[data-theme="light"] .glossary-card table,
+[data-theme="light"] .glossary-item-enhanced table,
+[data-theme="light"] article.glossary-card > div {
+    background: var(--bg-lighter) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .glossary-card td,
+[data-theme="light"] .glossary-card th {
+    color: var(--text-primary) !important;
+    border-color: var(--border-medium) !important;
+}
+
+[data-theme="light"] .glossary-card table tbody,
+[data-theme="light"] .glossary-card table thead {
+    background: transparent !important;
+}
+
+[data-theme="light"] .doc-modal-content table thead,
+[data-theme="light"] .modal-body table thead {
+    background: rgba(var(--primr-navy-rgb, 37, 99, 235), 0.08) !important;
+}
+
+[data-theme="light"] .doc-modal-content table thead th,
+[data-theme="light"] .modal-body table thead th {
+    color: var(--text-primary) !important;
+    border-color: var(--border-medium) !important;
+}
+
+[data-theme="light"] .doc-modal-content table tbody tr,
+[data-theme="light"] .modal-body table tbody tr {
+    background: var(--bg-white) !important;
+}
+
+[data-theme="light"] .doc-modal-content table tbody tr:nth-child(even),
+[data-theme="light"] .modal-body table tbody tr:nth-child(even) {
+    background: var(--bg-lighter) !important;
+}
+
+/* === MODALS === */
+[data-theme="light"] .historical-modal-content,
+[data-theme="light"] .doc-modal {
+    background: var(--bg-white) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .doc-modal-header,
+[data-theme="light"] .doc-modal-footer {
+    background: var(--bg-lighter) !important;
+    border-color: var(--border-medium) !important;
+}
+
+[data-theme="light"] #note-modal {
+    background: var(--bg-white) !important;
+}
+
+[data-theme="light"] #note-modal h2 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] #note-modal-textarea {
+    background: var(--bg-lighter) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-medium) !important;
+}
+
+/* === CARDS === */
+[data-theme="light"] #glossary-container > article.glossary-card {
+    background: var(--bg-white) !important;
+}
+
+[data-theme="light"] #glossary-container > article.glossary-card:hover {
+    background: var(--bg-lighter) !important;
+}
+
+[data-theme="light"] .historical-card {
+    background: var(--bg-white) !important;
+    border-color: var(--border-medium) !important;
+}
+
+[data-theme="light"] .card {
+    background: var(--bg-white) !important;
+    border-color: var(--border-light) !important;
+}
+
+[data-theme="light"] .card:hover,
+[data-theme="light"] .card:focus-within {
+    background: var(--bg-lighter) !important;
+    border-color: var(--border-medium) !important;
+}
+
+/* === FLASHCARDS === */
+[data-theme="light"] .flashcard-side,
+[data-theme="light"] .flashcard-front,
+[data-theme="light"] .flashcard-back {
+    background: var(--bg-white) !important;
+    border-color: var(--border-medium);
+}
+
+[data-theme="light"] .flashcard-front {
+    border-left-color: var(--primr-navy);
+}
+
+[data-theme="light"] .flashcard-back {
+    border-left-color: var(--primr-teal);
+}
+
+/* === FORMS & INPUTS === */
+[data-theme="light"] .form-input {
+    background: var(--bg-white);
+    color: var(--text-primary);
+    border-color: var(--border-medium);
+}
+
+[data-theme="light"] .form-input:focus {
+    border-color: var(--primr-teal);
+    box-shadow: 0 0 0 3px rgba(var(--primr-teal-rgb, 8, 145, 178), 0.1);
+}
+
+[data-theme="light"] .form-input::placeholder {
+    color: var(--text-muted);
+}
+
+[data-theme="light"] input[type="text"],
+[data-theme="light"] input[type="search"],
+[data-theme="light"] input.search,
+[data-theme="light"] .search-input,
+[data-theme="light"] #glossary-search,
+[data-theme="light"] #notes-search-input {
+    background: var(--bg-white) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-medium) !important;
+}
+
+[data-theme="light"] input[type="text"]::placeholder,
+[data-theme="light"] input[type="search"]::placeholder,
+[data-theme="light"] input.search::placeholder {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="light"] textarea,
+[data-theme="light"] #note-modal-textarea {
+    background: var(--bg-white) !important;
+    color: var(--text-primary) !important;
+    border-color: var(--border-medium) !important;
+}
+
+[data-theme="light"] textarea::placeholder {
+    color: var(--text-muted) !important;
+}
+
+/* === DRAWERS === */
+[data-theme="light"] #notes-drawer {
+    background: var(--bg-white) !important;
+}
+
+[data-theme="light"] #notes-drawer input {
+    background: var(--bg-lighter) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] #notes-drawer li {
+    background: var(--bg-white) !important;
+    border-color: var(--border-light) !important;
+}
+
+[data-theme="light"] #notes-drawer li:hover {
+    background: var(--bg-lighter) !important;
+}
+
+/* === GLOSSARY SPECIFIC === */
+[data-theme="light"] .glossary-item-enhanced,
+[data-theme="light"] .glossary-card {
+    background: var(--bg-white) !important;
+}
+
+[data-theme="light"] .glossary-card > div,
+[data-theme="light"] .glossary-card tbody,
+[data-theme="light"] .glossary-card td {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] #glossary-container a.source-pill,
+[data-theme="light"] .flashcard a.source-pill {
+    background: var(--bg-lighter) !important;
+    color: var(--primr-teal) !important;
+    border-color: var(--border-medium) !important;
+}
+
+[data-theme="light"] #glossary-container a.source-pill:hover,
+[data-theme="light"] .flashcard a.source-pill:hover {
+    background: var(--primr-teal) !important;
+    color: var(--bg-white) !important;
+}
+
+/* === QUIZ/KNOWLEDGE CHECKS === */
+[data-theme="light"] .quiz-gradient,
+[data-theme="light"] .knowledge-check {
+    background: var(--bg-lighter) !important;
+    border-color: var(--border-medium) !important;
+}
+
+[data-theme="light"] .check-option {
+    background: var(--bg-white) !important;
+    border-color: var(--border-medium) !important;
+}
+
+[data-theme="light"] .check-option:hover {
+    background: var(--bg-lighter) !important;
+    border-color: var(--primr-teal) !important;
+}
+
+/* === NAVIGATION === */
+[data-theme="light"] .nav-tab.active {
+    background: var(--primr-navy) !important;
+    color: var(--bg-white) !important;
+}
+
+[data-theme="light"] .nav-tab:hover:not(.active) {
+    background: rgba(var(--primr-navy-rgb, 37, 99, 235), 0.1);
+}
+
+/* === ALERTS & BADGES === */
+[data-theme="light"] .result-count,
+[data-theme="light"] .badge {
+    background: var(--bg-lighter) !important;
+    color: var(--text-primary) !important;
+}
+
+/* === HEADINGS === */
+[data-theme="light"] .historical-modal-content h2,
+[data-theme="light"] .historical-modal-content h3,
+[data-theme="light"] .historical-card h3,
+[data-theme="light"] .historical-card h4 {
+    color: var(--text-primary) !important;
+}
+
+/* === SEARCH HIGHLIGHTS === */
+[data-theme="light"] mark,
+[data-theme="light"] .highlight {
+    background-color: rgba(var(--primr-yellow-rgb, 251, 191, 36), 0.3) !important;
+    color: var(--text-primary) !important;
+}
+
 /* Smooth transitions for theme switching */
 body,
 .nav-tab,
