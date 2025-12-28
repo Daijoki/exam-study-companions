@@ -586,6 +586,73 @@
     color: var(--text-primary) !important;
 }
 
+/* === VISIBILITY FIXES: Knowledge Checks, Documents, Modals === */
+[data-theme="light"] .quiz-gradient,
+[data-theme="light"] .knowledge-check {
+    background: var(--bg-white) !important;
+    border-color: var(--border-medium) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .knowledge-check .font-bold,
+[data-theme="light"] .knowledge-check h2,
+[data-theme="light"] .knowledge-check h3,
+[data-theme="light"] .quiz-gradient .font-bold,
+[data-theme="light"] .quiz-gradient h2,
+[data-theme="light"] .quiz-gradient h3 {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .check-option {
+    background: var(--bg-lighter) !important;
+    border-color: var(--border-medium) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .check-option:hover {
+    background: var(--bg-white) !important;
+    border-color: var(--primr-teal) !important;
+}
+
+[data-theme="light"] .doc-card-blue,
+[data-theme="light"] .card-gradient {
+    background: linear-gradient(135deg, rgba(var(--primr-navy-rgb, 37, 99, 235), 0.1) 0%, rgba(var(--primr-teal-rgb, 8, 145, 178), 0.1) 100%) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .doc-card-green {
+    background: linear-gradient(135deg, rgba(var(--primr-green-rgb, 5, 150, 105), 0.1) 0%, rgba(var(--primr-teal-rgb, 8, 145, 178), 0.1) 100%) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .doc-card-orange {
+    background: linear-gradient(135deg, rgba(var(--primr-gold-rgb, 245, 158, 11), 0.1) 0%, rgba(var(--primr-yellow-rgb, 251, 191, 36), 0.1) 100%) !important;
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .doc-card {
+    background: var(--bg-white) !important;
+}
+
+[data-theme="light"] .doc-card h3,
+[data-theme="light"] .doc-card h4,
+[data-theme="light"] .doc-card p {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .historical-modal-content h2,
+[data-theme="light"] .historical-modal-content h3,
+[data-theme="light"] .historical-modal-content p,
+[data-theme="light"] .historical-modal-content li {
+    color: var(--text-primary) !important;
+}
+
+[data-theme="light"] .historical-card h3,
+[data-theme="light"] .historical-card h4,
+[data-theme="light"] .historical-card p {
+    color: var(--text-primary) !important;
+}
+
 /* Smooth transitions for theme switching */
 body,
 .nav-tab,
